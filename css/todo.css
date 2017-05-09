@@ -76,11 +76,13 @@ div.header {
 .footer-text p:hover {
 	color:#3BD4FF;
 	font-size:25px;
+	text-decoration:none;
 }
 
 .footer-text p:active {
 	color:white;
 	font-size:22.5px;
+	text-decoration:none;
 }
 
 /* Footer CSS */
