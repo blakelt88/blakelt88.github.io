@@ -1,13 +1,38 @@
+/* Stick footer CSS */
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
 	background-color:#34FF71;
 	margin:0;
 	padding:0;
 }
 
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -50px; 
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+
+/* Header CSS */
+
 div.header {
 	background-color:#FF5034;
 	width:100%;
-	height:10em;
+	height:5.5em;
+	padding-top:5px;
 }
 
 .header h1 {
@@ -36,4 +61,34 @@ div.header {
 	padding-right:0;
 	padding-top:0;
 	padding-left:0;
+}
+
+/* Main CSS */
+
+.footer-text p {
+	text-align:center;
+	margin:0 auto;
+	color:white;
+	font-size:22.5px;
+	text-decoration:none;
+}
+
+.footer-text p:hover {
+	color:#3BD4FF;
+	font-size:25px;
+}
+
+.footer-text p:active {
+	color:white;
+	font-size:22.5px;
+}
+
+/* Footer CSS */
+
+.footer, .wrapper:after {
+  height: 50px; 
+}
+
+.footer {
+  background: #FF5034;
 }
