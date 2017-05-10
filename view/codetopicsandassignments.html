@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="../css/todo.css">
   
-  <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="../scripts/iframes.js"></script>
  
 </head>
 
@@ -26,34 +26,39 @@
 	<div class="wrapper">
 		
 	<div class="header">
- <h1>ToDoABLES</h1>
+ <a href="../index.html"><h1>ToDoABLES</h1></a>
  <p>A Simple, Yet Effective, ToDo List!</p>
  </div>
  
- <div class="main">
+ <div id="main" class="main">
  	<div class="left-column">
  		<h2 class="away-from-h4">Sandbox Code</h2>	
  			<h4>1. Loops, Variables and Parameters</h4><br>
- 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF2VOM0YT9UK" target="_blank"><p>Sandbox Code Link</p></a>
-		<iframe src="https://www.w3schools.com/code/tryit.asp?filename=FF2VOM0YT9UK"></iframe><br>
-		<iframe src="assignments/LoopsConditionsArraysFunctions.html"></iframe>
+ 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF2VOM0YT9UK" target="_blank">Sandbox Code Link</a>
+		<iframe id="iframe" src="https://www.w3schools.com/code/tryit.asp?filename=FF2VOM0YT9UK">
+		</iframe><p></p><br>
  		<h4>2. Conditions and Functions</h4><br>
- 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF311TYJE022" target="_blank"><p>Sandbox Code Link</p></a>
-		<iframe src="assignments/example/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethodsXMP.html"></iframe><br>
-		<iframe src="assignments/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethods.html"></iframe>		
+ 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF311TYJE022" target="_blank">Sandbox Code Link</a>
+		<iframe src="https://www.w3schools.com/code/tryit.asp?filename=FF311TYJE022"></iframe><p></p><br>	
+		<h4>3. Arrays</h4><br>
+ 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF33YYMWNCNL" target="_blank">Sandbox Code Link</a>
+		<iframe src="https://www.w3schools.com/code/tryit.asp?filename=FF33YYMWNCNL"></iframe><p></p><br>
+		<h4>4. Zip to City Project (NOT WORKING YET)</h4><br>
+ 		<a href="https://www.w3schools.com/code/tryit.asp?filename=FF33YYMWNCNL" target="_blank">Sandbox Code Link</a>
+		<iframe src="https://www.w3schools.com/code/tryit.asp?filename=FF33YYMWNCNL"></iframe><p></p><br>
  </div>
   <div class="right-column">
   	<h2 class="away-from-h4">My Code</h2>
   	<div class="right-inner-left">
  		<h4>1. Loops, Conditions, Arrays and Functions</h4><br>
- 		<a href="https://github.com/blakelt88/blakelt88.github.io/blob/master/cit261/assignments/LoopsConditionsArraysFunctions.html" target="_blank"><p>GitHub Repo Link</p></a>
+ 		<a href="https://github.com/blakelt88/blakelt88.github.io/blob/master/cit261/assignments/LoopsConditionsArraysFunctions.html" target="_blank">GitHub Repo Link</a>
 		<iframe src="assignments/example/LoopsConditionsArraysFunctionsXMP.html"></iframe><br>
 		<iframe src="assignments/LoopsConditionsArraysFunctions.html"></iframe><p></p><br>
 		<h4>3. Previous with JSON Parse </h4>
  		</div>
  		<div class="right-inner-right">
  		<h4>2. Previous with Object Creation, Properties and Methods</h4><br>
- 		<a href="https://github.com/blakelt88/blakelt88.github.io/blob/master/cit261/assignments/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethods.html" target="_blank"><p>GitHub Repo Link</p></a>
+ 		<a href="https://github.com/blakelt88/blakelt88.github.io/blob/master/cit261/assignments/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethods.html" target="_blank">GitHub Repo Link</a>
 		<iframe src="assignments/example/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethodsXMP.html"></iframe><br>
 		<iframe src="assignments/LoopsConditionsArraysFunctionsWithObjectCreationPropertiesMethods.html"></iframe>
  		</div>	
@@ -61,7 +66,7 @@
  </div>
  </div>
  <div class="footer">
- <a class="footer-text" href="codetopicsandassignments.html">Code Topics/Assignments</a>
+ <a class="footer-text" href="#main">Click To Go To Top</a>
  </div>
 
 </body>

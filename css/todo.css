@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-html, body {
+html,body {
   height: 100%;
 }
 
@@ -35,6 +35,8 @@ div.header {
 	width:100%;
 	height:5.5em;
 	padding-top:5px;
+	position:fixed;
+	z-index:1;
 }
 
 .header h1 {
@@ -49,8 +51,10 @@ div.header {
 	padding-right:0;
 	padding-top:0;
 	padding-left:0;
-	
-	
+}
+
+.header h1,a {
+	text-decoration:none;
 }
 
 .header p {
@@ -67,6 +71,12 @@ div.header {
 
 /* Main CSS */
 
+.main {
+	padding-top:100px;
+}
+
+/* Footer CSS */
+
 .footer-text  {
 	text-align:center;
 	display:block;
@@ -78,8 +88,8 @@ div.header {
 }
 
 .footer-text:hover {
-	color:#3BD4FF;
-	font-size:25px;
+	font-size:23.5px;
+  text-shadow: -1px 0 #34FF71, 0 1px #34FF71, 1px 0 #34FF71, 0 -1px #34FF71;
 }
 
 .footer-text:active {
@@ -91,8 +101,6 @@ a.footer-text {
 	width:275px;
 }
 
-/* Footer CSS */
-
 .footer, .wrapper:after {
   height: 50px; 
 }
@@ -100,6 +108,9 @@ a.footer-text {
 .footer {
   background: #FF5034;
   overflow:auto;
+  position:relative;
+  z-index:1;
+  width:100%;
 }
 
 /* codetopicsandassignments.html */
@@ -112,6 +123,7 @@ a.footer-text {
   height:1%;
   padding-left:4%;
   padding-top:30px;
+  padding-bottom:30px;
 }
 
 .left-inner-left {
@@ -132,6 +144,7 @@ a.footer-text {
 	height:1%;
 	padding-left:4%;
   padding-top:30px;
+  padding-bottom:30px;
 }
 
 .right-inner-left {
@@ -152,9 +165,14 @@ a.footer-text {
 
 .right-column iframe {
 	width:384px; 
-	height:275px; 
+	height:275px;
 	background:white;
 	border:none;
 }
 
-.left-column iframe 
+.left-column iframe {
+	width:762px;
+	height:556px;
+	border:none;
+	background:white;
+}
