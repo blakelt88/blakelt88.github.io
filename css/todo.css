@@ -99,6 +99,7 @@ a.footer-text {
 
 .footer {
   background: #FF5034;
+  overflow:auto;
 }
 
 /* codetopicsandassignments.html */
@@ -149,9 +150,11 @@ a.footer-text {
 	padding-bottom:25px
 }
 
-iframe {
+.right-column iframe {
 	width:384px; 
 	height:275px; 
 	background:white;
 	border:none;
 }
+
+.left-column iframe 
