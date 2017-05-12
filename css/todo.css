@@ -79,8 +79,6 @@ div.header {
 
 .footer-text  {
 	text-align:center;
-	display:block;
-	margin:0 auto;
 	padding-top:10px;
 	color:white;
 	font-size:22.5px;
@@ -98,7 +96,9 @@ div.header {
 }
 
 a.footer-text {
-	width:275px;
+	width:250px;
+	display:inline-block;
+	margin:0 auto;
 }
 
 .footer, .wrapper:after {
@@ -175,4 +175,16 @@ a.footer-text {
 	height:556px;
 	border:none;
 	background:white;
+}
+
+/* Journal */
+
+.journal {
+	width:75%;
+	display:block;
+	margin:0 auto;
+}
+
+.journal p {
+	font-size:20px;
 }
