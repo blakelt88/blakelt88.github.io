@@ -1,0 +1,174 @@
+<xmp><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Conditions, Objects Add and Delete Properties</title>
+  <meta name="description" content="Conditions, Objects Add and Delete Properties">
+  <meta name="author" content="Blake Turley">
+
+  
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  
+
+</head>
+
+<body>
+
+<h1>Conditions, Objects Add and Delete Properties</h1>
+
+<p>Please select who you'd like to learn about below.</p>
+
+<select id="selection">
+	<option value="1">Dad</option>
+	<option value="2">Mom</option>
+	<option value="3">Son 1</option>
+	<option value="4">Son 2</option>
+	<option value="5">Son 3</option>
+	<option value="6">Daughter</option>
+</select>
+<input type="button" onclick="who()" value="Choose"></button>
+  
+<p>Hi I'm <b><span id="names"></span></b> and I'm <b><span id="ages"></span></b>, which means I was born in <b><span id="birthdates"> </span></b> and I like to <b><span id="interests"></span><span id="pets"></span></b></p>
+ 
+  <script type="text/javascript">
+  	
+  	 // Creating the function who() so it's capable of being called later or used for button
+  	
+  	function who() {
+  		
+  	// Created the variable that will house the choice from the <select> tag
+  		
+  	var choice = document.getElementById("selection").value;
+  	
+  	// Declaring the arrays used when selection is made
+  	
+  	// V3 Made the object creation function and did an array
+  	
+  	function us(names, ages, birthdates, interests, pets) {
+  	this.name = names;
+    this.age = ages;
+    this.birthdate = birthdates;
+    this.interest = interests;
+    //Added method to function for changing age of son2
+    this.changeAge = function (older) {
+        this.age = older;
+    }
+}
+  	var dad = new us("Blake ",29 ,1988 ,"make Websites. ");
+  	
+		var mom = new us("Karilyn ", 30, 1987 , "do Hair and Make-up. ");
+		
+		var son1 = new us("Eli ", 6, 2010 , "play Minecraft. ");
+		
+		var son2 = new us("Caden ", 4, 2012 , "play Star Wars Disney Infinity. ");
+		// Here is where we use the mehtod to change the property to the new age.
+		
+		//My son Caden turns 5 this month and that is what inspired this.
+		son2.changeAge(5);
+		
+		var son3 = new us("Hudson ", 2, 2014 , "play in the sand box. ");
+		
+		var daughter = new us("Clara ", "8 months ", 2016 , "sucky my pacifier. ");
+		
+		// Empty variables for housing end result coming from each array
+		
+		var output = "";
+		var output1 = "";
+		var output2 = "";
+		var output3 = "";
+		var output4 = "";
+		
+		// Variable below added for demonstrating concat() element use
+		
+		var knowmore = "If you'd like to know more ask Mom and Dad!";
+		
+		// IF logic to determine which information goes with what
+		
+		// V3 Made the .name, .age, .birthdate, .interest from object to call with in stead of array position
+		
+		if (choice == 1) {
+			output += dad.name;
+			output1 += dad.age;
+			output2 += dad.birthdate;
+			output3 += dad.interest;
+		} 
+		else if (choice == 2) {
+			output += mom.name;
+			output1 += mom.age;
+			output2 += mom.birthdate;
+			output3 += mom.interest;
+		}
+		else if (choice == 3) {
+			output += son1.name;
+			output1 += son1.age;
+			output2 += son1.birthdate;
+			output3 += son1.interest;
+		}
+		else if (choice == 4) {
+			output += son2.name;
+			output1 += son2.age;
+			output2 += son2.birthdate;
+			output3 += son2.interest;	
+		}
+		
+		else if (choice == 5) {
+			output += son3.name;
+			output1 += son3.age;
+			output2 += son3.birthdate;
+			output3 += son3.interest;
+		}
+		
+		else if (choice == 6) {
+		  output += daughter.name;
+			output1 += daughter.age;
+			output2 += daughter.birthdate;
+			output3 += daughter.interest;
+		}
+		
+		// Created a new object "pets" with no properties to symbolize that our family didn't have any pets.
+		
+		var pets = {
+			
+		};
+		
+		// Added two properties to the "pets" object to symbolize that we got two puppies
+		
+		pets.puppy1 = "Penny";
+		pets.puppy2 = "Hershey";
+		
+		// Deleted the two properties from "pets" as we sold our puppies
+		
+		// In case you are curious. We sold them because we thought we were moving to Texas and just didn't think we'd be able to do it with puppies...we wish we hadn't sold them now that we are staying in Rexburg.
+		
+		delete pets.puppy1;
+		delete pets.pupp2;
+		
+		if (pets.puppy1 != "Penny") {
+			
+			output4 += "We used to have 2 chocolate labs named Penny and Hershey.";
+			
+		} else {
+			output4 += "We have 2 chocolate lab puppies named Penny and Hershey."
+		}
+		
+		// Outputs the information given after logic is through
+		
+		// V2 I used the concat() method to demonstrate it on ouput3
+		
+     document.getElementById("names").innerHTML = output;
+     document.getElementById("ages").innerHTML = output1;
+     document.getElementById("birthdates").innerHTML = output2;
+     document.getElementById("interests").innerHTML = output3;
+		 document.getElementById("pets").innerHTML = output4.concat(" ",knowmore);
+		
+	}
+		
+  </script>
+  
+</body>
+</html></xmp>
