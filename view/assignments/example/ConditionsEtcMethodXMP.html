@@ -49,12 +49,14 @@
   	
   	// V3 Made the object creation function and did an array
   	
+  	
+  	
   	function us(names, ages, birthdates, interests, pets) {
   	this.name = names;
     this.age = ages;
     this.birthdate = birthdates;
     this.interest = interests;
-    //Added method to function for changing age of son2
+    // V5 Added method to function for changing age of son2
     this.changeAge = function (older) {
         this.age = older;
     }
@@ -66,9 +68,9 @@
 		var son1 = new us("Eli ", 6, 2010 , "play Minecraft. ");
 		
 		var son2 = new us("Caden ", 4, 2012 , "play Star Wars Disney Infinity. ");
-		// Here is where we use the mehtod to change the property to the new age.
+		// V5 Here is where we use the mehtod to change the property to the new age.
 		
-		//My son Caden turns 5 this month and that is what inspired this.
+		// V5My son Caden turns 5 this month and that is what inspired this.
 		son2.changeAge(5);
 		
 		var son3 = new us("Hudson ", 2, 2014 , "play in the sand box. ");
