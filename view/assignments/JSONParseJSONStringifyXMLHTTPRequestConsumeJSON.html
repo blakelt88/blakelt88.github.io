@@ -1,53 +1,77 @@
-
-
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>JSON Parse, JSON Stringify and XMLHTTPRequest to Consume a JSON Web Service</title>
-  <meta name="description" content="JSON Parse, JSON Stringify and XMLHTTPRequest to Consume a JSON Web Service">
-  <meta name="author" content="Blake Turley">
-  
-  <script type="text/javascript">
-  	var xhreq = new XMLHttpRequest();
-  	
-  	xhreq.open("GET",
-  							"textfile.txt",
-  							false);
-    
-    xhreq.send(null);
-    
-    alert(xhr.responseText);
-  	
-  	
-  	
-  	
-  	            
-  </script>
-
-</head>
-
+<!DOCTYPE html>
+<html>
 <body>
 	
-<h2>Store and retreive data from local storage.</h2>
+<h1>JSON.stringify() AND JSON.parse()</h1>
 
-<p id="demo"></p>
+<h3>Stringify Demonstration of Rifles</h3>	
+<p id="provestring1"></p>
+
+<h3>Stringify Demonstration of SMGs</h3>	
+<p id="provestring2"></p>
+
+<h3>Parsify Demonstration of Rifles</h3>	
+<p id="proveparse1"></p>
+
+<h3>Parsify Demonstration of SMGs</h3>	
+<p id="proveparse2"></p>
 
 <script>
-var blakeObject, blakeJSON, blakeText, obj;
 
-//Storing data:
-blakeObject = { "name":"Blake", "age":29, "city":"Rexburg" };
-blakeJSON = JSON.stringify(blakeObject);
-localStorage.setItem("testJSON", blakeJSON);
+// Declaring variables
+var rifles;
+var utility;
+var smgs;
+var provestring1;
+var provestring2;
+var proveparse1;
+var proveparse2;
+var storageQuery1;
+var storageQuery2;
 
-//Retrieving data:
-blakeText = localStorage.getItem("testJSON");
-obj = JSON.parse(blakeText);
-document.getElementById("demo").innerHTML = obj.name;
+// Create rifle object with properties
+
+rifles = {"rifle1":"M4A1",
+	        "rifle2":"M16",
+	        "rifle3":"SCAR",
+	        "rifle4":"AKM",
+	        "rifle5":"Khar 98",
+	        "rifle5":"SKS", 
+	        "rifle6":"M24",
+	        "rifle7":"AWM"};
+
+
+// Create smg object with properties
+
+smgs = {"smg1":"Vector",
+	      "smg2":"UMP 9",
+	      "smg3":"Micro UZI"};
+
+
+// Convert objects to strings
+provestring1 = JSON.stringify(rifles);	      
+provestring2 = JSON.stringify(smgs);
+
+// Store the stringified objects locally
+localStorage.setItem("rifleJSON", provestring1);
+localStorage.setItem("smgJSON", provestring2);
+
+
+// Print the new strings
+document.getElementById('provestring1').innerHTML = provestring1;
+document.getElementById('provestring2').innerHTML = provestring2;
+
+// Retrieve the strings from local storage
+storageQuery1 = localStorage.getItem("rifleJSON");
+storageQuery2 = localStorage.getItem("smgJSON");
+// Convert string to object
+proveparse1 = JSON.parse(storageQuery1);
+proveparse2 = JSON.parse(storageQuery2);
+// Prove parse1 to demonstrate that it's no longer a string and the default [object Object] displays in stead.
+document.getElementById("proveparse1").innerHTML = proveparse1;
+// Prove parse2 to demonstrate that it's parsed by calling the smg2 property
+document.getElementById("proveparse2").innerHTML = proveparse2.smg2;
 </script>
-  
+
 </body>
 </html>
