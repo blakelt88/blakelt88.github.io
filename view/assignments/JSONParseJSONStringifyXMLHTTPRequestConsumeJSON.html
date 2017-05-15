@@ -1,0 +1,53 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JSON Parse, JSON Stringify and XMLHTTPRequest to Consume a JSON Web Service</title>
+  <meta name="description" content="JSON Parse, JSON Stringify and XMLHTTPRequest to Consume a JSON Web Service">
+  <meta name="author" content="Blake Turley">
+  
+  <script type="text/javascript">
+  	var xhreq = new XMLHttpRequest();
+  	
+  	xhreq.open("GET",
+  							"textfile.txt",
+  							false);
+    
+    xhreq.send(null);
+    
+    alert(xhr.responseText);
+  	
+  	
+  	
+  	
+  	            
+  </script>
+
+</head>
+
+<body>
+	
+<h2>Store and retreive data from local storage.</h2>
+
+<p id="demo"></p>
+
+<script>
+var blakeObject, blakeJSON, blakeText, obj;
+
+//Storing data:
+blakeObject = { "name":"Blake", "age":29, "city":"Rexburg" };
+blakeJSON = JSON.stringify(blakeObject);
+localStorage.setItem("testJSON", blakeJSON);
+
+//Retrieving data:
+blakeText = localStorage.getItem("testJSON");
+obj = JSON.parse(blakeText);
+document.getElementById("demo").innerHTML = obj.name;
+</script>
+  
+</body>
+</html>
