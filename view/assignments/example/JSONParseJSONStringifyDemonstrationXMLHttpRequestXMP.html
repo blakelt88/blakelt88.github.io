@@ -2,7 +2,7 @@
 <html>
 <body></body>
 
-<h1>JSON.stringify() AND JSON.parse()</h1>
+<h1>JSON.stringify() AND JSON.parse() AND XMLHttpRequest()</h1>
 
 <h3>Stringify Demonstration of Rifles</h3>	
 <p id="provestring1"></p>
@@ -74,22 +74,22 @@ document.getElementById("proveparse1").innerHTML = proveparse1;
 document.getElementById("proveparse2").innerHTML = proveparse2.smg2;
 
 
-var request = new XMLHttpRequest();
-var requestURL = 'http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today';
+var xmlRequest = new XMLHttpRequest();
+var xmlRequestURL = 'http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today';
 
-request.onreadystatechange = function() {
+xmlRequest.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var text = JSON.parse(this.responseText);
     test(text);
   }
 };
 
-request.open('GET', requestURL, true);
-request.send();
+xmlRequest.open('GET', xmlRequestURL, true);
+xmlRequest.send();
 
-function test(obj) {
-  var myObj = obj;
-  document.getElementById('test').innerHTML = "It is " + "<u>" + myObj.season + "</u>" + " season in the Catholic Church currently.";
+function test(object) {
+  var catholicObject = object;
+  document.getElementById('test').innerHTML = "It is " + "<u>" + catholicObject.season + "</u>" + " season in the Catholic Church currently according to their calendar.";
 
 
 }
@@ -103,5 +103,4 @@ function test(obj) {
 <p id="test"></p>
 
 </body>
-</html>
-</xmp>
+</html></xmp>
