@@ -1,6 +1,0 @@
-{
-                  "handgun1":"1911",
-	          "handgun2":"Beretta 9",
-	          "handgun3":"Glock 9",
-	          "hangun4":"P250"
-}
