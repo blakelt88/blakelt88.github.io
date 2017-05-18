@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Local Storage</title>
+  <meta name="description" content="Local Storage">
+  <meta name="author" content="Blake Turley">
+
+</head>
+
+<body>
+
+<h1>Local Storage Example</h1>
+
+<p>Please enter the stated information below and click the button to store the data locally.s</p>
+
+<!-- Input boxes as well as empty p tags for data submission and retrieval -->
+
+Name: <input id="name" type="input"><br><br>
+<p id="name1"></p>
+Gender: <input id="gender" type="input"><br><br>
+<p id="gender1"></p>
+Origin: <input id="origin" type="input"><br><br>
+<p id="origin1"></p>
+
+<!-- Two buttons, one for submission and one for retrieval -->
+
+<button type="button" onClick="store()">Store Information Locally</button>
+
+<button type="button" onClick="retrieve()">Retrieve Previous Information</button>
+
+<script type="text/javascript">
+	
+	// function store() is for storing the information input in the text boxes
+	
+	function store() {
+	
+	// ID's to work with	
+		
+	var name = document.getElementById('name');
+	var gender = document.getElementById('gender');
+	var origin = document.getElementById('origin');
+	
+	// Storage of information for above ID's
+	
+	localStorage.setItem("name",name.value);
+	localStorage.setItem("gender",gender.value);
+	localStorage.setItem("origin",origin.value);
+	
+}
+
+	function retrieve(name, gender, origin) {
+		
+	// function retrieve() is for retrieving information that was stored
+	
+	// ID's from which to retrieve
+		
+		document.getElementById('name1').innerHTML = localStorage.getItem("name");
+		document.getElementById('gender1').innerHTML = localStorage.getItem("gender");
+		document.getElementById('origin1').innerHTML = localStorage.getItem("origin");
+		
+	}
+</script>
+
+  
+</body>
+</html>
