@@ -1,0 +1,50 @@
+<xmp><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Array and Object to Local Storage</title>
+  <meta name="description" content="Array and Object to Local Storage">
+  <meta name="author" content="Blake Turley">
+
+</head>
+
+<body>
+
+<h1>Array and Object to Local Storage</h1>
+
+<p>Click the button to see it happen.</p>
+
+<p id="array"></p>
+
+<button type="button" onClick="ArrayLocalStorage()">Click For Array</button>
+
+<!-- Input boxes as well as empty p tags for data submission and retrieval --> 
+
+<script type="text/javascript">
+	
+	var outputArray = "";
+	
+	function ArrayLocalStorage() {
+		var weapons = ["M4A1", "1911", "AWM","AKM"];
+		
+		for (var i = 0; i < weapons.length; i++) {
+			outputArray += localStorage.setItem("array",weapons[i]);
+		}
+	  document.getElementById('array').innerHTML = localStorage.getItem("array");
+		
+		
+	}
+	
+	function ObjectLocalStorage() {
+		var weapons = {"type1":"rifle","type2":"shotgun","type3":"smg","type4":"handgun"};
+		
+		stringifyWeapons = JSON.stringify(weapons);
+		
+		localStorage.setItem(weapons);
+	}
+</script>
+  
+</body>
+</html></xmp>
