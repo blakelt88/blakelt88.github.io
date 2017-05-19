@@ -1,0 +1,44 @@
+.hiding {
+	display:none;
+}
+
+.showing {
+	display:"";
+}
+
+#kittenWords {
+	top:75px; 
+	position:absolute; 
+	color:white; 
+	background:pink; 
+	font-size:20px; 
+	border-radius:65%; 
+	padding:35px;
+	margin-top:35px;
+}
+
+#kittenBigDot {
+	background:pink; 
+	width:0; 
+	position:absolute; 
+	border-width:15px; 
+	border-radius:50%; 
+	border-style:solid; 
+	border-color:pink; 
+	top:170px; 
+	left:280px;
+	margin-top:35px;
+}
+
+#kittenDot {
+	 background:pink; 
+	 width:0; 
+	 position:absolute; 
+	 border-width:5px; 
+	 border-radius:50%; 
+	 border-style:solid; 
+	 border-color:pink; 
+	 top:215px; 
+	 left:310px;
+	 margin-top:35px;
+}

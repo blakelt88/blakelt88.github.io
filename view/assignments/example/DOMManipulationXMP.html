@@ -1,0 +1,51 @@
+<xmp><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DOM Manipulation</title>
+  <meta name="description" content="DOM Manipulation">
+  <meta name="author" content="Blake Turley">
+  
+  <link rel="stylesheet" href="css/domcss.css">
+  
+  <script type="text/javascript">
+
+function kittenFunction(img) {
+	
+	var kittenVideo = document.getElementById("kittenVideo");
+	var ptag = document.getElementById("kittenWords");
+	var ptag1 = document.getElementById("kittenBigDot");
+	var ptag2 = document.getElementById("kittenDot");
+	
+	img.setAttribute("class","hiding");
+	ptag.setAttribute("class","hiding");
+	ptag1.setAttribute("class","hiding");
+	ptag2.setAttribute("class","hiding");
+  kittenVideo.setAttribute("class","showing");
+  
+  document.getElementById('kittenVideo').play();
+
+}
+
+</script>
+
+</head>
+
+<body>
+	
+<h1>OnClick Image DOM Manipulation</h1>
+
+<p class="showing" id="kittenWords" style="top:75px; position:absolute; color:white; background:pink; font-size:20px; border-radius:65%; padding:35px;">Oh I hope someone <span><b><u>CLICKS</u></b></span> on me...</p>	
+<p class="showing" id="kittenBigDot" style="background:pink; width:0; position:absolute; border-width:15px; border-radius:50%; border-style:solid; border-color:pink; top:170px; left:280px;"></p>
+<p class="showing" id="kittenDot" style="background:pink; width:0; position:absolute; border-width:5px; border-radius:50%; border-style:solid; border-color:pink; top:215px; left:310px;"></p>
+
+<img class="showing" onClick="kittenFunction(this);" id="kitten" src="../../images/beggingkitten.jpg" style="width:750px; height:469px;">
+
+<video class="hiding" id="kittenVideo" style="width:750px; height:469px;">
+  <source id="mp4_src" src="../../videos/kitten.mp4" type="video/mp4">
+</video>
+  
+</body>
+</html></xmp>

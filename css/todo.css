@@ -188,3 +188,21 @@ a.footer-text {
 .journal p {
 	font-size:20px;
 }
+
+/* DOM div */
+
+
+
+.domman iframe {
+ width:94%;
+ border:none;
+ background:white;
+}
+
+iframe.top-frame {
+	height:527px !important;
+}
+
+iframe.bottom-frame {
+	height:650px !important;
+}
