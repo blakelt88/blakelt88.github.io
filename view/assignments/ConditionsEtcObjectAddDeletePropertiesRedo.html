@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Conditions, Objects Add and Delete Properties</title>
+  <meta name="description" content="Conditions, Objects Add and Delete Properties">
+  <meta name="author" content="Blake Turley">
+
+  
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  
+
+</head>
+
+<body>
+
+<h1>Conditions, Objects Add and Delete Properties</h1>
+
+<p>Please select who you'd like to learn about below.</p>
+
+<select id="selection">
+	<option value="1">Dad</option>
+	<option value="2">Mom</option>
+	<option value="3">Son 1</option>
+	<option value="4">Son 2</option>
+	<option value="5">Son 3</option>
+	<option value="6">Daughter</option>
+</select>
+<input type="button" onclick="who()" value="Choose"></button>
+  
+<p id="output"></p>
+ 
+  <script type="text/javascript">
+  	
+  	 // Creating the function who() so it's capable of being called later or used for button
+  	
+  	function who() {
+  		
+  	// Created the variable that will house the choice from the <select> tag
+  		
+  	var choice = document.getElementById("selection").value;
+  	
+  	// Declaring the arrays used when selection is made
+  	
+  	// V3 Made the object creation function and did an array
+
+  	var people = [];
+  	people[0] = "Hi I'm Blake and I'm 29 years old, which means I was born in 1988. I like to build websites!";
+  	people[1] = "Hi I'm Karilyn and I'm 30 years old, which means I was born in 1987. I like to do hair and make up!";
+  	people[2] = "Hi I'm Eli and I'm 6 years old, which means I was born in 2010. I like to play Minecraft!";
+  	people[3] = "Hi I'm Caden and I'm 4 years old, which means I was born in 2012. I like to play Star Wars Disney Infinity!";
+  	people[4] = "Hi I'm Hudson and I'm 2 years old, which means I was born in 2014. I like to play in the sand box!";
+  	people[5] = "Hi I'm Clara and I'm 8 months old, which means I was born in 2016. I like to suck on my pacifier!";
+		
+		// Empty variables for housing end result coming from each array
+		
+		var output = "";
+		var output4 = "";
+		
+		// Variable below added for demonstrating concat() element use
+		
+		var knowmore = "If you'd like to know more ask Mom and Dad!";
+		
+		// IF logic to determine which information goes with what
+		
+		// V3 Made the .name, .age, .birthdate, .interest from object to call with in stead of array position
+		
+		if (choice == 1) {
+			output += people[0];
+		} else if (choice == 2) {
+			output += people[1];
+		} else if (choice == 3) {
+			output += people[2];
+		} else if (choice == 4) {
+			output += people[3];
+		} else if (choice == 5) {
+			output += people[4];
+		} else if (choice == 6) {
+			output += people[5];
+		}
+		
+		
+		// Created a new object "pets" with no properties to symbolize that our family didn't have any pets.
+		
+		var pets = {
+			
+		};
+		
+		// Added two properties to the "pets" object to symbolize that we got two puppies
+		
+		pets.puppy1 = "Penny";
+		pets.puppy2 = "Hershey";
+		
+		// Deleted the two properties from "pets" as we sold our puppies
+		
+		// In case you are curious. We sold them because we thought we were moving to Texas and just didn't think we'd be able to do it with puppies...we wish we hadn't sold them now that we are staying in Rexburg.
+		
+		delete pets.puppy1;
+		delete pets.pupp2;
+		
+		if (pets.puppy1 != "Penny") {
+			
+			output4 += "We used to have 2 chocolate labs named Penny and Hershey.";
+			
+		} else {
+			output4 += "We have 2 chocolate lab puppies named Penny and Hershey."
+		}
+		
+		// Outputs the information given after logic is through
+		
+		// V2 I used the concat() method to demonstrate it on ouput3
+		
+     document.getElementById("output").innerHTML = output.concat(" ",knowmore);
+		
+	}
+		
+  </script>
+  
+</body>
+</html>
