@@ -26,6 +26,14 @@
 
 <!-- Input boxes as well as empty p tags for data submission and retrieval --> 
 
+<p id="caliber"></p>
+
+<button type="button" onClick="NumberLocalStorage()">Click For Numbers</button>
+
+<p id="rifle"></p>
+
+<button type="button" onClick="useArray()">Click For Something From Associative Array</button>
+
 <script type="text/javascript">
 	
 	var outputArray = "";
@@ -52,6 +60,56 @@
 		
 		document.getElementById('object').innerHTML = stringifyWeapons;
 	}
+	
+	function NumberLocalStorage() {
+		var caliber = [5.56, 7.62];
+		
+		localStorage.setItem("caliber",caliber);
+		
+		localStorage.getItem("caliber",caliber);
+		
+		document.getElementById('caliber').innerHTML = caliber[0];
+		}
+		
+		function associativeArray(rifle, ammo, scope, magazine) {
+			
+	  var rifle;
+	  var ammo;
+	  var scope;
+	  var magazine;
+			
+		this.rifle = rifle;
+    this.ammo = ammo;
+    this.scope = scope;
+    this.magazine = magazine;
+    
+    return rifle;
+    return ammo;
+    return scope;
+    return magazine;
+       
+  }
+  
+  function useArray(rifle, ammo, scope, magazine) {
+  	    
+     var variable = new associativeArray("AKM",7.62, "4x Scope", "Extended Mag");
+     
+     string = JSON.stringify(variable);
+     
+     localStorage.setItem("string",variable);
+		
+		 localStorage.getItem("string",variable);
+					
+			document.getElementById("rifle").innerHTML = "Hello I'm a " + variable.scope + ". I am a demonstration of an Associative Array and am called by a word!";
+			 
+  }
+    
+   
+    
+  
+
+			
+		
 </script>
   
 </body>
