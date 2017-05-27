@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>createElement, appendChild, insertBefore, removeChild</title>
+  <meta name="description" content="createElement, appendChild, insertBefore, removeChild">
+  <meta name="author" content="Blake Turley">
+
+  <style>
+  	
+  </style>
+
+  <script>
+  	function makeOptions() {
+  		var create = document.createElement("OPTION");
+      var pizza = document.createTextNode("Pizza");
+      create.appendChild(pizza);
+      document.getElementById("select").appendChild(create);
+      
+      var create2 = document.createElement("OPTION");
+      var burrito = document.createTextNode("Burrito");
+      create2.appendChild(burrito);
+      document.getElementById("select").appendChild(create2);
+      
+      var create3 = document.createElement("OPTION");
+      var jambalaya = document.createTextNode("Jambalaya");
+      create3.appendChild(jambalaya);
+      document.getElementById("select").appendChild(create3);
+      
+      var create4 = document.createElement("OPTION");
+      var gyro = document.createTextNode("Gyro");
+      create4.appendChild(gyro);
+      document.getElementById("select").appendChild(create4);
+      
+      var create5 = document.createElement("OPTION");
+      var friedchicken = document.createTextNode("Fried Chicken");
+      create5.appendChild(friedchicken);
+      document.getElementById("select").appendChild(create5);
+      
+      var create6 = document.createElement("OPTION");
+      var cheeseburger = document.createTextNode("Cheeseburger");
+      create6.appendChild(cheeseburger);
+      document.getElementById("select").appendChild(create6);
+  	}
+  	
+  	function removeItem() {
+  		
+  		var remove = document.getElementById("select");
+  		var button = document.getElementById("button");
+			
+  		remove.removeChild(remove.childNodes[1]);
+      
+   		var confirm = document.createElement("P");
+   		confirm.setAttribute("id","remove");
+   		var text = document.createTextNode("Item Deleted");
+   		confirm.appendChild(text);
+   		document.body.insertBefore(confirm, button);
+   		
+   		document.getElementById("remove").style.color = "green";
+ 		
+  	}
+
+  	
+  </script>
+  
+</head>
+
+<body>
+	<h1>createElement, appendChild, insertBefore, removeChild</h1>
+	
+  <select id="select"></select>
+  
+  <button type="button" onClick="makeOptions();">Click Me First To Create List</button><br>
+  
+  <p>If I had to choose one from this list to take off it would be...(Click Button Belo To See What I'd Remove)</p>
+  
+  <button id="button" type="button" onClick="removeItem();">Click Me To Find Out</button><p></p>
+
+
+</body>
+</html>
