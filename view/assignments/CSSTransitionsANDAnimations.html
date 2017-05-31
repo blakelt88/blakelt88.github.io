@@ -1,0 +1,224 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Transitions</title>
+  <meta name="description" content="CSS Transitions">
+  <meta name="author" content="Blake Turley">
+  
+  <style>       
+  
+  body {
+  	background:black;
+  }
+  
+  h1,h2,p {
+  	color:white;
+  }
+  
+  /*Animation Styling */
+  
+  .animation-wrapper {
+  	width:100%;
+  }
+  
+  .animation {
+    width: 100px;
+    height: 5px;
+    background: green;
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 5s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+.animation:hover {
+    width: 100%;   
+}
+
+.animation2 {
+  transition: all 5s;
+  transition-timing: ease-in-out;
+  width: 350px;
+  height:350px;
+  position:center;
+}
+
+.animation2:hover {
+	transform: rotate(1080deg);
+}
+  	
+  /* PacMan Styling */
+  
+  .bigdot {
+  	top:30px;
+  	background:white;
+  	width:50px;
+  	height:50px;
+  	position:relative;
+  	border-radius:50%;
+  	margin-right:35px;
+   float:left;
+  }
+  
+  .littledot {
+  	top:48px;
+  	background:white;
+  	width:15px;
+  	height:15px;
+  	position:relative;
+  	border-radius:50%;
+  	margin-right:35px;
+  	float:left;
+  }
+  
+  .maze {
+  	border-top:solid 2px blue;
+  	border-bottom:solid 2px blue;
+  	width:100%;
+  	height:110px;
+  	background:black;
+  }
+  
+  .pacman {
+    width: 100px;
+    height: 100px;
+    border-radius:95%;
+    background: #FFCC00;
+    position: absolute;
+    -webkit-animation: movepacman 9s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation: movepacman 9s infinite;
+    animation-delay: 2s;
+    z-index:1;
+    margin-top:5px;
+    left:115x;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes movepacman {
+    from {left: 115px;}
+    to {left: 100%;}
+}
+
+@keyframes movepacman {
+    from {left: 115px;}
+    to {left: 100%;}
+}
+
+.eye {
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	top:27.5px;
+	left:50px;
+	background: black;
+	z-index:1;
+	position:absolute;
+}
+
+.mouth  {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 30px 0;
+  border-color: transparent black transparent transparent;
+  position:absolute;
+  left:55px;
+  top:22.5px;
+  z-index:1;
+}
+
+/*Ghost Styling */
+
+  img.img1 {
+  	position:absolute;
+  	z-index:2;
+  	-webkit-animation: moveghost 12s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation: moveghost 12s infinite;
+    animation-delay: 3s;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+ @-webkit-keyframes moveghost {
+    from {left: 100px;}
+    to {left: 100%;}
+}
+
+ @keyframes moveghost {
+    from {left: 100px;}
+    to {left: 100%;}
+}
+  
+  </style>
+  
+  <script>
+  	
+  </script>
+  
+</head>
+
+<body>
+	
+	<h1>CSS Transitions and Animations</h1>  
+	
+	<h2>It's PacMan!</h2></div>
+
+  <div class="maze">
+  <img src="../../images/ghost.png" class="img1" style="width:110px; height:110px;">
+  <div class="pacman">
+  	<div class="eye"></div>
+  	<div class="mouth"></div>
+  </div>
+  <div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="littledot"></div>
+  	<div class="bigdot"></div>
+  </div>
+  </div>
+  
+  <h2>Hover To Race PacMan</h2>
+
+  	<div  class="animation"></div>
+  	
+  <h2>Hover To Spin Gear</h2>
+  
+  <img src="../../images/gear.png" class="animation2">
+
+</body>
+
+</html>
