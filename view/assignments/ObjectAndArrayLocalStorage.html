@@ -62,13 +62,13 @@
 	}
 	
 	function NumberLocalStorage() {
-		var caliber = [5.56, 7.62];
+		var caliber = 5.56;
 		
 		localStorage.setItem("caliber",caliber);
 		
 		localStorage.getItem("caliber",caliber);
 		
-		document.getElementById('caliber').innerHTML = caliber[0];
+		document.getElementById('caliber').innerHTML = caliber;
 		}
 		
 		function associativeArray(rifle, ammo, scope, magazine) {

@@ -75,7 +75,7 @@ document.getElementById("proveparse2").innerHTML = proveparse2.smg2;
 
 
 var xmlRequest = new XMLHttpRequest();
-var xmlRequestURL = 'http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today';
+var xmlRequestURL = 'https://opentdb.com/api.php?amount=10';
 
 xmlRequest.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -88,11 +88,24 @@ xmlRequest.open('GET', xmlRequestURL, true);
 xmlRequest.send();
 
 function test(object) {
-  var catholicObject = object;
-  document.getElementById('test').innerHTML = "It is " + "<u>" + catholicObject.season + "</u>" + " season in the Catholic Church currently according to their calendar.";
-
-
+  var questionObj = object;
+  var answerObj = object;
+  
+  var x;
+  var y;
+  
+  for (i in questionObj.results) {
+    x = questionObj.results[i].question;
 }
+ 
+  document.getElementById('test').innerHTML = x;
+  for (j in answerObj.results) {
+    y = answerObj.results[j].correct_answer;
+}
+ 
+  document.getElementById('test2').innerHTML = "Answer: " + y;
+}
+
 
 
 </script>
@@ -101,6 +114,7 @@ function test(object) {
 
 <h3>Retreive Information From Catholic Church Calendar</h3>
 <p id="test"></p>
+<p id="test2"></p>
 
 </body>
 </html>
