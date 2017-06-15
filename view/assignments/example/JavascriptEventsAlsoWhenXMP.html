@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<xmp><!DOCTYPE HTML>
 <html>
 
 <head>
@@ -137,6 +137,11 @@
 	
 // Example 1: onclick and onload	
 
+	
+// In this example the animation was what I chose for the trajectory of the baseball because I wanted to be able to set a speed for the action as well as use a forward to make it not reset in place.
+
+// I used a transform on the hand because I wanted to represent the hand moving when the ball is thrown and transform does a great job with rotation.
+
 function handSuccess() {
  	document.getElementById("handSuccess").innerHTML = "Hand successfully loaded.";
 }
@@ -162,6 +167,11 @@ function throwBall() {
 
 
 // Example 2: oninput
+
+// In this example of a basketball dribbling I chose to use animation for the ball going back and forth from the hand to the ground because 
+// I could set how fast the ball would move with it as well as how many times it dribbled.
+
+// I chose to use a transition to make the ball bigger while it bounced. This was a better option because I was working with changing size of the CSS5 property.
 
 function inputToMoveBall() {
 	
@@ -191,6 +201,9 @@ function inputToMoveBall() {
 }
 
 // Example 3:  touchstart and animation
+
+// In this example of a basketball dribbling I chose to use animation for the ball going back and forth from the hand to the ground because 
+// I could set how fast the ball would move with it as well as how many times it dribbled.
 
 function touchToMoveBall() {
 	
@@ -244,3 +257,4 @@ function dribbleEnded() {
 </body>
 
 </html>
+</xmp>
