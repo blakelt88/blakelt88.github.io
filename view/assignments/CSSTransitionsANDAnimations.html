@@ -79,7 +79,7 @@
   .maze {
   	border-top:solid 2px blue;
   	border-bottom:solid 2px blue;
-  	width:100%;
+  	width:50%;
   	height:110px;
   	background:black;
   }
@@ -102,12 +102,12 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes movepacman {
     from {left: 115px;}
-    to {left: 100%;}
+    to {left: 49%;}
 }
 
 @keyframes movepacman {
     from {left: 115px;}
-    to {left: 100%;}
+    to {left: 49%;}
 }
 
 .eye {
@@ -147,18 +147,18 @@
   /* Safari 4.0 - 8.0 */
  @-webkit-keyframes moveghost {
     from {left: 100px;}
-    to {left: 100%;}
+    to {left: 49%;}
 }
 
  @keyframes moveghost {
     from {left: 100px;}
-    to {left: 100%;}
+    to {left: 49%;}
 }
   
   </style>
   
   <script>
-  	
+		
   </script>
   
 </head>
@@ -168,30 +168,16 @@
 	<h1>CSS Transitions and Animations</h1>  
 	
 	<h2>It's PacMan!</h2></div>
+  		
+	<button onclick="superPacman();">Make Super Pacman</button>
 
   <div class="maze">
   <img src="../../images/ghost.png" class="img1" style="width:110px; height:110px;">
-  <div class="pacman">
+  <div id="pacman" class="pacman">
   	<div class="eye"></div>
   	<div class="mouth"></div>
   </div>
   <div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="bigdot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="bigdot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="bigdot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="littledot"></div>
-  	<div class="bigdot"></div>
   	<div class="littledot"></div>
   	<div class="littledot"></div>
   	<div class="littledot"></div>
