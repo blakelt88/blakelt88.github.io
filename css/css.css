@@ -1,0 +1,191 @@
+/* index.php mostly */
+
+/* Sticky footer CSS */
+
+* {
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+  overflow:hidden;
+    background-image:url("../images/sandyt-background.png");
+}
+
+h1,h2,h3,h4,h5,p {
+		font-family: 'Coming Soon', cursive;
+}
+
+body {
+	margin:0;
+	padding:0;
+	z-index:0;
+}
+
+.sign-in {
+	background:white;
+	width:970px;
+	height:480px;
+	display:block;
+	margin:0 auto;
+	position:relative;
+	border:solid 7px #ffcb29;
+	border-radius:0 0 25% 25%;
+	top:-15px;
+	z-index:1;
+}
+
+.credentials {
+	padding-top:25px;
+	text-align:center;
+}
+
+
+
+.sign-in input {
+	width:250px;
+	font-size:30px;
+	display:inline-block;
+	margin:5px;
+}
+
+.sign-in label {
+	width:250px;
+	font-size:30px;
+	display:inline-block;
+	margin:5px;
+}
+
+.credentials {
+	padding-top:25px;
+}
+
+.submit{
+	margin:25px !important;
+}
+
+/* Header CSS */
+
+/* Main CSS */
+
+/* Footer CSS */
+
+.header {
+		z-index:2;
+		position:relative;
+}
+
+.header img {
+	margin:0 auto;
+	display:block;
+}
+
+.footer {
+	margin-top:25px;
+}
+
+.footer-text  {
+	text-align:center;
+	color:black;
+	font-size:22.5px;
+	text-decoration:none;
+}
+
+a.footer-text {
+	width:250px;
+	display:inline-block;
+	margin:0 auto;
+}
+
+
+/* Left Column */
+
+.left-column {
+  float: left;
+  width: 45%;
+  height:1%;
+  padding-left:4%;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.left-inner-left {
+	width:49%;
+	float:left;
+}
+
+.left-inner-right {
+	width:49%;
+	float:left;
+}
+
+/* Right Column */
+
+.right-column {
+	float: left;
+	width:45%;
+	height:1%;
+	padding-left:4%;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.right-inner-left {
+	width:49%;
+	float:left;
+}
+
+.right-inner-right {
+	width:49%;
+	float:left;
+}
+
+/* Right and Left Column */
+
+.away-from-h4 {
+	padding-bottom:25px
+}
+
+.right-column iframe {
+	width:384px; 
+	height:275px;
+	background:white;
+	border:none;
+}
+
+.left-column iframe {
+	width:762px;
+	height:556px;
+	border:none;
+	background:white;
+}
+
+/* Journal */
+
+.journal {
+	width:75%;
+	display:block;
+	margin:0 auto;
+}
+
+.journal p {
+	font-size:20px;
+}
+
+/* DOM div */
+
+
+
+.domman iframe {
+ width:94%;
+ border:none;
+ background:white;
+}
+
+iframe.top-frame {
+	height:527px !important;
+}
+
+iframe.bottom-frame {
+	height:650px !important;
+}
