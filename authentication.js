@@ -14,12 +14,16 @@ function storeCredentials() {
 		            ,"message3":"Passwords do not match. Please try again"
 		            ,"message4":"Something is wrong. Contact the administrator"};
   
-// Store username and password locally
+	// Store username and password locally
 	
 	if (pass != blank && repass != blank && pass == repass && user != blank) {
+	
+	var credentials = {"user":user
+		                ,"pass":pass};
+		                
+	var credentialsjson = JSON.stringify(credentials);
 			
-	localStorage.setItem('user', user);
-	localStorage.getItem('pass', pass);	
+	localStorage.setItem('storeUser', credentialsjson);	
 		
 		document.getElementById("validatemessage").style.color ="green";
 	  document.getElementById('validatemessage').innerHTML = message.message1;
@@ -42,7 +46,3 @@ function storeCredentials() {
 	}
 
 }
-
-if (localStorage.getItem("user") === Blake) {
-  window.alert("It's not there...sorry.");
-	}
