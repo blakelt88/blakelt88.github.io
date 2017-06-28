@@ -6,18 +6,19 @@
 	<h1>Login Below</h1><br><br>
 	<form class="my-form">
 	<p>
-	<label>Username:</label><input type="text">
+	<label>Username:</label><input type="text" id="getUser">
 	</p>
 	<p>
-	<label>Password:</label><input type="password">
+	<label>Password:</label><input type="password" id="getPass">
 	</p>
 	<p>
-	<input class="submit" type="submit">
+	<input class="submit" type="submit" onClick="getCredentials();">
 	</p>
 	<p>
 	</form>
+	<p style="margin-bottom:15px;" id="validatemessage"></p>
 	<p style="margin-bottom:75px;">Don't have an account? <a href="#/register">Click Me To Register!</a></p>
-	<div class="separate-links2">       
+	<div class="separate-links2">     
 	<a href="#">What is Phoneme Segmentation?</a>
 	<a href="view/journal.html">Journal</a>                      
 	<a href="view/codetopicsandassignments.html">Code Topics/Assignments</a>
