@@ -307,3 +307,48 @@ div.right-side {
 	
 }
 
+.visualcontainer p {
+	text-align:center;
+	font-size:35px;
+}
+
+.visualcontainer p:first-child {
+	padding-top:25px;
+}
+
+.visualcontainer img {
+	padding-top:75px;
+	display:block;
+	margin:0 auto;
+}
+
+table {
+	  border: none;
+    border-collapse: collapse;
+    padding:35px;
+    margin: 0;
+    width:90%;
+    display:block;
+    margin:0 auto;
+}
+
+table th {
+	border:solid 1px black;
+	padding:10px;
+}
+
+table td {
+  border:solid 1px black;
+  width:105px;
+  height:50px;
+}
+
+table td:first-child {
+	width:50px;
+}
+
+.firstchild {
+	text-align:center;
+}
+
+
