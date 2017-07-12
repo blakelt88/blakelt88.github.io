@@ -1,0 +1,69 @@
+
+body, html {
+	height:100%;
+}
+
+.thick-line {
+	border-bottom: solid 2px black;
+	margin:0;
+	padding:0;
+	position:relative;
+	width:33.4%;
+	height:70.5px;
+}
+
+.thick-line2 {
+	border-bottom: solid 2px black;
+	margin:0;
+	padding:0;
+	position:relative;
+	width:33.4%;
+ height:70.5px;
+}
+
+.thin-line {
+	border-bottom: solid 1px black;
+  text-align:center;
+		width:33.4%;
+	margin:0;
+	padding:0;
+}
+
+.title {
+	text-align:center;
+	width:100%;
+}
+
+.space {
+	width:100%;
+	height:50px;
+}
+
+.left-wrapper {
+	position:relative;
+	left:15px;
+}
+
+div.image-border {
+	border-top:solid 1px black;
+	border-bottom:solid 1px black;
+	border-left:solid 1px black;
+	width:auto;
+	padding:20px;
+}
+
+div.separator {
+	border-right:solid 1px black;
+	height:500px;
+	width:1%;
+}
+
+div.body-border {
+	border-top:solid 1px black;
+	border-bottom:solid 1px black;
+	border-right:solid 1px black;
+	position:relative;
+	left:25px;
+	width:83%;
+	height:142px;
+}

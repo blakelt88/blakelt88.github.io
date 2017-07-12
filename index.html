@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html ng-app="App">
+<html>
 <head>
 <meta charset="utf-8">
 
@@ -16,13 +16,416 @@
 <link rel="stylesheet" href="css/css.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-<script type="text/javascript" src="script.js"></script>
 
 </head>
 
-<body ng-style="body" id="body" class="body" ng-controller="MainController">
-<div ng-view>		
+<body id="body" class="body">
+<div class="show" id="maincontent">		
 
+<!-- Login Content -->	
+<div id="login" class="show">
+<div class="header">
+<img src="images/sandyt-header2.png">
+</div>
+<div class="sign-in">
+<div class="credentials">
+	<h1>Login Below</h1><br><br>
+	<form class="my-form">
+	<p>
+	<label>Username:</label><input type="text" id="getUser">
+	</p>
+	<p>
+	<label>Password:</label><input type="password" id="getPass">
+	</p>
+	<p>
+	<input class="submit" type="submit" onClick="getCredentials();">
+	</p>
+	<p>
+	</form>
+	<p style="margin-bottom:15px;" id="validatemessage"></p>
+	<p style="margin-bottom:50px;">Don't have an account? <a href="" onclick="register()">Click Me To Register!</a></p>
+	<div class="separate-links2">     
+	<a href="#/phoneme">What is Phoneme Segmentation?</a>
+	</div>
+	</div>
+	</div>
+</div>
+
+<!-- Loading Content -->
+
+<div id="loading" class="dontshow">
+<div class="header">
+<img src="images/sandyt-header2.png">
+</div>
+<div class="sign-in">
+<div class="credentials">
+<p style="font-size:25px; color:green;">You've been successfully logged in!</p>
+<img src="../images/pencil.png" class="loadingimage">
+<p style="font-size:25px;">LOADING . . .</p> 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Registration Content -->
+
+<div id="register" class="dontshow">	
+<div class="header">
+<img src="images/sandyt-header2.png">
+</div>
+<div class="sign-in">
+<div id="loading">
+<div id="loadingimage"></div>
+<div class="credentials">
+	<h1 id="credentials2">Register Below</h1><br><br>
+	<form id="credentials2">
+	<p id="credentials2">
+	<label id="credentials2">Username: </label><input style="margin:left;" type="text" id="user">
+	</p>
+	<p id="credentials2">
+	<label id="credentials2">Password: </label><input type="password" id="pass">
+	</p>
+	<p id="credentials2">
+	<label id="credentials2">Match Password: </label><input type="password" id="repass">
+	</p>
+	<p id="credentials2">
+  <input id="credentials2" class="submit" type="submit" onClick="storeCredentials()">
+  </p>
+	</form>
+		<p style="margin-bottom:15px; !important" id="validatemessage2"></p>  
+  <div class="go-back"><a href="#/phoneme" onclick="backhome()"><img src="../images/backarrow.png" id="credentials2" alt="backarrow"><span>Go Back?</span></a></div>
+	<div style="margin-top:8px;" id="credentials2">       
+	<a href="#/phoneme">What is Phoneme Segmentation?</a>                      
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Start Content -->
+
+<div id="start" class="dontshow">
+<audio id="startmusic">
+  <source src="music/background-music.mp3" type="audio/mp3">
+</audio>
+<div class="start-container">
+<div class="start">
+<a href="#/phoneme" onclick="play()"><input class="startbutton" type="button" value="Begin"></a>
+</div>
+</div>
+</div>
+
+<!-- Play -->
+
+<div id="play" class="dontshow">
+<div class="play-container">
+<div class="play-background">
+	<div id="confetti" class="dontshow">
+	<img style="width:100%; position:relative; z-index:10;" src="images/confetti.png">
+	</div>
+	<div id="sorry" class="dontshow">
+	<p style="font-size:50px; text-align:center; position:relative; z-index:10; top:500px;">Sorry that isn't correct. Try again!</p>
+	</div>
+
+<!-- Images -->	
+	
+	<div class="left-side">
+		<div class="visualcontainer show">
+			<p>Name the picture.</p><br>
+			<p>How many sounds are in it's name?</p>
+			<audio id="yay" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="book" class="show">
+		<img id="book" src="../images/book.jpg" alt="book">			
+		</div>
+		<audio id="yay2" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="four" class="dontshow">
+			<img src="../images/four.jpg" alt="four">
+		</div>
+		<audio id="yay3" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="flag" class="dontshow">
+			<img src="../images/flag.jpg" alt="flag">
+		</div>
+				<audio id="yay4" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="ice" class="dontshow">
+			<img src="../images/ice.jpg" alt="ice">
+		</div>
+						<audio id="yay5" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="glue" class="dontshow">
+			<img src="../images/glue.jpg" alt="glue">
+		</div>
+				<audio id="yay6" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="fish" class="dontshow">
+			<img src="../images/fish.jpg" alt="fish">
+		</div>
+		<audio id="yay7" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="mask" class="dontshow">
+			<img src="../images/mask.jpg" alt="mask">
+		</div>
+		<audio id="yay8" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div style="margin-top:30px;" id="belt" class="dontshow">
+			<img src="../images/belt.jpg" alt="belt">
+		</div>
+				<audio id="yay9" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="lamp" class="dontshow">
+			<img src="../images/lamp.jpg" alt="lamp">
+		</div>
+		 <audio id="yay10" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="milk" class="dontshow">
+			<img src="../images/milk.jpg" alt="milk">
+		</div>
+				 <audio id="yay11" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="fan" class="dontshow">
+			<img src="../images/fan.jpg" alt="fan">
+		</div>
+				 <audio id="yay12" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="sun" class="dontshow">
+			<img src="../images/sun.jpg" alt="sun">
+		</div>
+				 <audio id="yay13" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="pig" class="dontshow">
+			<img src="../images/pig.jpg" alt="pig">
+		</div>
+				 <audio id="yay14" class="dontshow">
+  <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+		<div id="truck" class="dontshow">
+			<img src="../images/truck.jpg" alt="truck">
+		</div>
+		<div id="submit1">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer1()">
+	  </div>
+		<div id="submit2" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer2()">
+		</div>
+		<div id="submit3" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer3()">
+		</div>
+		<div id="submit4" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer4()">
+		</div>
+		<div id="submit5" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer5()">
+		</div>
+		<div id="submit6" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer6()">
+		</div>
+		<div id="submit7" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer7()">
+		</div>
+		<div id="submit8" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer8()">
+		</div>
+		<div id="submit9" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer9()">
+		</div>
+		<div id="submit10" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer10()">
+		</div>
+				<div id="submit11" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer11()">
+		</div>
+				<div id="submit12" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer12()">
+		</div>
+				<div id="submit13" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer13()">
+		</div>
+				<div id="submit14" class="dontshow">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer14()">
+		</div>
+		</div>
+	</div>
+	
+<!-- End Images -->
+	
+	<div class="right-side">
+   <table>
+   <tbody>
+   <tr>
+    <th colspan="7">Create one circle for every sound you hear in the word.</th>
+    <th>How many sounds?</th>
+   </tr>
+   <tr id="firstsheet">
+   <td class="firstchild">1.</td>
+   <td><div id="row1box1" onclick="row1box1()"><img style="display:none;" id="reddot1" src="../images/reddot.png" alt="redot1"></div></td>
+   <td><div id="row1box2" onclick="row1box2()"><img style="display:none;" id="reddot2" src="../images/reddot.png" alt="redot2"></div></td>
+   <td><div id="row1box3" onclick="row1box3()"><img style="display:none;" id="reddot3" src="../images/reddot.png" alt="redot3"></div></td>
+   <td><div id="row1box4" onclick="row1box4()"><img style="display:none;" id="reddot4" src="../images/reddot.png" alt="redot4"></div></td>
+   <td><div id="row1box5" onclick="row1box5()"><img style="display:none;" id="reddot5" src="../images/reddot.png" alt="redot5"></div></td>
+   <td><div id="row1box6" onclick="row1box6()"><img style="display:none;" id="reddot6" src="../images/reddot.png" alt="redot6"></div></td>
+   <td><div id="row1box7" onclick="row1box7()"><b><p style="text-align:center; font-size:30px;" id="total1"></p></b></div></td>
+   </tr>
+   <tr id="secondsheet" class="dontshow">
+   <td class="firstchild">2.</td>
+   <td><div id="row2box1" onclick="row2box1();"><img style="display:none;" id="reddot7" src="../images/reddot.png" alt="redot7"></div></td>
+   <td><div id="row2box2" onclick="row2box2();"><img style="display:none;" id="reddot8" src="../images/reddot.png" alt="redot8"></div></td>
+   <td><div id="row2box3" onclick="row2box3();"><img style="display:none;" id="reddot9" src="../images/reddot.png" alt="redot9"></div></td>
+   <td><div id="row2box4" onclick="row2box4();"><img style="display:none;" id="reddot10" src="../images/reddot.png" alt="redot10"></div></td>
+   <td><div id="row2box5" onclick="row2box5();"><img style="display:none;" id="reddot11" src="../images/reddot.png" alt="redot11"></div></td>
+   <td><div id="row2box6" onclick="row2box6();"><img style="display:none;" id="reddot12" src="../images/reddot.png" alt="redot12"></div></td>
+   <td><div id="row2box7" onclick="row2box7();"><b><p style="text-align:center; font-size:30px;" id="total2"></p></b></div></td>
+   </tr>
+   <tr id="thirdsheet" class="dontshow">
+   <td class="firstchild">3.</td>
+   <td><div id="row3box1" onclick="row3box1();"><img style="display:none;" id="reddot13" src="../images/reddot.png" alt="redot13"></div></td>
+   <td><div id="row3box2" onclick="row3box2();"><img style="display:none;" id="reddot14" src="../images/reddot.png" alt="redot14"></div></td>
+   <td><div id="row3box3" onclick="row3box3();"><img style="display:none;" id="reddot15" src="../images/reddot.png" alt="redot15"></div></td>
+   <td><div id="row3box4" onclick="row3box4();"><img style="display:none;" id="reddot16" src="../images/reddot.png" alt="redot16"></div></td>
+   <td><div id="row3box5" onclick="row3box5();"><img style="display:none;" id="reddot17" src="../images/reddot.png" alt="redot17"></div></td>
+   <td><div id="row3box6" onclick="row3box6();"><img style="display:none;" id="reddot18" src="../images/reddot.png" alt="redot18"></div></td>
+   <td><div id="row3box7" onclick="row3box7()"><b><p style="text-align:center; font-size:30px;" id="total3"></p></b></div></td>
+   </tr>
+   <tr id="fourthsheet" class="dontshow">
+   <td class="firstchild">4.</td>
+   <td><div id="row4box1" onclick="row4box1();"><img style="display:none;" id="reddot19" src="../images/reddot.png" alt="reddot19"></div></td>
+   <td><div id="row4box2" onclick="row4box2();"><img style="display:none;" id="reddot20" src="../images/reddot.png" alt="reddot20"></div></td>
+   <td><div id="row4box3" onclick="row4box3();"><img style="display:none;" id="reddot21" src="../images/reddot.png" alt="reddot21"></div></td>
+   <td><div id="row4box4" onclick="row4box4();"><img style="display:none;" id="reddot22" src="../images/reddot.png" alt="reddot22"></div></td>
+   <td><div id="row4box5" onclick="row4box5();"><img style="display:none;" id="reddot23" src="../images/reddot.png" alt="reddot23"></div></td>
+   <td><div id="row4box6" onclick="row4box6();"><img style="display:none;" id="reddot24" src="../images/reddot.png" alt="reddot24"></div></td>
+   <td><div id="row4box7" onclick="row4box7()"><b><p style="text-align:center; font-size:30px;" id="total4"></p></b></div></td>
+   </tr>
+   <tr id="fifthsheet" class="dontshow">
+   <td class="firstchild">5.</td>
+   <td><div id="row5box1" onclick="row5box1();"><img style="display:none;" id="reddot25" src="../images/reddot.png" alt="reddot25"></div></td>
+   <td><div id="row5box2" onclick="row5box2();"><img style="display:none;" id="reddot26" src="../images/reddot.png" alt="reddot26"></div></td>
+   <td><div id="row5box3" onclick="row5box3();"><img style="display:none;" id="reddot27" src="../images/reddot.png" alt="reddot27"></div></td>
+   <td><div id="row5box4" onclick="row5box4();"><img style="display:none;" id="reddot28" src="../images/reddot.png" alt="reddot28"></div></td>
+   <td><div id="row5box5" onclick="row5box5();"><img style="display:none;" id="reddot29" src="../images/reddot.png" alt="reddot29"></div></td>
+   <td><div id="row5box6" onclick="row5box6();"><img style="display:none;" id="reddot30" src="../images/reddot.png" alt="reddot30"></div></td>
+   <td><div id="row5box7" onclick="row5box7()"><b><p style="text-align:center; font-size:30px;" id="total5"></p></b></div></td>
+   </tr>
+   <tr id="sixthsheet" class="dontshow">
+   <td class="firstchild">6.</td>
+   <td><div id="row6box1" onclick="row6box1();"><img style="display:none;" id="reddot31" src="../images/reddot.png" alt="reddot31"></div></td>
+   <td><div id="row6box2" onclick="row6box2();"><img style="display:none;" id="reddot32" src="../images/reddot.png" alt="reddot32"></div></td>
+   <td><div id="row6box3" onclick="row6box3();"><img style="display:none;" id="reddot33" src="../images/reddot.png" alt="reddot33"></div></td>
+   <td><div id="row6box4" onclick="row6box4();"><img style="display:none;" id="reddot34" src="../images/reddot.png" alt="reddot34"></div></td>
+   <td><div id="row6box5" onclick="row6box5();"><img style="display:none;" id="reddot35" src="../images/reddot.png" alt="reddot35"></div></td>
+   <td><div id="row6box6" onclick="row6box6();"><img style="display:none;" id="reddot36" src="../images/reddot.png" alt="reddot36"></div></td>
+   <td><div id="row6box7" onclick="row6box7()"><b><p style="text-align:center; font-size:30px;" id="total6"></p></b></div></td>
+   </tr>
+   <tr id="seventhsheet" class="dontshow">
+   <td class="firstchild">7.</td>
+   <td><div id="row7box1" onclick="row7box1();"><img style="display:none;" id="reddot37" src="../images/reddot.png" alt="reddot37"></div></td>
+   <td><div id="row7box2" onclick="row7box2();"><img style="display:none;" id="reddot38" src="../images/reddot.png" alt="reddot38"></div></td>
+   <td><div id="row7box3" onclick="row7box3();"><img style="display:none;" id="reddot39" src="../images/reddot.png" alt="reddot39"></div></td>
+   <td><div id="row7box4" onclick="row7box4();"><img style="display:none;" id="reddot40" src="../images/reddot.png" alt="reddot40"></div></td>
+   <td><div id="row7box5" onclick="row7box5();"><img style="display:none;" id="reddot41" src="../images/reddot.png" alt="reddot41"></div></td>
+   <td><div id="row7box6" onclick="row7box6();"><img style="display:none;" id="reddot42" src="../images/reddot.png" alt="reddot42"></div></td>
+   <td><div id="row7box7" onclick="row7box7()"><b><p style="text-align:center; font-size:30px;" id="total7"></p></b></div></td>
+   </tr>
+   <tr id="eighthsheet" class="dontshow">
+   <td class="firstchild">8.</td>
+   <td><div id="row8box1" onclick="row8box1();"><img style="display:none;" id="reddot43" src="../images/reddot.png" alt="reddot43"></div></td>
+   <td><div id="row8box2" onclick="row8box2();"><img style="display:none;" id="reddot44" src="../images/reddot.png" alt="reddot44"></div></td>
+   <td><div id="row8box3" onclick="row8box3();"><img style="display:none;" id="reddot45" src="../images/reddot.png" alt="reddot45"></div></td>
+   <td><div id="row8box4" onclick="row8box4();"><img style="display:none;" id="reddot46" src="../images/reddot.png" alt="reddot46"></div></td>
+   <td><div id="row8box5" onclick="row8box5();"><img style="display:none;" id="reddot47" src="../images/reddot.png" alt="reddot47"></div></td>
+   <td><div id="row8box6" onclick="row8box6();"><img style="display:none;" id="reddot48" src="../images/reddot.png" alt="reddot48"></div></td>
+   <td><div id="row8box7" onclick="row8box7()"><b><p style="text-align:center; font-size:30px;" id="total8"></p></b></div></td>
+   </tr>
+   <tr id="ninthsheet" class="dontshow">
+   <td class="firstchild">9.</td>
+   <td><div id="row9box1" onclick="row9box1();"><img style="display:none;" id="reddot49" src="../images/reddot.png" alt="reddot49"></div></td>
+   <td><div id="row9box2" onclick="row9box2();"><img style="display:none;" id="reddot50" src="../images/reddot.png" alt="reddot50"></div></td>
+   <td><div id="row9box3" onclick="row9box3();"><img style="display:none;" id="reddot51" src="../images/reddot.png" alt="reddot51"></div></td>
+   <td><div id="row9box4" onclick="row9box4();"><img style="display:none;" id="reddot52" src="../images/reddot.png" alt="reddot52"></div></td>
+   <td><div id="row9box5" onclick="row9box5();"><img style="display:none;" id="reddot53" src="../images/reddot.png" alt="reddot53"></div></td>
+   <td><div id="row9box6" onclick="row9box6();"><img style="display:none;" id="reddot54" src="../images/reddot.png" alt="reddot54"></div></td>
+   <td><div id="row9box7" onclick="row9box7()"><b><p style="text-align:center; font-size:30px;" id="total9"></p></b></div></td>
+   </tr>
+   <tr id="tenthsheet" class="dontshow">
+   <td class="firstchild">10.</td>
+   <td><div id="row10box1" onclick="row10box1();"><img style="display:none;" id="reddot55" src="../images/reddot.png" alt="reddot55"></div></td>
+   <td><div id="row10box2" onclick="row10box2();"><img style="display:none;" id="reddot56" src="../images/reddot.png" alt="reddot56"></div></td>
+   <td><div id="row10box3" onclick="row10box3();"><img style="display:none;" id="reddot57" src="../images/reddot.png" alt="reddot57"></div></td>
+   <td><div id="row10box4" onclick="row10box4();"><img style="display:none;" id="reddot58" src="../images/reddot.png" alt="reddot58"></div></td>
+   <td><div id="row10box5" onclick="row10box5();"><img style="display:none;" id="reddot59" src="../images/reddot.png" alt="reddot59"></div></td>
+   <td><div id="row10box6" onclick="row10box6();"><img style="display:none;" id="reddot60" src="../images/reddot.png" alt="reddot60"></div></td>
+   <td><div id="row10box7" onclick="row10box7()"><b><p style="text-align:center; font-size:30px;" id="total10"></p></b></div></td>
+   </tr>
+   <tr id="eleventhsheet" class="dontshow">
+   <td class="firstchild">11.</td>
+   <td><div id="row11box1" onclick="row11box1();"><img style="display:none;" id="reddot61" src="../images/reddot.png" alt="reddot61"></div></td>
+   <td><div id="row11box2" onclick="row11box2();"><img style="display:none;" id="reddot62" src="../images/reddot.png" alt="reddot62"></div></td>
+   <td><div id="row11box3" onclick="row11box3();"><img style="display:none;" id="reddot63" src="../images/reddot.png" alt="reddot63"></div></td>
+   <td><div id="row11box4" onclick="row11box4();"><img style="display:none;" id="reddot64" src="../images/reddot.png" alt="reddot64"></div></td>
+   <td><div id="row11box5" onclick="row11box5();"><img style="display:none;" id="reddot65" src="../images/reddot.png" alt="reddot65"></div></td>
+   <td><div id="row11box6" onclick="row11box6();"><img style="display:none;" id="reddot66" src="../images/reddot.png" alt="reddot66"></div></td>
+   <td><div id="row11box7" onclick="row11box7()"><b><p style="text-align:center; font-size:30px;" id="total11"></p></b></div></td>
+   </tr>
+   <tr id="twelvthsheet" class="dontshow">
+   <td class="firstchild">12.</td>
+   <td><div id="row12box1" onclick="row12box1();"><img style="display:none;" id="reddot67" src="../images/reddot.png" alt="reddot67"></div></td>
+   <td><div id="row12box2" onclick="row12box2();"><img style="display:none;" id="reddot68" src="../images/reddot.png" alt="reddot68"></div></td>
+   <td><div id="row12box3" onclick="row12box3();"><img style="display:none;" id="reddot69" src="../images/reddot.png" alt="reddot69"></div></td>
+   <td><div id="row12box4" onclick="row12box4();"><img style="display:none;" id="reddot70" src="../images/reddot.png" alt="reddot70"></div></td>
+   <td><div id="row12box5" onclick="row12box5();"><img style="display:none;" id="reddot71" src="../images/reddot.png" alt="reddot71"></div></td>
+   <td><div id="row12box6" onclick="row12box6();"><img style="display:none;" id="reddot72" src="../images/reddot.png" alt="reddot72"></div></td>
+   <td><div id="row12box7" onclick="row12box7()"><b><p style="text-align:center; font-size:30px;" id="total12"></p></b></div></td>
+   </tr>
+   <tr id="thirteenthsheet" class="dontshow">
+   <td class="firstchild">13.</td>
+   <td><div id="row13box1" onclick="row13box1();"><img style="display:none;" id="reddot73" src="../images/reddot.png" alt="reddot73"></div></td>
+   <td><div id="row13box2" onclick="row13box2();"><img style="display:none;" id="reddot74" src="../images/reddot.png" alt="reddot74"></div></td>
+   <td><div id="row13box3" onclick="row13box3();"><img style="display:none;" id="reddot75" src="../images/reddot.png" alt="reddot75"></div></td>
+   <td><div id="row13box4" onclick="row13box4();"><img style="display:none;" id="reddot76" src="../images/reddot.png" alt="reddot76"></div></td>
+   <td><div id="row13box5" onclick="row13box5();"><img style="display:none;" id="reddot77" src="../images/reddot.png" alt="reddot77"></div></td>
+   <td><div id="row13box6" onclick="row13box6();"><img style="display:none;" id="reddot78" src="../images/reddot.png" alt="reddot78"></div></td>
+   <td><div id="row13box7" onclick="row13box7()"><b><p style="text-align:center; font-size:30px;" id="total13"></p></b></div></td>
+   </tr>
+   <tr id="fourteenthsheet" class="dontshow">
+   <td class="firstchild">14.</td>
+   <td><div id="row14box1" onclick="row14box1();"><img style="display:none;" id="reddot79" src="../images/reddot.png" alt="reddot79"></div></td>
+   <td><div id="row14box2" onclick="row14box2();"><img style="display:none;" id="reddot80" src="../images/reddot.png" alt="reddot80"></div></td>
+   <td><div id="row14box3" onclick="row14box3();"><img style="display:none;" id="reddot81" src="../images/reddot.png" alt="reddot81"></div></td>
+   <td><div id="row14box4" onclick="row14box4();"><img style="display:none;" id="reddot82" src="../images/reddot.png" alt="reddot82"></div></td>
+   <td><div id="row14box5" onclick="row14box5();"><img style="display:none;" id="reddot83" src="../images/reddot.png" alt="reddot83"></div></td>
+   <td><div id="row14box6" onclick="row14box6();"><img style="display:none;" id="reddot84" src="../images/reddot.png" alt="reddot84"></div></td>
+   <td><div id="row14box7" onclick="row14box7()"><b><p style="text-align:center; font-size:30px;" id="total14"></p></b></div></td>
+   </tr>
+   </tbody>
+   </table>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="play.js"></script>
+
+
+</div>
 </div>
 </body>
 </html>

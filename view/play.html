@@ -3,155 +3,166 @@
 	<div class="left-side">
 		<div class="visualcontainer">
 			<p>Name the picture.</p><br>
-			<p>How many sounds in it's name?</p>
-		<img src="../images/book.jpg" alt="book">
+			<p>How many sounds are in it's name?</p>
+		<img src="../images/book.jpg" id="book" value="3" alt="book">
+		<input style="display:block; margin:0 auto; padding:25px; margin-top:30px;" type="button" value="Submit" onclick="verifyanswer1()">
 		</div>
 	</div>
 	<div class="right-side">
+		<div class="confetti">
+	</div>
    <table>
    <tbody>
    <tr>
-    <th colspan="7">Create one circe for every sound you hear in the word.</th>
+    <th colspan="7">Create one circle for every sound you hear in the word.</th>
     <th>How many sounds?</th>
    </tr>
    <tr>
    <td class="firstchild">1.</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
-   <td onclick="makedot">&nbsp;</td>
+   <td><div id="row1box1" onclick="row1box1()"><img style="display:none;" id="reddot1" src="../images/reddot.png" alt="redot1" value="1"></div></td>
+   <td><div id="row1box2" onclick="row1box2()"><img style="display:none;" id="reddot2" src="../images/reddot.png" alt="redot2" value="1"></div></td>
+   <td><div id="row1box3" onclick="row1box3()"><img style="display:none;" id="reddot3" src="../images/reddot.png" alt="redot3" value="1"></div></td>
+   <td><div id="row1box4" onclick="row1box4()"><img style="display:none;" id="reddot4" src="../images/reddot.png" alt="redot4" value="1"></div></td>
+   <td><div id="row1box5" onclick="row1box5()"><img style="display:none;" id="reddot5" src="../images/reddot.png" alt="redot5" value="1"></div></td>
+   <td><div id="row1box6" onclick="row1box6()"><img style="display:none;" id="reddot6" src="../images/reddot.png" alt="redot6" value="1"></div></td>
+   <td><div id="row1box7" onclick="row1box7()"><b><p style="text-align:center; font-size:30px;" id="total1"></p></b></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">2.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row2box1" onclick="row2box1();"></div></td>
+   <td><div id="row2box2" onclick="row2box2();"></div></td>
+   <td><div id="row2box3" onclick="row2box3();"></div></td>
+   <td><div id="row2box4" onclick="row2box4();"></div></td>
+   <td><div id="row2box5" onclick="row2box5();"></div></td>
+   <td><div id="row2box6" onclick="row2box6();"></div></td>
+   <td><div id="row2box7" onclick="row2box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">3.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row3box1" onclick="row3box1();"></div></td>
+   <td><div id="row3box2" onclick="row3box2();"></div></td>
+   <td><div id="row3box3" onclick="row3box3();"></div></td>
+   <td><div id="row3box4" onclick="row3box4();"></div></td>
+   <td><div id="row3box5" onclick="row3box5();"></div></td>
+   <td><div id="row3box6" onclick="row3box6();"></div></td>
+   <td><div id="row3box7" onclick="row3box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">4.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row4box1" onclick="row4box1();"></div></td>
+   <td><div id="row4box2" onclick="row4box2();"></div></td>
+   <td><div id="row4box3" onclick="row4box3();"></div></td>
+   <td><div id="row4box4" onclick="row4box4();"></div></td>
+   <td><div id="row4box5" onclick="row4box5();"></div></td>
+   <td><div id="row4box6" onclick="row4box6();"></div></td>
+   <td><div id="row4box7" onclick="row4box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">5.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row5box1" onclick="row5box1();"></div></td>
+   <td><div id="row5box2" onclick="row5box2();"></div></td>
+   <td><div id="row5box3" onclick="row5box3();"></div></td>
+   <td><div id="row5box4" onclick="row5box4();"></div></td>
+   <td><div id="row5box5" onclick="row5box5();"></div></td>
+   <td><div id="row5box6" onclick="row5box6();"></div></td>
+   <td><div id="row5box7" onclick="row5box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">6.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row6box1" onclick="row6box1();"></div></td>
+   <td><div id="row6box2" onclick="row6box2();"></div></td>
+   <td><div id="row6box3" onclick="row6box3();"></div></td>
+   <td><div id="row6box4" onclick="row6box4();"></div></td>
+   <td><div id="row6box5" onclick="row6box5();"></div></td>
+   <td><div id="row6box6" onclick="row6box6();"></div></td>
+   <td><div id="row6box7" onclick="row6box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">7.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row7box1" onclick="row7box1();"></div></td>
+   <td><div id="row7box2" onclick="row7box2();"></div></td>
+   <td><div id="row7box3" onclick="row7box3();"></div></td>
+   <td><div id="row7box4" onclick="row7box4();"></div></td>
+   <td><div id="row7box5" onclick="row7box5();"></div></td>
+   <td><div id="row7box6" onclick="row7box6();"></div></td>
+   <td><div id="row7box7" onclick="row7box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">8.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row8box1" onclick="row8box1();"></div></td>
+   <td><div id="row8box2" onclick="row8box2();"></div></td>
+   <td><div id="row8box3" onclick="row8box3();"></div></td>
+   <td><div id="row8box4" onclick="row8box4();"></div></td>
+   <td><div id="row8box5" onclick="row8box5();"></div></td>
+   <td><div id="row8box6" onclick="row8box6();"></div></td>
+   <td><div id="row8box7" onclick="row8box7();"></div></td>
    </tr>
-   <tr>
+   <tr class="dontshow">
    <td class="firstchild">9.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row9box1" onclick="row9box1();"></div></td>
+   <td><div id="row9box2" onclick="row9box2();"></div></td>
+   <td><div id="row9box3" onclick="row9box3();"></div></td>
+   <td><div id="row9box4" onclick="row9box4();"></div></td>
+   <td><div id="row9box5" onclick="row9box5();"></div></td>
+   <td><div id="row9box6" onclick="row9box6();"></div></td>
+   <td><div id="row9box7" onclick="row9box7();"></div></td>
    </tr>
-      <td class="firstchild">10.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <tr class="dontshow">
+   <td class="firstchild">10.</td>
+   <td><div id="row10box1" onclick="row10box1();"></div></td>
+   <td><div id="row10box2" onclick="row10box2();"></div></td>
+   <td><div id="row10box3" onclick="row10box3();"></div></td>
+   <td><div id="row10box4" onclick="row10box4();"></div></td>
+   <td><div id="row10box5" onclick="row10box5();"></div></td>
+   <td><div id="row10box6" onclick="row10box6();"></div></td>
+   <td><div id="row10box7" onclick="row10box7();"></div></td>
    </tr>
-      <td class="firstchild">11.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <tr class="dontshow">
+   <td class="firstchild">11.</td>
+   <td><div id="row11box1" onclick="row11box1();"></div></td>
+   <td><div id="row11box2" onclick="row11box2();"></div></td>
+   <td><div id="row11box3" onclick="row11box3();"></div></td>
+   <td><div id="row11box4" onclick="row11box4();"></div></td>
+   <td><div id="row11box5" onclick="row11box5();"></div></td>
+   <td><div id="row11box6" onclick="row11box6();"></div></td>
+   <td><div id="row11box7" onclick="row11box7();"></div></td>
    </tr>
-      <td class="firstchild">12.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <tr class="dontshow">
+   <td class="firstchild">12.</td>
+   <td><div id="row12box1" onclick="row12box1();"></div></td>
+   <td><div id="row12box2" onclick="row12box2();"></div></td>
+   <td><div id="row12box3" onclick="row12box3();"></div></td>
+   <td><div id="row12box4" onclick="row12box4();"></div></td>
+   <td><div id="row12box5" onclick="row12box5();"></div></td>
+   <td><div id="row12box6" onclick="row12box6();"></div></td>
+   <td><div id="row12box7" onclick="row12box7();"></div></td>
    </tr>
+   <tr class="dontshow">
    <td class="firstchild">13.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row13box1" onclick="row13box1();"></div></td>
+   <td><div id="row13box2" onclick="row13box2();"></div></td>
+   <td><div id="row13box3" onclick="row13box3();"></div></td>
+   <td><div id="row13box4" onclick="row13box4();"></div></td>
+   <td><div id="row13box5" onclick="row13box5();"></div></td>
+   <td><div id="row13box6" onclick="row13box6();"></div></td>
+   <td><div id="row13box7" onclick="row13box7();"></div></td>
    </tr>
+   <tr class="dontshow">
    <td class="firstchild">14.</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
-   <td>&nbsp;</td>
+   <td><div id="row14box1" onclick="row14box1();"></div></td>
+   <td><div id="row14box2" onclick="row14box2();"></div></td>
+   <td><div id="row14box3" onclick="row14box3();"></div></td>
+   <td><div id="row14box4" onclick="row14box4();"></div></td>
+   <td><div id="row14box5" onclick="row14box5();"></div></td>
+   <td><div id="row14box6" onclick="row14box6();"></div></td>
+   <td><div id="row14box7" onclick="row14box7();"></div></td>
    </tr>
    </tbody>
    </table>
   </div>
 </div>
 </div>
+</div>
+
+
 

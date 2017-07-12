@@ -10,6 +10,15 @@
 	display:none;
 }
 
+.show {
+	display:"":
+}
+
+.showconfetti {
+display:block;
+margin:0 auto;
+}
+
 .loadingimage {
 	  margin-top:55px;
 	  margin-bottom:45px;
@@ -47,6 +56,16 @@ html,body {
 html,body, .start-container {
   height:100%;
   min-height: 100% !important;
+}
+
+body {
+	-webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  user-drag: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
 }
 
 .move-on-body {
@@ -345,6 +364,18 @@ table td {
 
 table td:first-child {
 	width:50px;
+}
+
+table div {
+	width:auto;
+	height:40px;
+	position:relative;
+	z-index:15;
+}
+
+table img {
+	display:block;
+	margin:0 auto;
 }
 
 .firstchild {
