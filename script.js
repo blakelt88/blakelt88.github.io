@@ -145,7 +145,7 @@ function backhome() {
 function play() {
 	document.getElementById('startmusic').pause();
 	document.getElementById('playbackground').play();
-	document.getElementById('playbackground').volume = .1;
+	document.getElementById('playbackground').volume = .5;
 	document.getElementById('playbackground').loop = true;
 	document.getElementById('start').className = "dontshow";
 	document.getElementById('play').className = "show";
