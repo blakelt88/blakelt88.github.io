@@ -1498,6 +1498,7 @@ function verifyanswer14() {
 
   	document.getElementById('confetti').className = "dontshow";                                    
   	document.getElementById("thirteenthsheet").style.pointerEvents = "none";
+  	document.getElementById("fourteenthsheet").style.pointerEvents = "none";
 
   }, 4000 ); 
 		
