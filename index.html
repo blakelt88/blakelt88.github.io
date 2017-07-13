@@ -14,8 +14,6 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/css.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
 </head>
 
@@ -24,12 +22,13 @@
 
 <!-- Login Content -->	
 <div id="login" class="show">
+<div class="sign-in">
 <div class="header">
 <img src="images/sandyt-header2.png">
 </div>
-<div class="sign-in">
 <div class="credentials">
 	<h1>Login Below</h1><br><br>
+	<div class="form">
 	<form class="my-form">
 	<p>
 	<label>Username:</label><input type="text" id="getUser">
@@ -42,6 +41,7 @@
 	</p>
 	<p>
 	</form>
+	</div>
 	<p style="margin-bottom:15px;" id="validatemessage"></p>
 	<p style="margin-bottom:50px;">Don't have an account? <a href="#" onclick="register()">Click Me To Register!</a></p>
 	<div class="separate-links2">     
@@ -128,7 +128,7 @@
 	<p style="font-size:50px; text-align:center; position:relative; z-index:10; top:500px;">Sorry that isn't correct. Try again!</p>
 	</div>
 
-<!-- Images -->	
+<!-- Images and Audio -->	
 	
 	<div class="left-side">
 		<div class="visualcontainer show">
@@ -137,11 +137,17 @@
 			<audio id="yay" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="book" class="show">
 		<img id="book" src="../images/book.jpg" alt="book">			
 		</div>
 		<audio id="yay2" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect2" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="four" class="dontshow">
 			<img src="../images/four.jpg" alt="four">
@@ -149,11 +155,17 @@
 		<audio id="yay3" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect3" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="flag" class="dontshow">
 			<img src="../images/flag.jpg" alt="flag">
 		</div>
 				<audio id="yay4" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect4" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="ice" class="dontshow">
 			<img src="../images/ice.jpg" alt="ice">
@@ -161,11 +173,17 @@
 						<audio id="yay5" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect5" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="glue" class="dontshow">
 			<img src="../images/glue.jpg" alt="glue">
 		</div>
 				<audio id="yay6" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect6" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="fish" class="dontshow">
 			<img src="../images/fish.jpg" alt="fish">
@@ -173,11 +191,17 @@
 		<audio id="yay7" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect7" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="mask" class="dontshow">
 			<img src="../images/mask.jpg" alt="mask">
 		</div>
 		<audio id="yay8" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect8" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div style="margin-top:30px;" id="belt" class="dontshow">
 			<img src="../images/belt.jpg" alt="belt">
@@ -185,11 +209,17 @@
 				<audio id="yay9" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect9" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="lamp" class="dontshow">
 			<img src="../images/lamp.jpg" alt="lamp">
 		</div>
 		 <audio id="yay10" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect10" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="milk" class="dontshow">
 			<img src="../images/milk.jpg" alt="milk">
@@ -197,11 +227,17 @@
 				 <audio id="yay11" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect11" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="fan" class="dontshow">
 			<img src="../images/fan.jpg" alt="fan">
 		</div>
 				 <audio id="yay12" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect12" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="sun" class="dontshow">
 			<img src="../images/sun.jpg" alt="sun">
@@ -209,11 +245,17 @@
 				 <audio id="yay13" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
   </audio>
+  <audio id="incorrect13" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
+  </audio>
 		<div id="pig" class="dontshow">
 			<img src="../images/pig.jpg" alt="pig">
 		</div>
 				 <audio id="yay14" class="dontshow">
   <source src="music/yay.mp3" type="audio/mp3">
+  </audio>
+  <audio id="incorrect14" class="dontshow">
+  <source src="music/incorrect.mp3" type="audio/mp3">
   </audio>
 		<div id="truck" class="dontshow">
 			<img src="../images/truck.jpg" alt="truck">

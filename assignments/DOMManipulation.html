@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DOM Manipulation</title>
+  <meta name="description" content="DOM Manipulation">
+  <meta name="author" content="Blake Turley">
+  
+  <link rel="stylesheet" href="css/domcss.css">
+  
+  
+  
+  <script type="text/javascript">
+  
+  var kittenimage;
+  
+  function showkitten() {
+  	
+  var button1 = document.getElementById("startButton");
+  button1.setAttribute("class","hiding");
+  
+  
+  var kittenimage = document.createElement("IMG");
+   kittenimage.setAttribute("src", "../../images/beggingkitten.jpg");
+   kittenimage.setAttribute("width", "750");
+   kittenimage.setAttribute("height", "469");
+   kittenimage.setAttribute("class","showing");
+   kittenimage.setAttribute("id","kitten");
+   kittenimage.setAttribute("onClick","kittenFunction(this);");
+   document.body.appendChild(kittenimage);
+ 
+   var textbubble = document.createElement("P");
+   var text = document.createTextNode("Oh I hope someone CLICKS on me...");
+   textbubble.setAttribute("class","showing");
+   textbubble.setAttribute("id","kittenWords");
+   textbubble.appendChild(text);
+   document.body.appendChild(textbubble);
+ 
+ var textbubble2 = document.createElement("P");
+   textbubble2.setAttribute("class","showing");
+   textbubble2.setAttribute("id","kittenBigDot");
+   document.body.appendChild(textbubble2);
+ 
+ var textbubble3 = document.createElement("P");
+   textbubble3.setAttribute("class","showing");
+   textbubble3.setAttribute("id","kittenDot");
+   document.body.appendChild(textbubble3);
+ }
+
+function kittenFunction(img) {
+	
+	var kittenVideo = document.getElementById("kittenVideo");
+	var ptag1 = document.getElementById("kittenBigDot");
+	var ptag2 = document.getElementById("kittenDot");
+	var currenttext = document.getElementById("kittenWords").innerHTML; 
+  var newtext = currenttext.replace("Oh I hope someone CLICKS on me...", "You got Rick Rolled!");
+	
+	img.setAttribute("class","hiding");
+	ptag1.setAttribute("class","hiding");
+	ptag2.setAttribute("class","hiding");
+  kittenVideo.setAttribute("class","showing");
+  
+  document.getElementById('kittenVideo').play();
+
+  
+  document.getElementById("kittenWords").innerHTML = newtext;
+}
+
+</script>
+
+</head>
+
+<body>
+	
+<h1>OnClick Image DOM Manipulation</h1>
+
+<button id="startButton" class="showing" style="margin-bottom:75px;" type="button" onClick="showkitten();">Click To Create Image</button><br><br>
+
+<video class="hiding" id="kittenVideo" style="width:750px; height:469px;">
+  <source id="mp4_src" src="../../videos/kitten.mp4" type="video/mp4">
+</video>
+  
+</body>
+</html>

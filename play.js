@@ -126,7 +126,8 @@ function verifyanswer1() {
   }, 4000 ); 
 		
 	} else {
-		
+	
+		document.getElementById('incorrect').play();	
 		document.getElementById('sorry').className = "show";
 		
 		
@@ -234,6 +235,7 @@ function verifyanswer2() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
+		document.getElementById('incorrect2').play();
 		
 		
 		setTimeout(function() {
@@ -340,7 +342,7 @@ function verifyanswer3() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect3').play();
 		
 		setTimeout(function() {
  
@@ -447,7 +449,7 @@ function verifyanswer4() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect4').play();
 		
 		setTimeout(function() {
  
@@ -553,7 +555,7 @@ function verifyanswer5() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect5').play();
 		
 		setTimeout(function() {
  
@@ -659,7 +661,7 @@ function verifyanswer6() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect6').play();
 		
 		setTimeout(function() {
  
@@ -767,7 +769,7 @@ function verifyanswer7() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect7').play();
 		
 		setTimeout(function() {
  
@@ -873,7 +875,7 @@ function verifyanswer8() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect8').play();
 		
 		setTimeout(function() {
  
@@ -979,7 +981,7 @@ function verifyanswer9() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect9').play();
 		
 		setTimeout(function() {
  
@@ -1085,7 +1087,7 @@ function verifyanswer10() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect10').play();
 		
 		setTimeout(function() {
  
@@ -1191,7 +1193,7 @@ function verifyanswer11() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect11').play();
 		
 		setTimeout(function() {
  
@@ -1297,7 +1299,7 @@ function verifyanswer12() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect12').play();
 		
 		setTimeout(function() {
  
@@ -1403,7 +1405,7 @@ function verifyanswer13() {
 	} else {
 		
 		document.getElementById('sorry').className = "show";
-		
+		document.getElementById('incorrect13').play();
 		
 		setTimeout(function() {
  
@@ -1504,8 +1506,8 @@ function verifyanswer14() {
 		
 	} else {
 		
+		document.getElementById('incorrect14').play();
 		document.getElementById('sorry').className = "show";
-		
 		
 		setTimeout(function() {
  

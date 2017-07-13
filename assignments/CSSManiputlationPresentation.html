@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Manipulation Presentation</title>
+  <meta name="description" content="CSS Manipulation Presentation">
+  <meta name="author" content="Blake Turley">
+
+  <style>
+  	
+  	.hidden {
+  		display:none;
+  	}
+  	
+  	.showing {
+  		display:"";
+  	}
+  	
+  	#button {
+  		color:red;
+
+  	}
+  	
+  	input {
+  		margin:0 auto;
+  		display:block;
+  		float:left;
+  		padding:50px;
+  	}
+  	
+  </style>
+  
+</head>
+
+<body style="background-image:url(../../images/deer.jpg); background-size:cover;">
+	
+<input type="button" onClick="readyRifle();" value="Set Your Sights">
+
+<input class="hidden" id="button" type="button"  onClick="fire();" value="Fire!">
+
+<div class="hidden" id="orange" style="width:100%; z-index:-1; position:absolute;"></div>
+
+<div class="hidden" id="scope" style="width:100%; height:100%; border-right:150px solid black; border-top:150px solid black; z-index:1;"><img id="scope2" class="hidden" style="width:100%; height:100%;" src="../../images/scope.png"></div>
+
+<audio id="shot">
+  <source src="../../sounds/snipershot.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+  <script>
+  	
+  	function readyRifle() {
+  		
+  		  var scopeimage = document.getElementById("scope");
+        scopeimage.setAttribute("class","showing");
+        
+        var scopeimage2 = document.getElementById("scope2");
+        scopeimage2.setAttribute("class","showing");
+        
+        var button = document.getElementById("button");
+        button.setAttribute("class","showing");
+  
+  	}
+  	
+  	
+  	function fire() {
+  		
+  		document.getElementById("scope").style.borderBottom = "black 60px";
+  		document.getElementById("scope").style.position = "absolute";
+  		document.getElementById("orange").style.backgroundColor = "orange";
+			document.getElementById("orange").style.opacity = ".75";
+			document.getElementById("orange").style.zIndex = "-1";
+			document.getElementById("orange").style.height = "1100px";
+			
+			var muzzleFlash = document.getElementById("orange");
+			
+			document.getElementById('shot').play();
+  		
+  		muzzleFlash.setAttribute("class","showing");
+  		
+
+  		
+  	}
+  	
+  </script>
+  
+</body>
+
+</html>

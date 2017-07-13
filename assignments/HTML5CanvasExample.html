@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>HTML5 Canvas Example</title>
+  <meta name="description" content="HTML5 Canvas Example">
+  <meta name="author" content="Blake Turley">
+  
+  <style>
+  	canvas {
+  		border: 0px none black;
+  	}
+  </style>
+  
+</head>
+
+<body>
+	
+	<h1>HTML5 Canvas Example</h1>
+  
+  <p>Me: Hey Eli (my oldest), I need to make a picture. What should I make?</p>
+  <p>Eli: Make a Fly!</p>
+  <p>Haha okay I'll give it a shot.</p>
+  
+  <h2>Fly</h2>
+  
+  <canvas id="flyleftEye" height="800" width="800" style="position:absolute; left:0; top:0; z-index:3;"></canvas>
+  <canvas id="flyrightEye" height="800" width="800" style="position:absolute; left:0; top:0; z-index:3;"></canvas>
+  <canvas id="flyHead" height="700" width="800" style="position:absolute; left:0; top:0; z-index:2;"></canvas>
+  <canvas id="flyleftWing" height="1500" width="1000" style="position:absolute; left:0; top:0; z-index:2;"></canvas>
+  <canvas id="flyrightWing" height="1500" width="1000" style="position:absolute; left:0; top:0; z-index:0;"></canvas>
+  <canvas id="flyBody" height="1500" width="1000" style="position:absolute; left:0; top:0; z-index:1;"></canvas>
+  
+    
+  <script>
+  	
+  	// Make fly's head
+  	
+  	var head = document.getElementById("flyHead");
+  	var contextHead = head.getContext("2d");
+  	
+  	contextHead.beginPath();
+  	contextHead.arc(615,550,120,0,2*Math.PI, false);  	
+  	contextHead.fillStyle = 'black';
+  	contextHead.lineWidth = 4;
+  	contextHead.fill();
+  	contextHead.strokeStyle='black';
+  	contextHead.stroke();
+  	
+  	// Make fly's body
+  	
+  	var body = document.getElementById("flyBody");
+  	var contextBody = body.getContext("2d");
+
+  	contextBody.beginPath();
+  	contextBody.ellipse(400, 600, 150, 240, 270 * Math.PI/180, 0, 2 * Math.PI);  	
+  	contextBody.fillStyle = 'black';
+  	contextBody.lineWidth = 4;
+  	contextBody.fill();
+  	contextBody.strokeStyle='black';
+  	contextBody.stroke();
+  	
+  	// Make fly's left red Eye
+  	
+  	var leftEye = document.getElementById("flyleftEye");
+  	var contextleftEye = leftEye.getContext("2d");
+  	
+  	contextleftEye.beginPath();
+  	contextleftEye.arc(675,500,35,0,2*Math.PI, false);  	
+  	contextleftEye.fillStyle = 'red';
+  	contextleftEye.fill();
+  	contextleftEye.stroke();
+  	
+    // Make fly's right red Eye
+  	
+  	var rightEye = document.getElementById("flyrightEye");
+  	var contextrightEye = rightEye.getContext("2d");
+  	
+  	contextrightEye.beginPath();
+  	contextrightEye.arc(615,500,35,0,2*Math.PI, false);  	
+  	contextrightEye.fillStyle = 'red';
+  	contextrightEye.fill();
+  	contextrightEye.stroke();
+  	
+  	// Left wing
+
+		var leftWing = document.getElementById("flyBody");
+  	var contextleftWing = leftWing.getContext("2d");
+
+		contextleftWing.beginPath();
+  	contextleftWing.ellipse(350, 450, 150, 75, 18 * Math.PI/180, 0, 2 * Math.PI);  	
+  	contextleftWing.fillStyle = 'white';
+  	contextleftWing.lineWidth = 4;
+  	contextleftWing.fill();
+  	contextleftWing.stroke();
+  	
+  	// Right wing
+
+		var rightWing = document.getElementById("flyBody");
+  	var contextrightWing = rightWing.getContext("2d");
+
+		contextrightWing.beginPath();
+  	contextrightWing.ellipse(635, 425, 150, 75, 150 * Math.PI/180, 0, 2 * Math.PI);  	
+  	contextrightWing.fillStyle = 'white';
+  	contextrightWing.lineWidth = 4;
+  	contextrightWing.fill();
+  	contextrightWing.stroke();
+  	
+  	
+  	
+  	
+  	
+  </script>
+  
+</body>
+</html>

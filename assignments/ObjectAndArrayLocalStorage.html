@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Array and Object to Local Storage</title>
+  <meta name="description" content="Array and Object to Local Storage">
+  <meta name="author" content="Blake Turley">
+
+</head>
+
+<body>
+
+<h1>Array and Object to Local Storage</h1>
+
+<p>Click the button to see it happen.</p>
+
+<p id="array"></p>
+
+<button type="button" onClick="ArrayLocalStorage()">Click For Array Value</button>
+
+<p id="object"></p>
+
+<button type="button" onClick="ObjectLocalStorage()">Click For Stringified Object</button>
+
+<!-- Input boxes as well as empty p tags for data submission and retrieval --> 
+
+<p id="caliber"></p>
+
+<button type="button" onClick="NumberLocalStorage()">Click For Numbers</button>
+
+<p id="rifle"></p>
+
+<button type="button" onClick="useArray()">Click For Something From Associative Array</button>
+
+<script type="text/javascript">
+	
+	var outputArray = "";
+	
+	function ArrayLocalStorage() {
+		var weapons = ["M4A1", "1911", "AWM","AKM"];
+		
+		for (var i = 0; i < weapons.length; i++) {
+			outputArray += localStorage.setItem("array",weapons[i]);
+		}
+	  document.getElementById('array').innerHTML = localStorage.getItem("array");
+		
+		
+	}
+	
+	function ObjectLocalStorage() {
+		var weapons = {"type1":"rifle","type2":"shotgun","type3":"smg","type4":"handgun"};
+		
+		stringifyWeapons = JSON.stringify(weapons);
+		
+		localStorage.setItem("stringifyWeapons",stringifyWeapons);
+		
+		localStorage.getItem("stringifyWeapons",stringifyWeapons);
+		
+		document.getElementById('object').innerHTML = stringifyWeapons;
+	}
+	
+	function NumberLocalStorage() {
+		var caliber = 5.56;
+		
+		localStorage.setItem("caliber",caliber);
+		
+		localStorage.getItem("caliber",caliber);
+		
+		document.getElementById('caliber').innerHTML = caliber;
+		}
+		
+		function associativeArray(rifle, ammo, scope, magazine) {
+			
+	  var rifle;
+	  var ammo;
+	  var scope;
+	  var magazine;
+			
+		this.rifle = rifle;
+    this.ammo = ammo;
+    this.scope = scope;
+    this.magazine = magazine;
+    
+    return rifle;
+    return ammo;
+    return scope;
+    return magazine;
+       
+  }
+  
+  function useArray(rifle, ammo, scope, magazine) {
+  	    
+     var variable = new associativeArray("AKM",7.62, "4x Scope", "Extended Mag");
+     
+     string = JSON.stringify(variable);
+     
+     localStorage.setItem("string",variable);
+		
+		 localStorage.getItem("string",variable);
+					
+			document.getElementById("rifle").innerHTML = "Hello I'm a " + variable.scope + ". I am a demonstration of an Associative Array and am called by a word!";
+			 
+  }
+    
+   
+    
+  
+
+			
+		
+</script>
+  
+</body>
+</html>
