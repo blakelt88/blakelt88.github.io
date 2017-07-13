@@ -46,8 +46,14 @@ function storeCredentials() {
   }, 3001 ); 
 
 	
-	} else {
-		document.getElementById('validatemessage2').innerHTML = "Nope.";
+	} else if (pass != repass && pass != blank && repass != blank) {
+		document.getElementById("validatemessage2").style.color = "#FF8C00";
+	 	document.getElementById("validatemessage2").style.fontSize = "18px";
+		document.getElementById('validatemessage2').innerHTML = message.message3;
+	} else if (user == blank || pass == blank || repass == blank ) {
+		document.getElementById("validatemessage2").style.color = "#FF8C00";
+	 	document.getElementById("validatemessage2").style.fontSize = "18px";
+		document.getElementById('validatemessage2').innerHTML = message.message2;
 	}
 }
 
@@ -138,6 +144,9 @@ function backhome() {
 
 function play() {
 	document.getElementById('startmusic').pause();
+	document.getElementById('playbackground').play();
+	document.getElementById('playbackground').volume = .1;
+	document.getElementById('playbackground').loop = true;
 	document.getElementById('start').className = "dontshow";
 	document.getElementById('play').className = "show";
 }

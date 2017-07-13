@@ -54,10 +54,10 @@
 <!-- Loading Content -->
 
 <div id="loading" class="dontshow">
-<div class="header">
+<div class="sign-in">
+	<div class="header">
 <img src="images/sandyt-header2.png">
 </div>
-<div class="sign-in">
 <div class="credentials">
 <p style="font-size:25px; color:green;">You've been successfully logged in!</p>
 <img src="../images/pencil.png" class="loadingimage">
@@ -71,10 +71,10 @@
 <!-- Registration Content -->
 
 <div id="register" class="dontshow">	
+<div class="sign-in">
 <div class="header">
 <img src="images/sandyt-header2.png">
 </div>
-<div class="sign-in">
 <div id="loading">
 <div id="loadingimage"></div>
 <div class="credentials">
@@ -118,14 +118,17 @@
 
 <!-- Play -->
 
-<div id="play" class="dontshow">
+<div id="play" class="dontshow" loop>
+	<audio id="playbackground" class="dontshow">
+  <source src="music/playbackground.mp3" type="audio/mp3">
+  </audio>
 <div class="play-container">
 <div class="play-background">
 	<div id="confetti" class="dontshow">
 	<img style="width:100%; position:relative; z-index:10;" src="images/confetti.png">
 	</div>
 	<div id="sorry" class="dontshow">
-	<p style="font-size:50px; text-align:center; position:relative; z-index:10; top:500px;">Sorry that isn't correct. Try again!</p>
+	<img style=" display:block; margin:0 auto; position:relative; z-index:10;" src="images/wrong.png">
 	</div>
 
 <!-- Images and Audio -->	
