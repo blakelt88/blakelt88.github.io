@@ -147,7 +147,7 @@ function play() {
 	document.getElementById('play').className = "show";
 		document.getElementById('startmusic').pause();
 	document.getElementById('playbackground').play();
-	document.getElementById('playbackground').volume = .5;
+	document.getElementById('playbackground').volume = 10;
 	document.getElementById('playbackground').loop = true;
 }
 
