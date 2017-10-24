@@ -1,0 +1,120 @@
+<html>
+
+    <head>
+        
+        <title>jQuery</title>
+ 
+                		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- JQuery UI -->
+		
+		<link rel="stylesheet" href="jquery-ui.css">
+		
+		<!-- Custom CSS -->
+			
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />	
+        
+    </head>
+
+    <body>
+        
+        <div id="header">
+        
+            <div id="logo">
+            
+                Fiddle<span style="color:#009ACD">Sticks</span>
+                
+            </div>
+            
+            <div id="buttonContainer">
+                
+                <input type="button"  class="toggleButton active"  value="HTML5" id="html"></input>
+                
+                <input type="button"  class="toggleButton"  value="CSS3" id="css"></input>
+                
+                <input type="button"  class="toggleButton"  value="JavaScript" id="javascript"></input>
+                
+                <input type="button"  class="toggleButton active"  value="Output" id="output"></input>
+            
+            </div>
+        
+        </div>
+        
+        <div id="bodyContainer">
+        
+            <textarea id="htmlPanel" class="panel"><p id="paragraph"></textarea>
+            
+            <textarea id="cssPanel" class="panel hidden"></textarea>
+            
+            <textarea id="javascriptPanel" class="panel hidden"></textarea>
+            
+            <iframe id="outputPanel" class="panel"></iframe>
+        
+        
+        </div>
+        
+        <script type="text/javascript">
+            
+            function updateOutput() {
+                
+                $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+                
+                document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
+                
+                
+                
+            }
+            
+            $(".toggleButton").hover(function() {
+                
+                $(this).addClass("highlightedButton");
+                
+            }, function() {
+                
+                $(this).removeClass("highlightedButton");
+                
+            });
+            
+            $(".toggleButton").click(function() {
+                
+                $(this).toggleClass("active");
+                
+                $(this).removeClass("highlightedButton");
+                
+                var panelId = $(this).attr("id") + "Panel";
+                
+                $("#" + panelId).toggleClass("hidden");
+                
+                var numberOfActivePanels = 4 - $('.hidden').length;
+                
+                $(".panel").width(($(window).width() / numberOfActivePanels) - 10);
+                
+                if (numberOfActivePanels == 0) {
+                	$("body").css("background","rgba(0,0,0,0.8)");
+                } else {
+                	$("body").css("background","white");
+                }
+                
+            })
+            
+            $(".panel").height($(window).height() - $("#header").height() - 15);
+            
+            $(".panel").width(($(window).width() / 2) - 10);
+            
+            updateOutput();
+            
+            $("textarea").on('change keyup paste', function() {
+    
+                updateOutput();
+                
+                
+            });
+            
+    
+
+        </script>
+        
+    </body>
+
+</html>
