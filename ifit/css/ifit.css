@@ -151,14 +151,14 @@ li.fix-li {
 .opaque-image {
 	background-image:url(../img/opaquebackground.png);
 	background-repeat: no-repeat;
-	max-width:1400px;
+	max-width:4px;
 	height:627px;
 }
 
 .move-text {
 	position:absolute;
-	top:28.5em;
-	left:20em;
+	top:31em;
+	left:19em;
 	width:100%;
 }
 
