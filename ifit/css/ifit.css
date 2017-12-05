@@ -7,7 +7,7 @@ body,html {
 	max-width:1400px;
 	margin:0 auto;
 	display:block;
-	background-image: url(../img/background-image.png);
+	background-image: url(../img/background-image.jpg);
 	height:747px;
 	background-repeat: no-repeat;
 }
@@ -57,7 +57,7 @@ body,html {
 
 /* Second Header */
 
-.edit-top-nav2 {	
+.edit-top-nav2 {
 	background-color:#ffffff;
 	opacity:.85;
 	height:51px;
@@ -362,4 +362,3 @@ li.fix-li {
 .move-media {
 	margin-top:5px;
 }
-
