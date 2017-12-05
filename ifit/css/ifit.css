@@ -151,7 +151,6 @@ li.fix-li {
 .opaque-image {
 	background-image:url(../img/opaquebackground.png);
 	background-repeat: no-repeat;
-	max-width:4px;
 	height:627px;
 }
 
