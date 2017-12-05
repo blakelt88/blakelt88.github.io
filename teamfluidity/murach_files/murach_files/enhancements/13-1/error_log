@@ -1,0 +1,1 @@
+[07-Jul-2016 20:22:48 America/Denver] PHP Fatal error:  Cannot redeclare FV\futureValCal() (previously declared in /home3/aplaceo3/public_html/teamfluiditygaming/murach_files/murach_files/enhancements/13-1/functions.php:6) in /home3/aplaceo3/public_html/teamfluiditygaming/murach_files/murach_files/enhancements/13-1/functions.php on line 31

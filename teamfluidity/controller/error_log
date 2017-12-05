@@ -1,0 +1,4 @@
+[18-Jul-2016 22:43:54 America/Denver] PHP Notice:  Undefined variable: userids in /home3/aplaceo3/public_html/teamfluiditygaming/controller/forum_post_reply_controller.php on line 39
+[18-Jul-2016 22:43:55 America/Denver] PHP Notice:  Undefined variable: email in /home3/aplaceo3/public_html/teamfluiditygaming/controller/forum_post_reply_controller.php on line 58
+[18-Jul-2016 23:01:47 America/Denver] PHP Notice:  Undefined variable: userids in /home3/aplaceo3/public_html/teamfluiditygaming/controller/forum_post_reply_controller.php on line 39
+[18-Jul-2016 23:01:47 America/Denver] PHP Notice:  Undefined variable: email in /home3/aplaceo3/public_html/teamfluiditygaming/controller/forum_post_reply_controller.php on line 58

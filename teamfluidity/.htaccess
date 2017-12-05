@@ -1,0 +1,9 @@
+# Apache configuration file (see httpd.apache.org/docs/2.2/mod/quickreference.html)
+# File modified on Wed Jan 20 16:55:10 2016 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# File modified on Wed Jan 20 16:55:10 2016 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# disable directory listing - keeps site visitors from # seeing the contents of a folder if a default page # is not provided in the folderOptions -Indexes
+
+
+

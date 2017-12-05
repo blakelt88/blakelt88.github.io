@@ -1,0 +1,3 @@
+[09-Aug-2016 19:12:00 America/Denver] PHP Notice:  Undefined offset: 1 in /home3/aplaceo3/public_html/teamfluiditygaming/murach_files/murach_files/book_apps/ch20_guitar_shop_mysqli/util/main.php on line 8
+[09-Aug-2016 19:12:00 America/Denver] PHP Notice:  Undefined offset: 2 in /home3/aplaceo3/public_html/teamfluiditygaming/murach_files/murach_files/book_apps/ch20_guitar_shop_mysqli/util/main.php on line 8
+[09-Aug-2016 19:12:00 America/Denver] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'mgs_user'@'localhost' (using password: YES) in /home3/aplaceo3/public_html/teamfluiditygaming/murach_files/murach_files/book_apps/ch20_guitar_shop_mysqli/model/database.php on line 7
