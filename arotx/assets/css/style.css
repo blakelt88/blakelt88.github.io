@@ -45,6 +45,11 @@ body {
   overflow:auto;
 }
 
+#main h1 {
+
+  margin-top:55px;
+}
+
 .hidden {
   display:none;
 }
@@ -207,6 +212,10 @@ padding:15px;
 .fa-rss {
   background: #ff6600;
   color: white;
+}
+
+.brand-logo {
+  margin-top:75px;
 }
 
 /* End Font Awesome */
