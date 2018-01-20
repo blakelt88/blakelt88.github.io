@@ -218,6 +218,31 @@ padding:15px;
   margin-top:75px;
 }
 
+.submit-button {
+
+background: #15609f;
+border: #15609f;
+
+}
+
+.submit-button:hover {
+
+background: grey;
+
+}
+
+.submit-button:active {
+
+background: grey;
+
+}
+
+.submit-button:visited {
+
+background: grey;
+
+}
+
 /* End Font Awesome */
 
 /* Custom CSS */
