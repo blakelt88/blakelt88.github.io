@@ -1,14 +1,22 @@
+html,body {
+
+height:100%;
+
+}
+
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     background-color:white !important;
+    margin:0;
+    padding:0;
 }
 
 .mainnav {
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #111;
@@ -31,8 +39,10 @@ body {
 #main {
   margin-left:250px;
   padding-top:50px;
-  margin-bottom:600px;
-  height:100vh;
+  margin-bottom:150px;
+  height:auto;
+  min-height: 100%;
+  overflow:auto;
 }
 
 .hidden {
@@ -223,7 +233,7 @@ padding:15px;
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 1;
+      z-index: 1000;
       top: 0;
       left: 0;
       background-color: #111;
@@ -262,7 +272,7 @@ padding:15px;
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 1;
+      z-index: 1000;
       top: 0;
       left: 0;
       background-color: #111;
