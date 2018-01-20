@@ -20,24 +20,203 @@ body {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
 }
 
 .mainnav a:hover {
-    color: #f1f1f1;
+    color: #15609f;
 }
 
 #main {
   margin-left:250px;
   padding-top:50px;
+  margin-bottom:150px;
+  height:100vh;
 }
 
 .hidden {
   display:none;
 }
 
+.footer {
+
+  width:100% !important;
+  padding:0;
+  margin:0;
+
+}
+
+.top-footer {
+
+width:100%;
+height:150px;
+background:#191919;
+padding:0;
+margin:0;
+border-top:solid 2px #323232 !important;
+
+}
+
+.bottom-footer {
+
+color:white;
+width:100%;
+height:50px;
+background:#111;
+padding:0;
+margin:0;
+padding:15px;
+
+}
+
+
+
+/* Font Awesome */
+
+.fa {
+  padding:25px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top:45px;
+  left:25px;
+  margin-right:25px;
+  text-decoration: none;
+  border-radius: 50% !important;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding-left:28px;
+  padding-right:28px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+/* End Font Awesome */
+
 /* Custom CSS */
+
+@media only screen and (max-width: 1200px) {
+
+  .fa {
+
+    float:right;
+
+  }
+
+  .bottom-footer p {
+    float:right;
+  }
+
+}
 
 @media only screen and (max-width: 940px) {
   .sidenav {
@@ -57,13 +236,13 @@ body {
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
-      color: #818181;
+      color: #f1f1f1;
       display: block;
       transition: 0.3s;
   }
 
   .sidenav a:hover {
-      color: #f1f1f1;
+      color: #15609f;
   }
 
   .sidenav .closebtn {
@@ -102,7 +281,7 @@ body {
   }
 
   .sidenav a:hover {
-      color: #f1f1f1;
+      color: #15609f;
   }
 
   .sidenav .closebtn {
@@ -127,6 +306,25 @@ body {
 
   .sidenav {padding-top: 100px;}
   .sidenav a {font-size: 20px;}
+
+  .fa {
+
+    position: relative;
+    top:15px;
+    margin: 35px 25px;
+    float:none;
+
+  }
+
+}
+
+@media only screen and (max-width:740px) {
+
+  .top-footer {
+
+  height:300px;
+
+  }
 
 }
 
