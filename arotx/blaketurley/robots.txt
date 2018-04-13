@@ -1,0 +1,26 @@
+User-Agent: *
+Disallow:
+
+User-Agent: Googlebot
+Allow: /blaketurley
+
+User-Agent: Googlebot-Mobile
+Allow: /blaketurley
+
+User-Agent: Googlebot-Image
+Allow: /blaketurley
+
+User-Agent: Mediapartners-Google
+Allow: /blaketurley
+
+User-Agent: Adsbot-Google
+Allow: /blaketurley
+
+User-Agent: Slurp
+Allow: /blaketurley
+
+User-Agent: msnbot
+Allow: /blaketurley
+
+User-Agent: Teoma
+Allow: /blaketurley

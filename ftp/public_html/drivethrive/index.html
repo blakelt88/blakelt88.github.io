@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drive Thrive</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Smooth Scroll -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+
+    <!-- JQuery UI JS -->
+    <script type="text/javascript" src="javascript/jquery-ui.js"></script>
+
+    <!-- JQuery UI CSS -->
+		<link href="jquery-ui.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <script>
+    $('a').click(function () {
+        // custom handling here
+        return false;
+    });
+    </script>
+
+  </head>
+
+  <script>
+  	jQuery( document ).ready( function( $ ) {
+
+  		  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      active: false
+    	});
+  	});
+
+  });
+
+$('.searchbychar').click(function () {
+    var divID = '#' + this.id;
+    $('html, body').animate({
+        scrollTop: $(guide).offset().top
+    }, 2000);
+});
+
+
+
+  </script>
+
+  <body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <img class="img-responsive logo" src="images/brand.png" alt="Drive Thrive">
+      <div class="move-car">
+        <button class="navbar-toggler car" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="images/caredited.png" alt="Drive Thrive Car Menu Button"</span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a onclick="$('#home').animatescroll();" class="nav-link" href="#" id="home-button" data-target="home">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="$('#sign-up').animatescroll();" class="nav-link" href="#" data-target="steps-button">Easy Signup</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="$('#guide').animatescroll();" class="nav-link" href="#" id="guide-button" data-target="guide">Driver Guide</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="$('#contact').animatescroll();" class="nav-link" href="#" data-target="contact-button">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script type="text/javascript">
+     $( document ).ready(function() {
+  $('.car').animate({ left: '0px' },500);
+      });
+    </script>
+
+    <header class="masthead" id="home">
+      <div class="overlay">
+        <div class="container extra-income">
+          <h2 class="display-2 text-white">Make Extra Income</h1>
+          <h3 class="display-3 text-white">Driving DFW</h2>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <class="row">
+          <div style="margin-top:25px;text-align:center; font-size:22px;" class="col first-row">
+            <h1>Cover Your Work Commute</h1>
+            <p>Work full time, but still curious? Skip all the details I have below and keep reading this! I now work full-time but still Uber and Lyft just to pay for tolls and gas I use to get to and from work. I usually make a little more than what I spent that day for gas and tolls! You open both Uber and Lyft apps and set your destination for home and then they only find a ride for you that takes you towards home! Might as well make money doing what you already have to do right!?</p>
+          </div>
+        </div>
+        <div style="margin-top:55px;" class="row align-items-center">
+          <div class="col-md-6 uber-button">
+            <a class="uber-sign-up" href="https://partners.uber.com/i/blaket2860ue" target="_blank">Uber Sign-up</a>
+          </div>
+          <div class="col-md-6 lyft-button">
+            <a class="lyft-sign-up" href="https://www.lyft.com/drivers/BLAKE62002" target="_blank">Lyft Sign-up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sign-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="images/apply.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Brief Application</h2>
+              <p>Briefly share about yourself and your vehicle. If you meet the requirements of your region, you are good to go and <span class="uber">Uber</span>/<span class="lyft">Lyft</span> will get you setup quickly!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="images/upload.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-5">
+              <h2 class="display-4">Share Documents</h2>
+              <p>Just submit a picture of your license, car registration, car insurance and once your background check clears you are good to go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="passed-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="images/steeringwheel.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Get App & Drive</h2>
+              <p>Head over to the Play Store or Apple Store and download the Uber and Lyft Driver apps and begin making money!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script type="text/javascript">
+    $(document).ready( function() {
+    var topOfOthDiv = $("#passed-section").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("footer").animate({bottom:'0'},1000); //reached the desired point -- show div
+        }
+    });
+});
+</script>
+
+     <section id="guide">
+      <div class="container">
+        <div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="p-5">
+							<center><p class="five-star">5 <span><i class="fa fa-star" aria-hidden="true"></i></span> Advice From A 5 <span><i class="fa fa-star" aria-hidden="true"></i></span> Driver</p><br></center>
+							<p class="text-box-border font-17">TIP: Whenever you drive <u>without</u> a passenger in the car do all you can to avoid toll roads as <span class="uber">Uber</span>/<span class="lyft">Lyft</span> doesn't pay for the tolls unless there is a passenger in your car.</p><br>
+							<div id="accordion">
+  							<h3 class="accordion-title" id="title1"><span id="shake-title">North Dallas (7AM - 11AM)</span></h3>
+  							<div id="accordion-content" class="title1">
+										<p>Here is the best method I found for doing this:</p>
+										<ol>
+											<li>Open the <span class="uber">Uber</span> app, go online, enter DFW into destination mode, drive to one of the Headquarters in Plano (McAfee, Dr. Pepper Snapple, Toyota, etc.).</li><br>
+											<ul>
+												<li>WHY: Rides to the from North Dallas make a good chunk of money and getting a <span class="uber">UberPOOL</span> to the <span><i class="fa fa-plane" aria-hidden="true"></i></span> will help you break even on the cost of the toll.</li><br>
+											</ul>
+											<li>IF you didn't get ride request on the way to Headquarters, Open <span class="lyft">Lyft</span> app and go online.</li><br>
+											<ul>
+												<li>WHY: This will enable you to still make some money while waiting to get a ride towards the <span><i class="fa fa-plane" aria-hidden="true"></i></span>. Mornings usually bring you people going to work in the Headquarters area or someone going to the <span><i class="fa fa-plane" aria-hidden="true"></i></span>. (Hope you get a ride to the with <span class="lyft">Lyft</span> as it usually pays 5 to 10 dollars more than <span class="uber">Uber</span> does).</li><br>
+											</ul>
+											<li>The ride you pick up towards the <span><i class="fa fa-plane" aria-hidden="true"></i></span> will take you straight to the <span><i class="fa fa-plane" aria-hidden="true"></i></span> about 90% of the time because you are camping out around headquarters that constantly have people leaving on business trips. The other 10% of the time will take you closer to the.</li><br>
+											<ul>
+												<li>If you don't get a trip straight to the <span><i class="fa fa-plane" aria-hidden="true"></i></span> you now have 3 choices.</li><br>
+												<ul>
+													<li>If you are still close to headquarters (within 10 minutes) head back to get the next ride out.</li><br>
+													<ul>
+														<li><b>PRO: </b></li><br>
+														<ul>
+															<li>High probability of getting a ride straight to the <span><i class="fa fa-plane" aria-hidden="true"></i></span>.</li><br>
+														</ul>
+														<li><b>CON: </b></li><br>
+														<ul>
+															<li>You are backtracking a little bit from your destination.</li><br>
+														</ul>
+													</ul>
+												</ul>
+												<ul>
+													<li>Head to DFW</li><br>
+													<ul>
+														<li><b>PRO: </b></li><br>
+														<ul>
+															<li>You are heading towards your destination and will most likely get another <span class="uber">UberPOOL</span> towards it.</li><br>
+														</ul>
+														<li><b>CON: </b></li><br>
+														<ul>
+															<li>The probability of getting a ride straight to the has gone down now.</li>
+															<li>If you make it to the <span><i class="fa fa-plane" aria-hidden="true"></i></span> without a passenger you pay the entry toll.</li><br>
+														</ul>
+													</ul>
+												</ul>
+												<ul>
+													<li>Change destination to Love Field and head there</li><br>
+													<ul>
+														<li><b>PRO: </b></li><br>
+														<ul>
+															<li>You are heading to an with no toll fee.</li>
+															<li>There is always less of a wait at Love Field.</li>
+															<li>You are closer to the power zones of Dallas.</li><br>
+														</ul>
+														<li><b>CON: </b></li><br>
+														<ul>
+															<li>You are driving to a little further of a destination.</li><br>
+														</ul>
+													</ul>
+												</ul>
+											</ul>
+											<li>Once you got your ride at the you'll have to determine your best move according to where that ride takes you.</li><br>
+												<ul>
+													<li>Back in North Dallas and it's still before 11AM?</li><br>
+													<ul>
+														<li>Head back to the Headquarters and use the same method!</li><br>
+													</ul>
+													<li>Got taken deeper into Dallas and it's before 11AM?</li><br>
+													<ul>
+														<li>Go to Love Field!</li><br>
+													</ul>
+													<li>Got taken to Fort Worth and it's before 11AM?</li><br>
+													<ul>
+														<li>Go to DFW!</li><br>
+													</ul>
+												</ul>
+										</ol>
+  							</div>
+                <h3 class="accordion-title" id="title2">North Dallas (11AM - 9PM)</h3>
+                <div id="accordion-content" class="title2">
+                  <p>At this time of day there are basically two methods to making money that are best and you can decide in the end what would be your preference as far as those are concerned.</p>
+                  <ol>
+                    <li>If you ended up back in or close to North Dallas after the airport rides you should stay and work both Uber and Lyft there. If you do deliveries you will mostly get those kinds of request between 11 and 2 and also between 4 and 8. Between 2 and 4 is the slowest period of the day from my experience and you’ll mostly get rides here and there between Lyft and Uber.</li><br>
+                    <ul>
+                      <li>Most of your rides/food requests are going to happen around the Stone briar Mall and Legacy Rd so set that as your destination after doing a ride or delivery but, wait 5 minutes before leaving to see if you get another ride where you ended up. </li><br>
+                      <li>More often than not you won’t actually end up there because you will get requests along the way to your destination, but that is what you want! The destination is solely to give you an end point where you know you will be busy there.</li><br>
+                    </ul>
+                    <li>If you are in South Dallas or in Dallas itself you want to be in the center of Dallas working the rest of the day. You can either work the hotspots/surge areas or the Love Field Airport. As long as you end up in South Dallas or Dallas you should work the Central Dallas surge/hotspot areas and if you are in North Dallas then stay there and work it.</li>
+                  </ol>
+                </div>
+  							<h3 class="accordion-title" id="title3">South Dallas/Dallas</h3>
+  							<div id="accordion-content"  class="title3">
+  							  <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+  							</div>
+							</div>
+						</div>
+					</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+            <div class="container footer">
+              <div class="row align-items-center footer-content">
+                <div class="col-md-6 uber-button-footer">
+                  <a class="uber-sign-up" href="https://partners.uber.com/i/blaket2860ue" target="_blank">Uber Sign-up</a>
+                </div>
+                <div class="col-md-6 lyft-button-footer">
+                  <a class="lyft-sign-up" href="https://www.lyft.com/drivers/BLAKE62002" target="_blank">Lyft Sign-up</a>
+                </div>
+              </div>
+            </div>
+    </footer>
+
+    <section class="second" id="sign-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 uber-button">
+            <a class="uber-sign-up" href="https://partners.uber.com/i/blaket2860ue" target="_blank">Uber Sign-up</a>
+          </div>
+          <div class="col-md-6 lyft-button">
+            <a class="lyft-sign-up" href="https://www.lyft.com/drivers/BLAKE62002" target="_blank">Lyft Sign-up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+      <!-- Animate Scroll -->
+
+      <script src="javascript/animatescroll/animatescroll.js"></script>
+
+  </body>
+
+</html>

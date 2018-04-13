@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KVN9FHM');
+		</script>
+		<title>Arotx | DFW Refrigerator and Washer Repairs
+		</title>
+		<meta name="description" content="Dallas/Fort Worth DFW fast and professional refrigerator and washer repairs.">
+		<meta name="keywords" content="Refrigerator, Washer Repairs, Washer Services, Washer Help Repair, Dallas, Fort Worth, DFW, Professional, Service, Appliance, Home Refrigerator Repair, Refrigerator Repair Dallas, Refrigerator Repair Fort Worth">
+		<meta name="author" content="Blake Turley">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="shortcut icon" href="favicon.ico"/>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVN9FHM"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+
+		<div class="container">
+
+			<div class="modal fade" id="headerModal" role="dialog">
+
+				<div class="modal-dialog modal-lg">
+
+					<div class="modal-content">
+
+						<div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Request A Service</h4>
+						</div>
+
+						<div class="modal-body">
+
+							<form action="https://formspree.io/arotxappliancerepairs@gmail.com" method="post">
+
+								<div class="row">
+
+									<div class="col-md-12"><h3>Name:</h3>
+									</div>
+								</div>
+
+								<div class="row">
+									
+									<input type="text" name="_gotcha" style="display:none" />
+
+									<div class="col-md-4 form-group">
+										<input type="text" placeholder="First Name" class="form-control" id="fn" name="first-name" required="required" data-error="Firstname is required.">
+									</div>
+
+									<div class="col-md-4 form-group">
+										<input type="text" placeholder="Last Name" class="form-control" id="ln" name="last-name" required="required" data-error="Last Name is required.">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-4 form-group"><h3>Phone Number:*</h3>
+										<input type="text" placeholder="XXX-XXX-XXXX" class="form-control" id="phone" name="phone" required="required" data-error="Phone Number is required.">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-6 form-group"><h3>Email Address</h3>
+										<input type="email" placeholder="Ex: emailaddress@example.com" class="form-control" id="email" name="_replyto" required="required" data-error="Email is required.">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-8 form-group"><h3>Service Location</h3>
+										<input type="text" class="form-control" placeholder="Street Address" id="street-address" name="street-address" required="required" data-error="Street is required.">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-8 form-group">
+										<input type="text" class="form-control" placeholder="Street Address Line 2" id="street-address-line2" name="street-address-line2">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-4 form-group">
+										<input type="text" class="form-control" placeholder="City" id="city" name="city" required="required" data-error="City is required.">
+									</div>
+
+									<div class="col-md-4 form-group">
+										<input type="text" class="form-control" placeholder="County" id="county" name="county">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-4 form-group">
+										<input type="text" class="form-control" placeholder="Postal/Zip Code" id="zip" name="zip" required="required" data-error="Zip is required.">
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-6 form-group"><h3>Refrigerator Type:</h3>
+										<select class="form-control" id="appliance-type" name="appliance-type" required="required" data-error="Appliance type is required.">
+
+											<option value="" selected disabled>-Make Selection-</option>
+
+											<option value="refrigerator">Refrigerator</option>
+
+											<option value="washer">Washer</option>
+
+											<option value="dryer">Dryer</option>
+
+											<option value="dishwasher">Dishwasher</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-6 form-group"><h3>Brand:</h3>
+										<select class="form-control" id="brand" name="brand" required="required" data-error="Brand is required.">
+
+											<option value="" selected disabled>-Make Selection-</option>
+
+											<option value="frigidaire">Frigidaire</option>
+
+											<option value="ge">GE </option>
+
+											<option value="jenn-air ">Jenn-Air </option>
+
+											<option value="kitchenaid">KitchenAid</option>
+
+											<option value="monogram">Monogram </option>
+
+											<option value="samsung">Samsung </option>
+
+											<option value="scotsman">Scotsman </option>
+
+											<option value="sub-zero">Sub-Zero </option>
+
+											<option value="thermador">Thermador </option>
+
+											<option value="u-line">U-line </option>
+
+											<option value="viking">Viking </option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-12 form-group"><h3>Description</h3>
+										<textarea class="form-control" rows="5" id="comment" placeholder="What issues are you having with your appliance?" name="description" required="required" data-error="Description is required.">
+										</textarea>
+
+										<div class="help-block with-errors">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-12">
+										<input type="submit" class="input-button btn btn-success btn-send" value="Submit Request">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper"><nav id="sidebar">
+
+			<div class="sidebar-header"><img class="img-responsive repair-guy" src="assets/images/tools.png" alt="Tools">
+			</div>
+			<ul class="list-unstyled components">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="refrigerator-repairs.html">Other Refrigerator Repairs</a></li>
+				<li><a href="subzero-refrigerator-repairs.html">Subzero Refrigerator Repairs</a></li>
+				<li><a href="contact-arotx.html">Contact Us</a></li>
+			</ul>
+
+			<div class="container">
+
+				<div class="row row-sidebar">
+
+					<div class="col-sm-12 little-box"><h2>Call Us Today!</h2><h3><a href="tel:+469-279-5061">469-279-5061</a></h3>
+						<br><h3>Servicing the Dallas/Fort Worth area.</h3>
+					</div>
+				</div>
+
+				<div class="row row-sidebar">
+
+					<div class="col-sm-12 social-media"><a href="http://www.facebook.com/arotx" class="fa fa-facebook" target="_blank"></a><a href="http://www.twitter.com/arotxx" class="fa fa-twitter" target="_blank"></a>
+						<!--<a href="#" class="fa fa-google"></a><a href="#" class="fa fa-youtube"></a>--><a href="http://www.instagram.com/aarotxx" class="fa fa-instagram" target="_blank"></a>
+					</div>
+				</div>
+			</div></nav>
+
+			<div id="content">
+
+				<div class="container-fluid"><nav class="navbar navbar-default">
+
+					<div class="navbar-header"><img class="img-responsive logo" src="assets/images/newlogo2.png" alt="Arotx Logo"><a class="mobile-telephone" href="tel:469-279-5061"><i class="fa fa-phone"></i>469-279-5061</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="li-button"><a data-toggle="modal" data-target="#headerModal" href="#">Schedule A Service</a></li>
+							<li class="phone-nav"><i class="fa fa-phone"></i><a href="tel:469-279-5061">469-279-5061</a></li>
+						</ul>
+					</div></nav>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12 menu-bar"><a href="javascript:void(0)"><h1 id="trigger-sidebar">MENU</h1></a><button type="button" id="sidebarCollapse" class="navbar-btn">
+
+						<span class="span">
+						</span>
+
+						<span class="span">
+						</span>
+
+						<span class="span">
+						</span></button>
+					</div>
+				</div>
+
+				<div class="row background-img">
+
+					<div class="col-md-6 opaque-background"><h2>Quick Response Repair, Because We Care</h2>
+
+						<p>Quality service is our top priority. AROTX &copy; top rated and reliable service professionals are here to handle all your appliance service needs.</p>
+						<input type="button" class="input-button" data-toggle="modal" data-target="#headerModal" value="Request Service">
+					</div>
+				</div>
+
+				<div class="row mobile-opaque-background">
+
+					<div class="col-md-12"><h2>Quick Response Repair, Because We Care</h2>
+
+						<p>Quality service is our top priority. AROTX &copy; top rated and reliable service professionals are here to handle all your appliance service needs.</p>
+						<input type="button" class="input-button mobile-input-button" data-toggle="modal" data-target="#headerModal" value="Request Service">
+					</div>
+				</div>
+
+				<div class="container">
+				<div class="row cities-served">
+					<h2>DFW Cities We Service</h2>
+					<div class="col-xs-2">
+						<ul>
+							<li>Addison      </li>
+							<li>Allen        </li>
+							<li>Alliance     </li>
+							<li>Argyle area  </li>
+							<li>Arlington    </li>
+							<li>Azle         </li>
+							<li>Balch Springs</li>
+							<li>Bedford      </li>
+							<li>Benbrook     </li>
+							<li>Burleson     </li>
+							<li>Carrollton </li>
+							<li>Cedar Hill </li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul>
+							<li>Celina      </li>
+							<li>Colleyville </li>
+							<li>Coppell     </li>
+							<li>Crowley     </li>
+							<li>Dallas      </li>
+							<li>Denton      </li>
+							<li>Desoto      </li>
+							<li>Duncanville </li>
+							<li>Euless      </li>
+							<li>Fairview    </li>
+							<li>Flower Mound</li>
+							<li>Fort Worth  </li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul>
+							<li>Frisco          </li>
+							<li>Garland         </li>
+							<li>Grand Prairie   </li>
+							<li>Grapevine       </li>
+							<li>Haltom City     </li>
+							<li>Haslet          </li>
+							<li>Highland Village</li>
+							<li>Hurst           </li>
+							<li>Hutchins        </li>
+							<li>Irving          </li>
+							<li>Keller          </li>
+							<li>Kennedale       </li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul>
+							<li>Lancaster           </li>
+							<li>Lucas               </li>
+							<li>Mansfield           </li>
+							<li>McKinney            </li>
+							<li>Mesquite            </li>
+							<li>Murphy              </li>
+							<li>North Richland Hills</li>
+							<li>Parker              </li>
+							<li>Plano               </li>
+							<li>Prosper             </li>
+							<li>Richardson          </li>							
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul>
+							<li>Roanoke    </li>
+							<li>Rowlett    </li>
+							<li>Sachse     </li>
+							<li>Saginaw    </li>
+							<li>Seagoville </li>
+							<li>Southlake  </li>
+							<li>Sunnyvale  </li>
+							<li>Trophy Club</li>
+							<li>Watauga    </li>
+							<li>Westlake   </li>
+							<li>Wilmer     </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				<div class="row spanish">
+
+					<div class="col-md-12"><h4>&#161;Hablamos Espa&#241;ol!</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer container-fluid">
+
+			<div class="top-footer row">
+
+				<div class="col-lg-3">
+				</div>
+
+				<div class="col-lg-6 footer-social"><a href="http://www.facebook.com/arotx" class="fa fa-facebook" target="_blank"></a><a href="http://www.twitter.com/arotxx" class="fa fa-twitter" target="_blank"></a>
+					<!--<a href="#" class="fa fa-google"></a><a href="#" class="fa fa-youtube"></a>--><a href="http://www.instagram.com/aarotxx" class="fa fa-instagram" target="_blank"></a>
+				</div>
+
+				<div class="col-lg-3">
+				</div>
+			</div>
+
+			<div class="bottom-footer row">
+
+				<div class="col-lg-4">
+				</div>
+
+				<div class="col-lg-4">
+
+					<p>&copy; Your company copyright goes here</p>
+				</div>
+
+				<div class="col-lg-4">
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+		<script type="text/javascript">$(document).ready(function (){$('#sidebarCollapse, #trigger-sidebar').on('click', function (){$('#sidebar').toggleClass('active');$("#sidebarCollapse").toggleClass('active');});});
+		</script>
+	</body>
+</html>

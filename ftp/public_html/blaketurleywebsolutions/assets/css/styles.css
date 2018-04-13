@@ -1,0 +1,817 @@
+/* all encompassing */
+
+body {
+  background-color: white !important;
+}
+
+a,p,h1,h2,h3,h4,label {
+    font-family: 'Comfortaa', cursive;
+}
+
+::placeholder {
+  font-family: 'Comfortaa', cursive;
+}
+
+input[type=submit]{
+    font-family: 'Comfortaa', cursive;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/* end all emcompassing */
+
+/* navigation */
+
+.navbar {
+  background-color:#212529 !important;
+  z-index: 1000;
+}
+
+.navbar-header {
+  height:85px;
+  padding: 10px 0px 0px 0px;
+}
+
+.edit-nav {
+  padding: 20px 0px 0px 100px !important;
+}
+
+.navbar-right {
+  padding-right:50px;
+}
+
+.nav-menu {
+  position: relative;
+  top: 12.5%;
+  width:50%;
+}
+
+nav img {
+  padding-left:50px;
+}
+
+.navbar a {
+  font-size:25px;
+  font-family: 'Comfortaa', cursive;
+  color:white !important;
+}
+
+.nav-menu a:hover {
+  color:grey !important;
+}
+
+.navbar-collapse {
+  background: #212529 !important;
+}
+
+.fa-facebook {
+  position: relative;
+  bottom:6.5px;
+  font-size:30px !important;
+}
+
+.fa-github {
+  position: relative;
+  bottom:6.5px;
+  font-size:30px !important;
+}
+
+.fa-linkedin {
+  position: relative;
+  bottom:6.5px;
+  font-size:30px !important;
+}
+
+/* end navigation */
+
+/* footer */
+
+footer {
+  background-color: #e9e9e9;
+}
+
+footer ul {
+  overflow: hidden !important;
+  list-style-position: inside !important;
+  width:100%;
+}
+
+footer li {
+  padding:15px;
+}
+
+footer a {
+  color:black;
+}
+
+footer a:hover {
+  color:black;
+}
+
+footer p {
+  padding: 25px 0px 0px 0px;
+}
+
+/* end footer */
+
+/* HOME PAGE */
+
+/* jumbotron */
+
+.when-smaller-screen p {
+  width:100%;
+  margin: 0 auto;
+}
+
+.jumbotron-blake {
+  border-bottom:solid	#E0E0E0 1px;
+  box-shadow: 1px 1px 1px	#E0E0E0;
+}
+
+.analytics-outer {
+  position:absolute;
+  z-index: 1000;
+  left:70%;
+  top:30%;
+}
+
+.analytics-inner {
+  position:relative;
+  width:200px;
+}
+
+.coder-outer {
+  position:absolute;
+    z-index: 1000;
+    left:20%;
+    top:30%;
+}
+
+.coder-inner {
+  position:relative;
+  width:200px;
+}
+
+.img-div {
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+  display: block;
+  width:100%;
+}
+
+.mixed-img {
+  position: absolute;
+  max-width:100%;
+}
+
+.analytics-img {
+  position: absolute;
+  opacity: 0;
+  max-width:100%;
+}
+
+.code-img {
+  opacity:0;
+  max-width:100%;
+}
+
+/* end jumbotron */
+
+/* current projects modal */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+#myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#about-site p {
+  color:white;
+  width:600px;
+  margin:0 auto !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+#about-site a {
+  font-size: 20px;
+}
+
+.currentwork-blake {
+  padding-bottom: 75px !important;
+  padding-top: 75px !important;
+  background:#f1f1f1;
+}
+
+.size-site-imgs {
+  padding:50px;
+}
+
+.img-w-cap {
+  background: white;
+  padding:15px;
+  box-shadow: 5px 5px 5px	#E0E0E0;
+  border-radius: 1%;
+}
+
+.img-w-cap p {
+  padding:15px 15px 0px 15px;
+}
+
+.featured-img:hover {
+  opacity:.75;
+}
+
+/* end current projects */
+
+/* END HOME PAGE */
+
+
+
+
+
+/* ABOUT PAGE */
+
+/* about jumbotron */
+
+.jedi-text-left {
+  text-align: left !important;
+  position:relative;
+  top:75px;
+  max-width:700px;
+}
+
+.jedi-text-left p {
+  font-size: 18px;
+}
+
+.jumbotron-about {
+  min-height: 600px;
+}
+
+.jedi-blake img {
+  margin:0 auto;
+}
+
+.about-container {
+  padding-bottom:100px;
+}
+
+/* end about jumbotron */
+
+/* skills */
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+  z-index: 5;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+  width:150px;
+	font-weight:bold;
+	color:#ffffff;
+	background:gray;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+  z-index: 5;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+  font-size:10px;
+	-webkit-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	border-radius:10px;
+
+}
+
+.skillbar-bar {
+  position:absolute;
+  top:8px;
+	height:18px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:40% !important;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/* end skills */
+
+/* END ABOUT PAGE */
+
+/* PORTFOLIO PAGE */
+
+/* END PORTFOLIO PAGE */
+
+/* CONTACT PAGE */
+
+/* form */
+
+.edit-form {
+  width:50% !important;
+}
+
+textarea {
+    resize: none !important;
+}
+
+/* end form */
+
+/* form jumbotron */
+
+.social-media2 {
+  padding-bottom: 100px;
+}
+
+.social-media2 li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-media2 i {
+  font-size: 50px !important;
+  padding-top:25px;
+}
+
+.social-media2 a {
+  position: relative;
+}
+
+.social-media2 span {
+  font-size: 45px !important;
+  position: relative;
+  padding-left: 25px;
+  bottom:6.5px;
+}
+
+.contact-fb {
+  color:#3B5998 !important;
+}
+
+.contact-fb:hover {
+  text-shadow: 0 0 25px black;
+}
+
+.contact-fb:hover > span {
+    text-shadow: 0 0 25px black;
+}
+
+.contact-gh:hover {
+  text-shadow: 0 0 25px black;
+}
+
+.contact-gh:hover > span {
+    text-shadow: 0 0 25px black;
+}
+
+.contact-li:hover {
+  text-shadow: 0 0 25px black;
+}
+
+.contact-li:hover > span {
+    text-shadow: 0 0 25px black;
+}
+
+.contact-gh {
+  color:#6e5494;
+}
+
+.contact-li {
+  color:#0077B5;
+}
+
+.btn-send {
+  float:right;
+}
+
+.form-group label {
+  float:left;
+}
+
+/* end form jumbotron */
+
+
+/* END CONTACT PAGE */
+
+/* MOBILE FIRST */
+
+@media only screen and (max-width: 1500px){
+
+  .footer-nav {
+    display:table !important;
+    margin:0 auto !important;
+    padding-bottom:15px !important;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    float:none !important;
+  }
+
+  .edit-form {
+    width:75% !important;
+  }
+
+  .coder-outer {
+      left:12%;
+  }
+
+  .analytics-outer {
+    top:31%;
+  }
+
+}
+
+@media only screen and (max-width: 1199px){
+  .social-media span {
+    display: none;
+  }
+
+  .social-media li {
+    display: inline;
+    padding-left:25px;
+    text-align: center;
+  }
+
+  .social-media {
+    padding-bottom:125px;
+  }
+
+  .jedi-text-left {
+    display:block !important;
+    margin:0 auto !important;
+    text-align: center;
+    width:90%;
+  }
+
+
+  .coder-outer {
+      left:10%;
+      top:35%;
+  }
+
+  .analytics-outer {
+    top:35%;
+
+  }
+
+}
+
+@media only screen and (max-width: 992px){
+
+  .navbar-header {
+    padding: 10px 0px 0px 0px !important;
+  }
+
+  .nav-menu {
+    width:100% !important;
+  }
+
+  .edit-form {
+    width:90% !important;
+  }
+
+  .coder-outer {
+    left:2.5%;
+  }
+
+  .analytics-outer {
+    left:71%;
+  }
+
+  ul.nav.navbar-nav.edit-nav {
+    padding-left:0px !important;
+  }
+
+  nav img {
+    padding-left: 5px !important;
+}
+
+}
+
+@media only screen and (max-width: 920px){
+  .coder-outer {
+    display:none;
+  }
+
+  .analytics-outer {
+    display: none;
+  }
+
+  .edit-nav li {
+    text-align: center;
+    padding:5px;
+  }
+
+}
+
+@media only screen and (max-width: 767px){
+  ul.nav.navbar-nav.navbar-right.edit-nav {
+    margin:0;
+    padding-top:0 !important;
+  }
+
+  ul.nav.navbar-nav.edit-nav {
+    margin:0;
+    padding-top:0 !important;
+  }
+
+  .edit-nav li:hover {
+    background-color:gray;
+  }
+
+  .navbar-header img {
+    padding-left: 15px !important;
+  }
+
+  button.navbar-toggle {
+    margin-top:15px !important;
+  }
+
+  .size-site-imgs {
+    padding: 2.5px !important;
+}
+
+.skillbar-title {
+  font-size:10px;
+  width:123px;
+}
+
+.size-site-imgs {
+  margin-bottom: 25px;
+}
+
+.social-media i {
+  font-size: 30px !important;
+}
+
+.mixed-img {
+  position: relative;
+}
+
+.code-img {
+  display: none;
+}
+
+.analytics-img {
+  display: none;
+}
+
+.contact-container {
+  padding-bottom: 100px;
+}
+
+}
+
+.g-blue {
+  color:#3369e8 !important;
+}
+
+.g-red {
+  color:#d50f25 !important;
+}
+
+.g-yellow {
+  color:#009925 !important;
+}
+
+.green-saber {
+  background: #99ff99 !important; box-shadow:0 0 28px #00ff00 !important;
+}
+
+.orange-saber {
+   background: #ffdb99 !important; box-shadow:0 0 28px #ffa500 !important;
+}
+
+.yellow-saber {
+  background: #ffff99 !important; box-shadow:0 0 28px #ffff00 !important;
+}
+
+.blue-saber {
+   background: #99ccff !important; box-shadow:0 0 28px #0080ff !important;
+}
+
+.white-saber {
+  background: #e5e5e5 !important; box-shadow:0 0 28px #c0c0c0 !important;
+}
+
+.red-saber {
+   background: #ff4c4c !important; box-shadow:0 0 28px #ff0000 !important;
+}
+
+.purple-saber {
+   background: #cc99cc !important; box-shadow:0 0 28px #800080 !important;
+}
+
+.black-saber {
+   background: #323232 !important; box-shadow:0 0 28px #323232 !important;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.phone-center {
+  margin-bottom:65px;
+}
+
+.phone-center a,span {
+  font-size:20px;
+}
+
+.pitch {
+  padding:50px 150px 55px 150px;
+}
+
+.pitch p {
+  font-size:18px;
+}
