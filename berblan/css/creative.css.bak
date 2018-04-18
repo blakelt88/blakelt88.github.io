@@ -89,7 +89,6 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700;
   text-transform: uppercase;
   color: black !important;
   font-family: 'Syncopate', sans-serif;
@@ -98,7 +97,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #212529 !important;
-  font-size:20.5px;
+  font-size:36px;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
