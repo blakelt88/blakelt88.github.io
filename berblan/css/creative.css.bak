@@ -102,8 +102,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: .9rem;
-  font-weight: 700;
+  font-size: 21px;
   text-transform: uppercase;
   color: #212529 !important;
 }
@@ -111,7 +110,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #212529 !important;
-  font-size:14.5px;
+  font-size:22px;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
