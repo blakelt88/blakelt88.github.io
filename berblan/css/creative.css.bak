@@ -160,13 +160,15 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width:100% !important;
+  background:url("../img/flower2.png");
+  background-repeat:no-repeat;
+	background-position:center;
 }
 
 header.masthead hr {
@@ -180,20 +182,17 @@ header.masthead h1 {
 
 header.masthead p {
   font-weight: 300;
+  
 }
 
 .flower {
-	background:url("../img/flower2.png");
-	width:95%;
-	background-repeat:no-repeat;
-	background-position:center;
+	
+	width:90%;
+	
 	display:block;
 	margin:0 auto;
 }
 
-.container {
-	width:100% !important;
-}
 
 
 iframe {
