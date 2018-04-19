@@ -210,6 +210,10 @@ iframe {
 	iframe {
 		width:100% !important;
 	}
+	
+	.my-auto {
+	width:100% !important;
+}
 }
 
 @media (min-width: 768px) {
