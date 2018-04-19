@@ -4,6 +4,10 @@ html {
   height: 100%;
 }
 
+.container-fluid {
+	width:50% !important;
+}
+
 body {
   font-family: 'Abel', sans-serif !important;
   line-height:.75 !important;
@@ -206,6 +210,10 @@ iframe {
 	iframe {
 		width:100% !important;
 	}
+	
+	.container-fluid {
+	width:100% !important;
+}
 }
 
 @media (min-width: 768px) {
