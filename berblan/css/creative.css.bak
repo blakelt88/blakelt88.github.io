@@ -202,6 +202,12 @@ iframe {
 	height:500px;
 }
 
+@media (max-width:941px) {
+	iframe {
+		width:100%;
+	}
+}
+
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
