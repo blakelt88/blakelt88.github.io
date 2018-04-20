@@ -11,7 +11,13 @@ html {
 body {
   font-family: 'Abel', sans-serif !important;
   line-height:.75 !important;
-  background:#dec4ff;
+  background:url("../img/white.jpg");
+  background-repeat:no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 hr {
@@ -198,12 +204,22 @@ header.masthead p {
 }
 
 .younowlink a {
-	font-size:45px;
-	color:#FFB6C1 !important;
+	font-size:35px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:black !important;
 	padding:25px;
 	text-align:center !important;
 	position:relative;
-	bottom:50px;
+	font-family: 'Gaegu', cursive;
+	top: 25px;
+  z-index: 1;
+  text-outline: 2px 2px #FFB6C1 !important;
+}
+
+.younowlink a:hover {
+	color:#cfb6f0 !important;
 }
 
 iframe {
