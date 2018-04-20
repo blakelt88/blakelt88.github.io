@@ -23,8 +23,11 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Philosopher|Roboto|Gaegu" rel="stylesheet">
 
-		<!-- Animate.css -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+		<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		
 		<!-- JQUERY -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -60,7 +63,7 @@
       <div class="container-fluid my-auto">
       	<div class="row">
           <div class="col-lg-12 younowlink">
-        		<a class="animated wobble" href="https://www.younow.com/Berblan/channel" target="_blank">Join me on YouNow!</a>
+        		<a href="https://www.younow.com/Berblan/channel" target="_blank">Join me on YouNow!</a>
         	</div>
         </div>
         <div class="row">
@@ -84,7 +87,6 @@
   xhttp.onreadystatechange = function() {
     if(xhttp.readyState == 4 && xhttp.status == 200) {
         var response = JSON.parse(xhttp.responseText);
-				console.log(response);
         var data = response.items[0].id.videoId;
         console.log("data: " + data);
         document.getElementById("video").src = vidSrc + data + "?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0";
@@ -100,55 +102,59 @@
     
 </script>
 
-    <section class="text-white">
+		<!-- Photo Gallery will go here -->		
+
+		<section class="bg-dark text-white">
       <div class="container text-center">
         
       </div>
     </section>
     
+    <!-- Recent Videos will go here -->		
+
+		<section class="bg-dark text-white">
+      <div class="container text-center">
+        
+      </div>
+    </section>
+
+    
+    <!-- Instagram Stuff will go in this -->
+    
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="img/threeimg-1.jpg">
+              <img class="img-fluid" src="img/threeimg-1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+                  <div class="project-category">
+                    Photo Gallery
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/threeimg-2.jpg">
+              <img class="img-fluid" src="img/threeimg-2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+                  <div class="project-category">
+                    Photo Gallery
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="img/threeimg-3.jpg">
+              <img class="img-fluid" src="img/threeimg-3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+                  <div class="project-category">
+                    Photo Gallery
                   </div>
                 </div>
               </div>
@@ -158,11 +164,7 @@
       </div>
     </section>
     
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        
-      </div>
-    </section>
+    <!-- Contact Form will go here -->
 
     <section id="contact">
       <div class="container">
@@ -171,6 +173,12 @@
         </div>
       </div>
     </section>
+    
+    <!-- Footer will go here -->
+    
+    <footer>
+    	
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
