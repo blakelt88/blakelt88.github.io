@@ -1,7 +1,50 @@
 body,
 html {
   width: 100%;
-  height: 100%;
+}
+
+.threeImgs {
+	padding:15px;
+	margin-bottom:25px;
+	background-repeat:no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width:100%;
+}
+
+#twitter-widget-0{
+   width: 100% !important;  
+
+}
+
+#twitter-widget-1{
+   width: 100% !important;  
+
+}
+
+.timeline-header, .timeline-footer
+{
+          display:none ;
+}
+
+
+
+.threeImgs .row {
+	width:60%;
+	margin:0 auto;
+}
+
+.center-img img {
+	display:block;
+	margin:0 auto;
+}
+
+.threeImgs img {
+	padding:25px;
+	height:384px;
 }
 
 .my-auto {
@@ -20,15 +63,22 @@ body {
   background-size: cover;
 }
 
+
+ 
+
 hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #E6A8D7 !important;
+
+    background-color:#8c8f78 !important;
+
+    margin-top: 20px !important;
+
+    margin-bottom: 20px !important;
+
+    width: 75% !important;
+
 }
 
-hr.light {
-  border-color: #fff;
-}
+
 
 a {
   color: #E6A8D7 !important;
@@ -64,7 +114,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 
 .section-heading {
@@ -85,12 +135,12 @@ section {
 
 img::selection {
   color: #fff;
-  background: transparent;
+  background: #fafafa;
 }
 
 img::-moz-selection {
   color: #fff;
-  background: transparent;
+  background: #fafafa;
 }
 
 #mainNav {
@@ -99,13 +149,14 @@ img::-moz-selection {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  z-index:999999;
 }
 
 #mainNav .navbar-brand {
   text-transform: uppercase;
   color: black !important;
   font-family: 'Philosopher', sans-serif;
-  text-shadow:0 0 1px transparent !important;
+  text-shadow:0 0 1px #fafafa !important;
   font-size: 35px;
 }
 
@@ -122,13 +173,13 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
-  background-color: transparent;
+  background-color: #fafafa;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: transparent;
-    background-color: transparent;
+    border-color: #fafafa;
+    background-color: #fafafa;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -148,8 +199,8 @@ img::-moz-selection {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    border-bottom: 1px solid #E6A8D7;
-    background-color: #E6A8D7;
+    border-bottom: 1px solid #fafafa;
+    background-color: #fafafa;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: black;
@@ -210,7 +261,7 @@ header.masthead p {
 	position:relative;
 	font-family: 'Gaegu', cursive;
 	top: 25px;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .younowlink a:hover {
@@ -220,6 +271,97 @@ header.masthead p {
 iframe {
 	width:75%;
 	height:500px;
+}
+
+.twitter-feed {
+	height:75px;
+	text-align:center;
+}
+
+.twitter-feed a {
+	padding:15px 75px 15px 75px;
+	background:white;
+	border:solid 2px #ed8098;
+	color:#ed8098 !important;
+	font-weight:bold;
+	margin:25px;
+	text-decoration:none;
+}
+
+.twitter-feed a:hover {
+	letter-spacing:2px;
+	background:#73624d;
+	border:solid 2px #73624d;
+	color:white !important;
+}
+
+.grid-Widget-footer {
+	display:none !important;
+}
+
+#img1 {
+	border-radius:15px;
+}
+
+#img2 {
+	border-radius:15px;
+}
+
+#img3 {
+	border-radius:15px;
+}
+
+
+
+#contact {
+	height:500px;
+	width:100%;
+	background:#fafafa;
+}
+
+hr {
+	color:#898c77 !important;
+}
+
+.subscribe div{
+	margin:0 auto;
+	display:block;
+	text-align:center;
+	height:100px;
+}
+
+.subscribe input[type="text"] {
+	height:48px;
+	margin-right:1px;
+	width:50%;
+}
+
+.subscribe input[type="button"] {
+	    height: 50px;
+    background: white;
+    color: #ed8098 !important;
+    font-weight: bold;
+    border: solid 2px #ed8098 !important;
+}
+
+.subscribe input[type="button"]:hover {
+	background:#73624d;
+	border:solid 2px #73624d;
+	color:white !important;
+}
+
+.social-media {
+	height:150px;
+	text-align:center;
+}
+
+.copyright {
+	text-align:center;
+	height:50px;
+}
+
+.credit {
+	text-align:center;
 }
 
 @media (max-width:941px) {

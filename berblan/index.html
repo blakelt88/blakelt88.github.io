@@ -52,6 +52,12 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Videos">Videos</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
           </ul>
@@ -73,10 +79,6 @@
         </div>
       </div>
     </header>
-    
-    <div class="container-fluid">
-    	   
-    </div>
 
 <script type="text/javascript">
 	
@@ -104,62 +106,73 @@
 
 		<!-- Photo Gallery will go here -->		
 
-		<section class="bg-dark text-white">
-      <div class="container text-center">
-        
+      <div class="container-fluid threeImgs">
+      	<div class="row">
+        <div class="col-lg-4">
+        	<a href=""><img id="img1" class="img-fluid" src="img/piano.JPG" alt="Lion Ice Skating"></a>
+        </div>
+        <div class="col-lg-4 center-img">
+        	<a href=""><img id="img2" class="img-fluid" src="img/whitesweater.JPG" alt="Lion Ice Skating"></a>
+        </div>
+        <div class="col-lg-4">
+        	<a href=""><img id="img3" class="img-fluid" src="img/youtubepic.JPG" alt="Lion Ice Skating"></a>
+        </div>
+        </div>
       </div>
-    </section>
+      
+      <script>
+      	var img1 = document.getElementById("img1");
+      	var img2 = document.getElementById("img2");
+      	var img3 = document.getElementById("img3");
+      	
+ 
+      			$("#img1").hover(function(){
+    					$(this).attr("src","img/pianoopaque.jpg");
+    				}, function(){
+   					 
+   					 $(this).attr("src","img/piano.jpg");
+						});
+    		
+    		$("#img2").hover(function(){
+    					$(this).attr("src","img/whitesweateropaque.jpg");
+    				}, function(){
+   					 
+   					 $(this).attr("src","img/whitesweater.jpg");
+						});
+						
+						$("#img3").hover(function(){
+    					$(this).attr("src","img/pinkopaque.jpg");
+    				}, function(){
+   					 
+   					 $(this).attr("src","img/pink.jpg");
+						});
+      	
+      </script>
     
-    <!-- Recent Videos will go here -->		
+    <!-- About Berblan will go here -->		
 
-		<section class="bg-dark text-white">
-      <div class="container text-center">
-        
-      </div>
-    </section>
+		
 
     
     <!-- Instagram Stuff will go in this -->
     
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
+    <section id="portfolio">
+      <div class="container-fluid p-0 twitter">
+      	<div class="row twitter-feed">
+      		<div class="col-lg-12">
+      			<a href="www.twitter.com/Berblann" target="_blank">Twitter Feed</a>
+      		</div>      		
+      	</div>
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/threeimg-1.jpg">
-              <img class="img-fluid" src="img/threeimg-1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    Photo Gallery
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/threeimg-2.jpg">
-              <img class="img-fluid" src="img/threeimg-2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    Photo Gallery
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/threeimg-3.jpg">
-              <img class="img-fluid" src="img/threeimg-3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    Photo Gallery
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+        	<div class="col">
+          	<a class="twitter-grid" data-limit="2" href="https://twitter.com/Berblann/timelines/988584480255434753?ref_src=twsrc%5Etfw" data-chrome="nofooter">Website Grid 1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        	</div>
+        	<div class="col">
+        		<a class="twitter-grid" data-limit="2" href="https://twitter.com/Berblann/timelines/988588252817973249?ref_src=twsrc%5Etfw" data-chrome="nofooter">Website Grid 2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        	</div>
+        	<div class="col">
+        		<a class="twitter-grid" data-limit="2" href="https://twitter.com/Berblann/timelines/988603454481485824?ref_src=twsrc%5Etfw" data-chrome="nofooter">Website Grid 2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        	</div>
         </div>
       </div>
     </section>
@@ -167,9 +180,38 @@
     <!-- Contact Form will go here -->
 
     <section id="contact">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          
+        		<div class="col subscribe">
+        			<div>
+        			<input placeholder="Enter Email Address Here" type="text"><input type="button" value="Subscribe">
+        			</div>
+        		</div>
+        </div>
+        <div class="row social-media">
+        	<hr>
+        		<div class="col-sm-12">
+        			<i class="fa fa-twitter"></i>
+        			<i class="fa fa-instagram"></i>
+        			<i class="fa fa-facebook"></i>
+        			<i class="fa fa-tumblr"></i>
+        			<i class="fa fa-snapchat"></i>
+        			<i class="fa fa-youtube"></i>
+        			<i class="fa fa-younow"></i>
+        			<i class="fa fa-rize"></i>
+        		</div>
+        	<hr>
+        	</div>
+        	<div class="row copyright">
+        		<div class="col">
+        			<p>Copyright &copy 2018 Berblan</p>
+        		</div>
+        	</div>
+        	<div class="row credit">
+        		<div class="col">
+        			<p>Designed and Created by <a href="www.blaketurleywebsolutions.com">Blake Turley Web Solutions</a></p>
+        		</div>
+        	</div>
         </div>
       </div>
     </section>
