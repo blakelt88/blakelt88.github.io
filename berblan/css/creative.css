@@ -346,13 +346,18 @@ hr {
 
 .subscribe input[type="button"]:hover {
 	background:#73624d;
-	border:solid 2px #73624d;
+	border:solid 2px #73624d !important;
 	color:white !important;
 }
+
 
 .social-media {
 	height:150px;
 	text-align:center;
+}
+
+.social-media a {
+	padding:25px;
 }
 
 .copyright {

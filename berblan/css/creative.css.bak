@@ -114,7 +114,7 @@ h6 {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 .section-heading {
@@ -353,6 +353,10 @@ hr {
 .social-media {
 	height:150px;
 	text-align:center;
+}
+
+.social-media a {
+	padding:25px;
 }
 
 .copyright {

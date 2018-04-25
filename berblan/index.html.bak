@@ -157,7 +157,7 @@
     <!-- Instagram Stuff will go in this -->
     
     <section id="portfolio">
-      <div class="container-fluid p-0">
+      <div class="container-fluid p-0 twitter">
       	<div class="row twitter-feed">
       		<div class="col-lg-12">
       			<a href="www.twitter.com/Berblann" target="_blank">Twitter Feed</a>
@@ -191,14 +191,16 @@
         <div class="row social-media">
         	<hr>
         		<div class="col-sm-12">
-        			<i class="fa fa-twitter"></i>
-        			<i class="fa fa-instagram"></i>
-        			<i class="fa fa-facebook"></i>
-        			<i class="fa fa-tumblr"></i>
-        			<i class="fa fa-snapchat"></i>
-        			<i class="fa fa-youtube"></i>
-        			<i class="fa fa-younow"></i>
-        			<i class="fa fa-rize"></i>
+        			<a href=""><img src="img/twitter.svg" alt="Berblan Twitter"></a>
+        			<a href=""><img src="img/instagram.svg" alt="Berblan Instagram"> </a>
+        			<a href=""><img src="img/facebook.svg" alt="Berblan Facebook"></a>
+        			<a href=""><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>
+        			<a href=""><img src="img/twitch.png" alt="Berblan Twitch"></a>
+        			<a href=""><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
+        			<a href=""><img src="img/snapchat.png" alt="Berblan Snapchat"></a>
+        			<a href=""><img src="img/youtube.svg" alt="Berblan YouTube"></a>
+        			<a href=""><img src="img/younow.png" alt="Berblan YouNow"></a>
+        			<a href=""><img src="img/rize.png" alt="Berblan Rize"></a>
         		</div>
         	<hr>
         	</div>
@@ -209,7 +211,7 @@
         	</div>
         	<div class="row credit">
         		<div class="col">
-        			<p>Designed and Created by <a href="www.blaketurleywebsolutions.com">Blake Turley Web Solutions</a></p>
+        			<p>Designed and Created by <a href="www.blaketurleywebsolutions.com" target="_blank">Blake Turley Web Solutions</a></p>
         		</div>
         	</div>
         </div>
