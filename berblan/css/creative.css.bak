@@ -346,9 +346,10 @@ hr {
 
 .subscribe input[type="button"]:hover {
 	background:#73624d;
-	border:solid 2px #73624d;
+	border:solid 2px #73624d !important;
 	color:white !important;
 }
+
 
 .social-media {
 	height:150px;
@@ -362,6 +363,11 @@ hr {
 .copyright {
 	text-align:center;
 	height:50px;
+	margin-top:50px;
+}
+
+.hide {
+	display:none;
 }
 
 .credit {
@@ -498,3 +504,10 @@ hr {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+
+@media only screen and (max-width: 768px) {
+    .hidden {
+    	display:block;
+    }                             
+}        
+                            

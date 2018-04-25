@@ -185,24 +185,26 @@
         		<div class="col subscribe">
         			<div>
         			<input placeholder="Enter Email Address Here" type="text"><input type="button" value="Subscribe">
+        			
         			</div>
         		</div>
         </div>
         <div class="row social-media">
-        	<hr>
-        		<div class="col-sm-12">
-        			<a href=""><img src="img/twitter.svg" alt="Berblan Twitter"></a>
-        			<a href=""><img src="img/instagram.svg" alt="Berblan Instagram"> </a>
-        			<a href=""><img src="img/facebook.svg" alt="Berblan Facebook"></a>
-        			<a href=""><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>
-        			<a href=""><img src="img/twitch.png" alt="Berblan Twitch"></a>
-        			<a href=""><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
-        			<a href=""><img src="img/snapchat.png" alt="Berblan Snapchat"></a>
-        			<a href=""><img src="img/youtube.svg" alt="Berblan YouTube"></a>
-        			<a href=""><img src="img/younow.png" alt="Berblan YouNow"></a>
-        			<a href=""><img src="img/rize.png" alt="Berblan Rize"></a>
+        	
+        		<div class="col-lg-12">
+        			<hr>
+        			<a href="http://www.twitter.com/Berblann" target="_blank"><img src="img/twitter.svg" alt="Berblan Twitter"></a>
+        			<a href="http://www.instagram.com/Berblan" target="_blank"><img src="img/instagram.svg" alt="Berblan Instagram"> </a>
+        			<a href="http://www.facebook.com/Berblan" target="_blank"><img src="img/facebook.svg" alt="Berblan Facebook"></a>
+        			<a class="hide" href="https://berblan.tumblr.com/" target="_blank"><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>
+        			<a href="http://www.twitch.com/Berblan" target="_blank"><img src="img/twitch.png" alt="Berblan Twitch"></a>
+        			<a class="hide" href="https://www.musical.ly/en-US/berblann" target="_blank"><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
+        			<a class="hide" href="http://www.snapchat.com/Berblan" target="_blank"><img src="img/snapchat.png" alt="Berblan Snapchat"></a>
+        			<a href="http://www.youtube.com/Berblan" target="_blank"><img src="img/youtube.svg" alt="Berblan YouTube"></a>
+        			<a class="hide" href="http://www.younow.com/Berblan" target="_blank"><img src="img/younow.png" alt="Berblan YouNow"></a>
+        			<a href="https://rizeapp.io/Berblan" target="_blank"><img src="img/rize.png" alt="Berblan Rize"></a>
+        			<hr>
         		</div>
-        	<hr>
         	</div>
         	<div class="row copyright">
         		<div class="col">
@@ -211,7 +213,7 @@
         	</div>
         	<div class="row credit">
         		<div class="col">
-        			<p>Designed and Created by <a href="www.blaketurleywebsolutions.com" target="_blank">Blake Turley Web Solutions</a></p>
+        			<p>Designed and Created by <a href="http://www.blaketurleywebsolutions.com" target="_blank">Blake Turley Web Solutions</a></p>
         		</div>
         	</div>
         </div>
