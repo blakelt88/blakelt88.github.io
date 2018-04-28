@@ -7,6 +7,10 @@ body {
 	margin-top:25px;
 }
 
+.video-div {
+	height:600px;
+}
+
 .threeImgs {
 	padding:15px;
 	margin-bottom:25px;
@@ -374,6 +378,7 @@ hr {
 }
 
 @media (max-width:941px) {
+
 	
 	header.masthead {
     height: 100vh;
@@ -518,6 +523,14 @@ hr {
 } 
 
 @media only screen and (max-width: 600px) {
+	
+		body {
+	margin-top:0px;
+}
+
+.video-div {
+	height:500px;
+}
     .hidden {
     	display:"";
     }  

@@ -378,6 +378,15 @@ hr {
 }
 
 @media (max-width:941px) {
+
+
+.threeImgs img {
+			padding:0;
+			width:85%;
+			margin:0 auto;
+			margin-bottom:15px;
+			display:block;
+		}
 	
 	header.masthead {
     height: 100vh;
@@ -522,6 +531,14 @@ hr {
 } 
 
 @media only screen and (max-width: 600px) {
+	
+		body {
+	margin-top:0px;
+}
+
+.video-div {
+	height:500px;
+}
     .hidden {
     	display:"";
     }  
