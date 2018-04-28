@@ -72,7 +72,7 @@
         		<a class="animated rubberBand" href="https://www.younow.com/Berblan/channel" target="_blank">Join me on YouNow!</a>       		
         	</div>
         </div>
-        <div class="row">
+        <div class="row video-div">
           <div class="col-lg-12">
           	<iframe id="video" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
@@ -205,10 +205,10 @@
   </div>
 
   <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <a class="carousel-control-prev" href="#twitter" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
+  <a class="carousel-control-next" href="#twitter" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
 

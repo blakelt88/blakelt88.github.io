@@ -3,6 +3,14 @@ html {
   width: 100%;
 }
 
+body {
+	margin-top:25px;
+}
+
+.video-div {
+	height:600px;
+}
+
 .threeImgs {
 	padding:15px;
 	margin-bottom:25px;
