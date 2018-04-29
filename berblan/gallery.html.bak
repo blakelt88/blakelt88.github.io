@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -42,23 +42,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger animated rubberBand" href="#page-top">Berblan</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Berblan</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Gallery">Gallery</a>
+              <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Videos">Videos</a>
+              <a class="nav-link js-scroll-trigger" href="videos.html">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#events">Events</a>
+              <a class="nav-link js-scroll-trigger" href="events.html">Events</a>
             </li>
           </ul>
         </div>
@@ -69,10 +69,10 @@
       <div class="container-fluid my-auto">
       	<div class="row">
           <div class="col-lg-12 younowlink">
-        		<a href="https://www.younow.com/Berblan/channel" target="_blank">Join me on YouNow!</a>
+        		<a class="animated rubberBand" href="https://www.younow.com/Berblan/channel" target="_blank">Join me on YouNow!</a>       		
         	</div>
         </div>
-        <div class="row">
+        <div class="row video-div">
           <div class="col-lg-12">
           	<iframe id="video" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
@@ -158,9 +158,9 @@
     
     <section id="portfolio">
       <div class="container-fluid p-0 twitter">
-      	<div class="row twitter-feed">
-      		<div class="col-lg-12">
-      			<a href="www.twitter.com/Berblann" target="_blank">Twitter Feed</a>
+      	<div class="row">
+      		<div class="col-lg-12 twitter-feed">
+      			<a href="https://www.twitter.com/Berblann" target="_blank">Twitter Feed</a>
       		</div>      		
       	</div>
         <div class="row no-gutters popup-gallery">
@@ -177,6 +177,43 @@
       </div>
     </section>
     
+<div id="twitter" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#twitter" data-slide-to="0" class="active"></li>
+    <li data-target="#twitter" data-slide-to="1"></li>
+    <li data-target="#twitter" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yeah! It’s too late to say sorry?!....Sorry by JustinBieber <a href="https://t.co/Yl88lcHz8I">pic.twitter.com/Yl88lcHz8I</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/942135748484128768?ref_src=twsrc%5Etfw">December 16, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="carousel-item">
+      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Come for great music !! <a href="https://t.co/Y5DhUrXt7R">https://t.co/Y5DhUrXt7R</a> <a href="https://t.co/lYFNVpW3Wi">pic.twitter.com/lYFNVpW3Wi</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/988507888711815168?ref_src=twsrc%5Etfw">April 23, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+    <div class="carousel-item">
+      <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/itsmeelaurennn?ref_src=twsrc%5Etfw">@itsmeelaurennn</a> <a href="https://twitter.com/evieyannakidis?ref_src=twsrc%5Etfw">@evieyannakidis</a> <a href="https://t.co/XMt7iQs9jf">pic.twitter.com/XMt7iQs9jf</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/987516149654016001?ref_src=twsrc%5Etfw">April 21, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#twitter" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#twitter" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+    
     <!-- Contact Form will go here -->
 
     <section id="contact">
@@ -184,27 +221,23 @@
         <div class="row">
         		<div class="col subscribe">
         			<div>
-        			<input placeholder="Enter Email Address Here" type="text"><input type="button" value="Subscribe">
-        			
+        				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			
         			</div>
         		</div>
         </div>
         <div class="row social-media">
-        	
-        		<div class="col-lg-12">
-        			<hr>
+        	<div class="col">
         			<a href="http://www.twitter.com/Berblann" target="_blank"><img src="img/twitter.svg" alt="Berblan Twitter"></a>
-        			<a href="http://www.instagram.com/Berblan" target="_blank"><img src="img/instagram.svg" alt="Berblan Instagram"> </a>
+        			<a href="http://www.instagram.com/Berblan" target="_blank"><img src="img/instagram.svg" alt="Berblan Instagram"> </a>       		
         			<a href="http://www.facebook.com/Berblan" target="_blank"><img src="img/facebook.svg" alt="Berblan Facebook"></a>
-        			<a class="hide" href="https://berblan.tumblr.com/" target="_blank"><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>
+        			<a class="hidden" href="https://berblan.tumblr.com/" target="_blank"><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>     		
         			<a href="http://www.twitch.com/Berblan" target="_blank"><img src="img/twitch.png" alt="Berblan Twitch"></a>
-        			<a class="hide" href="https://www.musical.ly/en-US/berblann" target="_blank"><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
-        			<a class="hide" href="http://www.snapchat.com/Berblan" target="_blank"><img src="img/snapchat.png" alt="Berblan Snapchat"></a>
+        			<a class="hidden" href="https://www.musical.ly/en-US/berblann" target="_blank"><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
+        			<a class="hidden" href="http://www.snapchat.com/Berblan" target="_blank"><img src="img/snapchat.png" alt="Berblan Snapchat"></a>     			
         			<a href="http://www.youtube.com/Berblan" target="_blank"><img src="img/youtube.svg" alt="Berblan YouTube"></a>
         			<a href="http://www.younow.com/Berblan" target="_blank"><img src="img/younow.png" alt="Berblan YouNow"></a>
-        			<a class="hide" href="https://rizeapp.io/Berblan" target="_blank"><img src="img/rize.png" alt="Berblan Rize"></a>
-        			<hr>
-        		</div>
+        			<a class="hidden" href="https://rizeapp.io/Berblan" target="_blank"><img src="img/rize.png" alt="Berblan Rize"></a>
+        			</div>
         	</div>
         	<div class="row copyright">
         		<div class="col">
