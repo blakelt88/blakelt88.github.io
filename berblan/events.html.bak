@@ -42,7 +42,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Berblan</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Berblan</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,43 +76,6 @@
         </div>
       </div>
     </section>
-    
-<div id="twitter" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#twitter" data-slide-to="0" class="active"></li>
-    <li data-target="#twitter" data-slide-to="1"></li>
-    <li data-target="#twitter" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yeah! It’s too late to say sorry?!....Sorry by JustinBieber <a href="https://t.co/Yl88lcHz8I">pic.twitter.com/Yl88lcHz8I</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/942135748484128768?ref_src=twsrc%5Etfw">December 16, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div class="carousel-item">
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Come for great music !! <a href="https://t.co/Y5DhUrXt7R">https://t.co/Y5DhUrXt7R</a> <a href="https://t.co/lYFNVpW3Wi">pic.twitter.com/lYFNVpW3Wi</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/988507888711815168?ref_src=twsrc%5Etfw">April 23, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    </div>
-    <div class="carousel-item">
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/itsmeelaurennn?ref_src=twsrc%5Etfw">@itsmeelaurennn</a> <a href="https://twitter.com/evieyannakidis?ref_src=twsrc%5Etfw">@evieyannakidis</a> <a href="https://t.co/XMt7iQs9jf">pic.twitter.com/XMt7iQs9jf</a></p>&mdash; Berblan (@Berblann) <a href="https://twitter.com/Berblann/status/987516149654016001?ref_src=twsrc%5Etfw">April 21, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#twitter" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#twitter" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
     
     <!-- Contact Form will go here -->
 

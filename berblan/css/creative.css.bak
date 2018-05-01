@@ -23,6 +23,11 @@ body {
 	width:100%;
 }
 
+.nav-item {
+	    padding: 15px;
+    text-align: center;
+}
+
 #twitter-widget-0{
    width: 100% !important;  
 
@@ -38,9 +43,9 @@ body {
           display:none ;
 }
 
-.threeImgs .row {
-	width:60%;
-	margin:0 auto;
+#img2.img-fluid img {
+	margin-left:0 !important;
+	margin-right:0 !important;
 }
 
 .center-img img {
@@ -53,8 +58,34 @@ body {
 	height:384px;
 }
 
+#youtubeVid {
+	padding:25px;
+}
+
+.title {
+	color:black;
+}
+
+h2 {
+	color:black;
+}
+
+.nav-item {
+	border-top: solid 1px gainsboro;
+	border-left: solid 1px gainsboro;
+	border-left: solid 1px gainsboro;
+}
+
+.nav-item:last-child {
+	border-bottom: solid 1px gainsboro;
+}
+
 .my-auto {
 	width:50% !important;
+}
+
+.ml-auto {
+    margin-top: 5px;
 }
 
 body {
@@ -403,12 +434,11 @@ hr {
 	text-align:center;
 }
 
-@media (max-width:941px) {
+@media (max-width:991px) {
 
 
 .threeImgs img {
 			padding:0;
-			width:85%;
 			margin:0 auto;
 			margin-bottom:15px;
 			display:block;
@@ -589,10 +619,15 @@ hr {
     
     #twitter {
     	display:block;
+    	margin-top:75px;
     }     
     
     #portfolio {
-    	display:none !important;
+    	display:none;
+    }
+    
+    .videos {
+    	display:block !important;
     }
     
     .my-auto iframe {
@@ -600,14 +635,17 @@ hr {
     }              
     
     .threeImgs .row {
-    width: 100%;
-    margin: 0 auto;
+    width:100%;
+    margin: 0;
     padding:0;
 		}
 		
+		.threeImgs .col-lg-4 {
+			width:100%;
+			margin:25px;
+		}
+		
 		.threeImgs img {
-			padding:0;
-			width:85%;
 			margin:0 auto;
 			margin-bottom:15px;
 			display:block;
