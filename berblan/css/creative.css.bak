@@ -138,18 +138,23 @@ a:hover {
   color: #E6A8D7 !important;
 }
 
-h1,
+h1
+ {
+  font-family: 'Gaegu', cursive;
+  color:black;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gaegu', cursive;
-  color:black;
+	color:black;
+	font-family: 'Dosis', sans-serif;
 }
 
-#twitter {
-	
+#videoDiv.div {
+	padding:50px;
 }
 
 .bg-primary {
@@ -343,7 +348,7 @@ label.error {
     padding-top:10px;
     padding-bottom:10px;
     background-color:#2ABCA7;
-    width: 80%;
+    width: 50%;
     margin:auto;
     color: #FAFAFA;
     -webkit-border-radius:6px;
