@@ -68,20 +68,12 @@
         </div>
       </div>
     </nav>
-    
-    <script>
-  var $hamburger = $(".hamburger");
-  $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
-  });
-</script>
   
     <!-- Instagram Stuff will go in this -->
     
     <section id="portfolio" class="masthead-subpage text-center text-white d-flex videos">
       <div class="container-fluid p-0 twitter">
-      	<h1 class="title">Streams & Videos</h1>
+      	<h1 class="title">Streams/Videos</h1>
         <div id="videoDiv" class="row no-gutters popup-gallery">       	
         	<!-- Videos Will Populate Here From Array -->
         </div>
@@ -193,12 +185,18 @@ for (var i=9; i<keys.length && i<9; i++) {
     <!-- Contact Form will go here -->
 
     <section id="contact">
+<<<<<<< HEAD
       <!-- <div class="row">
+=======
+      <div class="container-fluid">
+        <div class="row">
+>>>>>>> parent of e212f96... 05/04/2018
         		<div class="col subscribe">
         			<div>
         				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			
         			</div>
-        		</div> -->
+        		</div>
+        </div>
         <div class="row social-media">
         	<div class="col">
         			<a href="http://www.twitter.com/Berblann" target="_blank"><img src="img/twitter.svg" alt="Berblan Twitter"></a>
