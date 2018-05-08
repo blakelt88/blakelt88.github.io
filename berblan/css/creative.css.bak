@@ -4,8 +4,22 @@ html {
 }
 
 body {
+	margin-top:-48px;
+}
+
+.video-body {
 	margin-top:25px;
 }
+
+#videoDiv div {
+	padding:35px;
+}
+
+h1 {
+	font-family: 'Gaegu', cursive;
+	color:black;
+}
+
 
 .video-div {
 	height:600px;
@@ -29,7 +43,7 @@ body {
 
 #mainNav button {
 	position:relative;
-	top:2.5pxl
+	top:2.5px;
 }
 
 button:focus {
@@ -134,13 +148,12 @@ a:hover {
   color: #E6A8D7 !important;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Dosis', sans-serif;
 }
 
 #twitter {

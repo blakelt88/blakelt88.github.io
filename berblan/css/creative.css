@@ -4,8 +4,26 @@ html {
 }
 
 body {
+	margin-top:-48px;
+}
+
+.video-body {
 	margin-top:25px;
 }
+
+#videoDiv div {
+	padding:35px;
+}
+
+#videoDiv iframe {
+	height:350px !important;
+}
+
+h1 {
+	font-family: 'Gaegu', cursive;
+	color:black;
+}
+
 
 .video-div {
 	height:600px;
@@ -134,13 +152,12 @@ a:hover {
   color: #E6A8D7 !important;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Dosis', sans-serif;
 }
 
 #twitter {

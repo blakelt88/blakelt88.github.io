@@ -9,6 +9,8 @@
     <meta name="author" content="">
 
     <title>Berblan - Public Figure</title>
+    
+    <link href="dist/hamburgers.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,9 +85,9 @@
       <div class="container-fluid">
         <div class="row">
         		<div class="col subscribe">
-        			<div>
-        				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			
-        			</div>
+        			<!-- <div>
+        				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			 
+        			</div> -->
         		</div>
         </div>
         <div class="row social-media">
