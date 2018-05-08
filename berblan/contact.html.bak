@@ -78,6 +78,7 @@
     <input class="form-text name" type="text" name="name" placeholder="Name" /><br />
     <input class="form-text email"  type="email" name="email" placeholder="Email" /><br />
     <textarea class="form-text message-body" type="text" name="message" placeholder="Message"></textarea><br />
+    <div class="message">Fill All Fields To Unlock Button</div>
     <button class="contact-button" id="submit" type="submit">
       Send!
     </button>
@@ -91,8 +92,7 @@
     $('.contact-button').attr('disabled',true);
     $('.name, .email, .message').keyup(function(){
         if($(this).val().length !=0)
-            $('.contact-button').attr('disabled', false);
-            $('.message').attr('text','All Set You May Submit')         
+            $('.contact-button').attr('disabled', false);            
         else
             $('.contact-button').attr('disabled',true);
     })

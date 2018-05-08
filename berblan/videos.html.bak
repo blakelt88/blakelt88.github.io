@@ -193,7 +193,8 @@ for (var i=9; i<keys.length && i<9; i++) {
     <!-- Contact Form will go here -->
 
     <section id="contact">
-      <!-- <div class="row">
+      <div class="container-fluid">
+        <!-- <div class="row">
         		<div class="col subscribe">
         			<div>
         				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			

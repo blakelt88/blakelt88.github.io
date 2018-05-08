@@ -138,23 +138,18 @@ a:hover {
   color: #E6A8D7 !important;
 }
 
-h1
- {
-  font-family: 'Gaegu', cursive;
-  color:black;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	color:black;
-	font-family: 'Dosis', sans-serif;
+  font-family: 'Gaegu', cursive;
+  color:black;
 }
 
-#videoDiv div {
-	padding:50px;
+#twitter {
+	
 }
 
 .bg-primary {
