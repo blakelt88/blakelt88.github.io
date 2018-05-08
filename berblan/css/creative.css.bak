@@ -23,6 +23,7 @@ body {
 	width:100%;
 }
 
+<<<<<<< HEAD
 .navbar-light .navbar-toggler {
 	border:none;
 }
@@ -36,6 +37,8 @@ button:focus {
   outline: none;
 }
 
+=======
+>>>>>>> parent of 144f39f... 04/30/2018-2
 .nav-item {
 	    padding: 15px;
     text-align: center;
@@ -87,7 +90,15 @@ h2 {
 	color:black;
 }
 
+.nav-item {
+	border-top: solid 1px gainsboro;
+	border-left: solid 1px gainsboro;
+	border-left: solid 1px gainsboro;
+}
 
+.nav-item:last-child {
+	border-bottom: solid 1px gainsboro;
+}
 
 .my-auto {
 	width:50% !important;
@@ -153,7 +164,7 @@ h6 {
 	font-family: 'Dosis', sans-serif;
 }
 
-#videoDiv.div {
+#videoDiv div {
 	padding:50px;
 }
 
@@ -206,6 +217,9 @@ img::-moz-selection {
     background: transparent;
     font-weight: bold;
     border-radius: 0;
+      -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contact-button:hover {
@@ -294,67 +308,7 @@ input:first-of-type
   margin:0 auto;
 }
 
-button {
-  margin-top:15px;
-  margin-bottom:25px;
-  background-color:#2ABCA7;
-  padding: 12px 45px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #2ABCA7;
-  -webkit-transition: .5s;
-  transition: .5s;
-  display: inline-block;
-  cursor: pointer;
-  width:30%;
-  color:#fff;
-}
-button:hover, .button:hover {
-  background:#19a08c;
-}
-label.error {
-    font-family:'Source Sans Pro',arial,sans-serif;
-    font-size:1em;
-    display:block;
-    padding-top:10px;
-    padding-bottom:10px;
-    background-color:#d89c9c;
-    width: 80%;
-    margin:auto;
-    color: #FAFAFA;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
-    border-radius:6px;
-}
-/* media queries */
-@media (max-width: 700px) {
-  label.error {
-    width: 90%;
-  }
-  input, textarea {
-    width: 90%;
-  }
-  button {
-    width:90%;
-  }
-  body {
-  padding-top:10px;
-  }  
-}
-.message {
-    font-family:'Source Sans Pro',arial,sans-serif;
-    font-size:1.1em;
-    padding-top:10px;
-    padding-bottom:10px;
-    background-color:#2ABCA7;
-    width: 50%;
-    margin:auto;
-    color: #FAFAFA;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
-    border-radius:6px;
-}
+
 
 @media (min-width: 992px) {
 	
@@ -522,20 +476,6 @@ hr {
 
 @media (max-width:991px) {
 
-
-.nav-item {
-	border-top: solid 1px gainsboro;
-	border-left: solid 1px gainsboro;
-	border-left: solid 1px gainsboro;
-}
-
-.nav-item:last-child {
-	border-bottom: solid 1px gainsboro;
-}
-
-.nav-item:hover {
-	background:gainsboro;
-}
 
 .threeImgs img {
 			padding:0;
@@ -819,6 +759,12 @@ hr {
   
   .social-media a {
   	padding:5px;
+  }
+  
+  li.nav-item a {
+  	padding:15px;
+  	text-align:center;
+  	border:1px #949484 solid;
   }
   
   .navbar.navbar-expand-lg.navbar-light.fixed-top {
