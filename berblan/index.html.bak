@@ -23,7 +23,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
 		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Philosopher|Roboto|Gaegu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Philosopher|Roboto|Gaegu|Dosis" rel="stylesheet">
 
 		<link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -110,14 +110,14 @@
 
       <div class="container threeImgs">
       	<div class="row">
-        <div class="col-md-4">
-        	<a href=""><img id="img1" class="img-fluid" src="img/piano.JPG" alt="Lion Ice Skating"></a>
+        <div class="col-md-4 center-img">
+        	<a href=""><img id="img1" class="img-fluid" src="https://thumbsnap.com/i/8YKbf6lx.jpg" alt="Gallery"></a>
         </div>
         <div class="col-md-4 center-img">
-        	<a href=""><img id="img2" class="img-fluid" src="img/whitesweater.JPG" alt="Lion Ice Skating"></a>
+        	<a href=""><img id="img2" class="img-fluid" src="https://thumbsnap.com/i/ED1JXlPR.jpg" alt="Gallery 2"></a>
         </div>
-        <div class="col-md-4">
-        	<a href=""><img id="img3" class="img-fluid" src="img/youtubepic.JPG" alt="Lion Ice Skating"></a>
+        <div class="col-md-4 center-img">
+        	<a href=""><img id="img3" class="img-fluid" src="https://thumbsnap.com/i/PQMdWugF.jpg" alt="Gallery 3"></a>
         </div>
         </div>
       </div>
@@ -128,27 +128,28 @@
       	var img3 = document.getElementById("img3");
       	
  
+ 
       			$("#img1").hover(function(){
-    					$(this).attr("src","img/pianoopaque.jpg");
+    					$(this).attr("src","img/new/IMG 018 opaqu.JPG");
     				}, function(){
    					 
-   					 $(this).attr("src","img/piano.jpg");
+   					 $(this).attr("src","https://thumbsnap.com/i/8YKbf6lx.jpg");
 						});
     		
     		$("#img2").hover(function(){
-    					$(this).attr("src","img/whitesweateropaque.jpg");
+    					$(this).attr("src","img/new/IMG 016 opaque.JPG");
     				}, function(){
    					 
-   					 $(this).attr("src","img/whitesweater.jpg");
+   					 $(this).attr("src","https://thumbsnap.com/i/ED1JXlPR.jpg");
 						});
 						
 						$("#img3").hover(function(){
-    					$(this).attr("src","img/pinkopaque.jpg");
+    					$(this).attr("src","img/new/IMG009opaque.JPG");
     				}, function(){
    					 
-   					 $(this).attr("src","img/pink.jpg");
+   					 $(this).attr("src","https://thumbsnap.com/i/PQMdWugF.jpg");
 						});
-      	
+     
       </script>
     
     <!-- About Berblan will go here -->		
