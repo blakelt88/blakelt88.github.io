@@ -29,7 +29,7 @@ body {
 
 #mainNav button {
 	position:relative;
-	top:2.5pxl
+	top:2.5px;
 }
 
 button:focus {
@@ -77,6 +77,10 @@ button:focus {
 
 .title {
 	color:black;
+}
+
+h1 {
+	font-family: 'Gaegu', cursive !important;
 }
 
 h2 {
@@ -145,12 +149,8 @@ h3,
 h4,
 h5,
 h6 {
-<<<<<<< HEAD
 	color:black;
 	font-family: 'Dosis', sans-serif;
-=======
-  font-family: 'Roboto', sans-serif !important;
->>>>>>> parent of e212f96... 05/04/2018
 }
 
 #videoDiv.div {
@@ -199,6 +199,22 @@ img::-moz-selection {
   background: #fafafa;
 }
 
+.contact-button {
+	padding:15px 75px 15px 75px;
+    color: #ed8098;
+    border: 2px solid #ed8098;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.contact-button:hover {
+	letter-spacing:2px;
+	background:#73624d;
+	border:solid 2px #73624d;
+	color:white !important;
+}
+
 #mainNav {
   background-color: #fff;
   -webkit-transition: all 0.2s;
@@ -231,7 +247,6 @@ img::-moz-selection {
   background-color: #fafafa;
 }
 
-<<<<<<< HEAD
 .container-contact {
   max-width:600px;
   margin:0 auto;
@@ -341,8 +356,6 @@ label.error {
     border-radius:6px;
 }
 
-=======
->>>>>>> parent of e212f96... 05/04/2018
 @media (min-width: 992px) {
 	
 	#twitter {
@@ -390,61 +403,7 @@ label.error {
   }
 }
 
-header.masthead-subpage {
-  padding-top: 5rem;
-  padding-bottom: calc(10rem - 56px);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width:100% !important;
-  background:url("../img/white3.png");
-  background-repeat:no-repeat;
-	background-position:center;
-}
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width:100% !important;
-  background:url("../img/white3.png");
-  background-repeat:no-repeat;
-	background-position:center;
-}
-
-header.masthead hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-header.masthead h1 {
-  font-size: 2rem;
-}
-
-header.masthead p {
-  font-weight: 300;
-  
-}
-
-header.masthead-subpage hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-header.masthead-subpage h1 {
-  font-size: 2rem;
-}
-
-header.masthead-subpage p {
-  font-weight: 300;
-  
-}
 
 .younowlink {
 	width:100%;
