@@ -101,7 +101,13 @@ h2 {
 	color:black;
 }
 
+.contact-form {
+	width:50%;
+}
 
+.contact-form h1 {
+	text-align:center;
+}
 
 .my-auto {
 	width:50% !important;
@@ -389,6 +395,28 @@ iframe {
 	color:white !important;
 }
 
+.contact-button {
+	padding:15px 75px 15px 75px;
+	background:white;
+	border:solid 2px #ed8098;
+	color:#ed8098 !important;
+	font-weight:bold;
+	margin:25px;
+	text-decoration:none;
+	width:250px;
+}
+
+.contact-button:hover {
+	letter-spacing:2px;
+	background:#73624d;
+	border:solid 2px #73624d;
+	color:white !important;
+	
+	-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .grid-Widget-footer {
 	display:none !important;
 }
@@ -398,7 +426,6 @@ iframe {
 	height:500px;
 	width:100%;
 	background:#fafafa;
-	padding-bottom:none !important;
 }
 
 hr {
