@@ -74,7 +74,19 @@ button:focus {
           display:none ;
 }
 
-#img2.img-fluid img {
+#img2 {
+	display:none;
+}
+
+#img4 {
+	display:none;
+}
+
+#img6 {
+	display:none;
+}
+
+#img3.img-fluid img {
 	margin-left:0 !important;
 	margin-right:0 !important;
 }
@@ -387,6 +399,8 @@ iframe {
 	margin:25px;
 	text-decoration:none;
 }
+
+
 
 .twitter-feed a:hover {
 	letter-spacing:2px;

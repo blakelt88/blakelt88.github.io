@@ -74,7 +74,9 @@ button:focus {
           display:none ;
 }
 
-#img2.img-fluid img {
+
+
+#img3.img-fluid img {
 	margin-left:0 !important;
 	margin-right:0 !important;
 }
@@ -388,6 +390,8 @@ iframe {
 	text-decoration:none;
 }
 
+
+
 .twitter-feed a:hover {
 	letter-spacing:2px;
 	background:#73624d;
@@ -404,6 +408,9 @@ iframe {
 	margin:25px;
 	text-decoration:none;
 	width:250px;
+		-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contact-button:hover {

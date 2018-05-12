@@ -112,12 +112,15 @@
       	<div class="row">
         <div class="col-md-4 center-img">
         	<a href="gallery.html"><img id="img1" class="img-fluid" src="https://thumbsnap.com/i/8YKbf6lx.jpg" alt="Gallery"></a>
+        	<a href="gallery.html"><img id="img2" class="img-fluid" src="img/new/opaque2.jpg" alt="Gallery"></a>
         </div>
         <div class="col-md-4 center-img">
-        	<a href="gallery.html"><img id="img2" class="img-fluid" src="https://thumbsnap.com/i/ED1JXlPR.jpg" alt="Gallery 2"></a>
+        	<a href="gallery.html"><img id="img3" class="img-fluid" src="https://thumbsnap.com/i/ED1JXlPR.jpg" alt="Gallery 2"></a>
+        	<a href="gallery.html"><img id="img4" class="img-fluid" src="img/new/opaque1.jpg" alt="Gallery 2"></a>
         </div>
         <div class="col-md-4 center-img">
-        	<a href="gallery.html"><img id="img3" class="img-fluid" src="https://thumbsnap.com/i/PQMdWugF.jpg" alt="Gallery 3"></a>
+        	<a href="gallery.html"><img id="img5" class="img-fluid" src="https://thumbsnap.com/i/PQMdWugF.jpg" alt="Gallery 3"></a>
+        	<a href="gallery.html"><img id="img6" class="img-fluid" src="img/new/opaque3.jpg" alt="Gallery 2"></a>
         </div>
         </div>
       </div>
@@ -126,30 +129,51 @@
       	var img1 = document.getElementById("img1");
       	var img2 = document.getElementById("img2");
       	var img3 = document.getElementById("img3");
+      	var img4 = document.getElementById("img4");
+      	var img5 = document.getElementById("img5");
+      	var img6 = document.getElementById("img6");
       	
  
- 
-      			$("#img1").hover(function(){
-    					$(this).attr("src","img/new/IMG 018 opaqu.JPG");
-    				}, function(){
-   					 
-   					 $(this).attr("src","https://thumbsnap.com/i/8YKbf6lx.jpg");
-						});
-    		
-    		$("#img2").hover(function(){
-    					$(this).attr("src","img/new/IMG 016 opaque.JPG");
-    				}, function(){
-   					 
-   					 $(this).attr("src","https://thumbsnap.com/i/ED1JXlPR.jpg");
-						});
-						
-						$("#img3").hover(function(){
-    					$(this).attr("src","img/new/IMG009opaque.JPG");
-    				}, function(){
-   					 
-   					 $(this).attr("src","https://thumbsnap.com/i/PQMdWugF.jpg");
-						});
+				$('document').ready(function() {
+
+  $('#img1').on({
+    'mouseover' : function() {
+      $(this).attr('src','img/new/opaque2.jpg');
+    },
+    mouseout : function() {
+  $(this).attr('src','https://thumbsnap.com/i/8YKbf6lx.jpg');
+    }
+  });
+});
      
+      </script>
+      
+      <script>
+      	$('document').ready(function() {
+
+  $('#img3').on({
+    'mouseover' : function() {
+      $(this).attr('src','img/new/opaque1.jpg');
+    },
+    mouseout : function() {
+  $(this).attr('src','https://thumbsnap.com/i/ED1JXlPR.jpg');
+    }
+  });
+});
+      </script>
+      
+            <script>
+      	$('document').ready(function() {
+
+  $('#img5').on({
+    'mouseover' : function() {
+      $(this).attr('src','img/new/opaque3.jpg');
+    },
+    mouseout : function() {
+  $(this).attr('src','https://thumbsnap.com/i/PQMdWugF.jpg');
+    }
+  });
+});
       </script>
     
     <!-- About Berblan will go here -->		

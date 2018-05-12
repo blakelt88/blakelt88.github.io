@@ -84,7 +84,7 @@
 	<div class="row">
 
        <div class="col-md-12">
-       	<form action="https://formspree.io/your@email.com"
+       	<form action="https://formspree.io/Fam@berblan"
       method="POST">
          <div class="form-group">
          	<label>Name</label>
@@ -111,17 +111,7 @@
 
 </div>
   
-    <!-- Instagram Stuff will go in this -->
-    
-    <section id="portfolio" class="masthead-subpage text-center text-white d-flex">
-      <div class="container-fluid p-0 twitter">
-        <div class="row no-gutters popup-gallery">
-        	<div class="col">
-         
-        	</div>
-        </div>
-      </div>
-    </section>
+
     
     <!-- Contact Form will go here -->
 
