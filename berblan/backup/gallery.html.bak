@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Berblan - Public Figure</title>
+    
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Philosopher|Roboto|Gaegu|Dosis" rel="stylesheet">
+
+		<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger animated rubberBand" href="index.html">Berblan</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="events.html">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Instagram Stuff will go in this -->
+    
+    <section id="portfolio-gallery" class="masthead-subpage text-center text-white d-flex">
+      <div class="container-fluid p-0">
+      	<h1>Gallery</h1>
+        <div class="row">
+        	<div class="col-lg-3">
+        		<img id="myImg" class="img-fluid gallery-img" src="https://i.imgur.com/UVhr0dd.jpg" alt="Berblan 1">
+        	</div>
+        	<div class="col-lg-3">
+        		<img id="myImg2" class="img-fluid gallery-img" src="https://i.imgur.com/a8s0dTs.jpg" alt="Berblan 2">
+        		<div class="row">
+        			<div class="col">
+        				<img id="myImg3" class="img-fluid gallery-img" src="https://i.imgur.com/eyjTYxR.jpg" alt="Berblan 3">
+        			</div>
+        	</div>    		
+        	</div>
+        	<div class="col-lg-3">
+        		<img id="myImg4" class="img-fluid gallery-img" src="https://i.imgur.com/OhXmzxd.jpg" alt="Berblan 4">
+        	</div>
+        	<div class="col-lg-3">
+        		<img id="myImg5" class="img-fluid gallery-img" src="https://i.imgur.com/fbiT6mK.jpg" alt="Berblan 5">
+        		<div class="row">
+        			<div class="col">
+        				<img id="myImg6" class="img-fluid gallery-img" src="https://i.imgur.com/pf4Bw4s.jpg" alt="Berblan 6">
+        			</div>
+        	</div> 
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="col">
+        		<img id="myImg7" class="img-fluid gallery-img" src="https://i.imgur.com/yi4fCok.jpg" alt="Berblan 7">
+        	</div>
+        	<div class="col">
+        		<img id="myImg8" class="img-fluid gallery-img" src="https://i.imgur.com/AYbrPwI.jpg" alt="Berblan 8">
+        	</div>
+        	<div class="col">
+        		<img id="myImg9" class="img-fluid gallery-img" src="https://i.imgur.com/TBWpEhg.jpg" alt="Berblan 9">
+        	</div>
+        	<div class="col">
+        		<img id="myImg10" class="img-fluid gallery-img" src="https://i.imgur.com/ncCFbmx.jpg" alt="Berblan 10">
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-3">
+        		
+        	</div>
+        	
+        	<div class="container-fluid p-0">
+        <div class="row">
+        	<div class="col-lg-3">
+        		<img id="myImg11" class="img-fluid gallery-img" src="https://i.imgur.com/GjCD1c9.jpg" alt="Berblan 11">
+        	</div>
+        	<div class="col-lg-3">
+        		<img id="myImg12" class="img-fluid gallery-img" src="https://i.imgur.com/hNru0C8.jpg" alt="Berblan 12">
+        	</div>
+        	<div class="col-lg-3">
+        		<img id="myImg13" class="img-fluid gallery-img" src="https://i.imgur.com/jNSIKMS.jpg" alt="Berblan 13">
+        		
+        		<div class="row">
+        			<div class="col">
+        				
+        			</div>
+        	</div>    		
+        	</div>
+        	<div class="col-lg-3">
+        		
+        	</div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+<!--   <script>
+    	$.ajax({
+    type: "GET",
+    url: "https://api.imgur.com/3/album/n2QaVG9/images",
+    dataType: "text",
+    beforeSend: function(xhr) {
+        xhr.setRequestHeader('Authorization', 'Client-ID <7a0c644ca08f768>');
+    },
+    success: function(data) {
+        var json = $.parseJSON(data);
+        console.log("DATA:" + json);
+    }
+}); 
+    </script> -->
+    
+<div id="twitter" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#twitter" data-slide-to="0" class="active"></li>
+    <li data-target="#twitter" data-slide-to="1"></li>
+    <li data-target="#twitter" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner gallery-img">
+    <div class="carousel-item active">
+      <img src="img/gallery1.jpg" alt="Gallery 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/gallery2.jpg" alt="Gallery 2">
+    </div>
+    <div class="carousel-item">
+    	<img src="img/gallery3.jpg" alt="Gallery 3">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#twitter" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#twitter" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+    
+    <!-- Contact Form will go here -->
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+        		<div class="col subscribe">
+        			<!-- <div>
+        				<input placeholder=" Enter Email Address Here" type="text"><input type="button" value="Subscribe">        			 
+        			</div> -->
+        		</div>
+        </div>
+        <div class="row social-media">
+        	<div class="col">
+        			<a href="http://www.twitter.com/Berblann" target="_blank"><img src="img/twitter.svg" alt="Berblan Twitter"></a>
+        			<a href="http://www.instagram.com/Berblan" target="_blank"><img src="img/instagram.svg" alt="Berblan Instagram"> </a>       		
+        			<a href="http://www.facebook.com/Berblan" target="_blank"><img src="img/facebook.svg" alt="Berblan Facebook"></a>
+        			<a class="hidden" href="https://berblan.tumblr.com/" target="_blank"><img src="img/tumblr.svg" alt="Berblan Tumblr"></a>     		
+        			<a href="http://www.twitch.com/Berblan" target="_blank"><img src="img/twitch.png" alt="Berblan Twitch"></a>
+        			<a class="hidden" href="https://www.musical.ly/en-US/berblann" target="_blank"><img src="img/musicaly.png" alt="Berblan Musicaly"></a>
+        			<a class="hidden" href="http://www.snapchat.com/Berblan" target="_blank"><img src="img/snapchat.png" alt="Berblan Snapchat"></a>     			
+        			<a href="http://www.youtube.com/Berblan" target="_blank"><img src="img/youtube.svg" alt="Berblan YouTube"></a>
+        			<a href="http://www.younow.com/Berblan" target="_blank"><img src="img/younow.png" alt="Berblan YouNow"></a>
+        			<a class="hidden" href="https://rizeapp.io/Berblan" target="_blank"><img src="img/rize.png" alt="Berblan Rize"></a>
+        			</div>
+        	</div>
+        	<div class="row copyright">
+        		<div class="col">
+        			<p>Copyright &copy 2018 Berblan</p>
+        		</div>
+        	</div>
+        	<div class="row credit">
+        		<div class="col">
+        			<p>Designed and Created by <a href="http://www.blaketurleywebsolutions.com" target="_blank">Blake Turley Web Solutions</a></p>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer will go here -->
+    
+    <footer>
+    	
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
