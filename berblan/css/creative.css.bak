@@ -193,10 +193,8 @@ body {
 }
 
 .video-body {
-	margin-top:25px !important;
-
+	margin-top:25px;
 }
-
 
 #videoDiv div {
 	padding:35px;
@@ -211,12 +209,6 @@ h1 {
 	color:black;
 }
 
-#videoDiv h2 {
-	background-color: #ed8098!important;
-	padding:10px;
-	color:white;
-	margin-bottom:0;
-}
 
 .video-div {
 	height:600px;
@@ -280,17 +272,7 @@ button:focus {
           display:none ;
 }
 
-#img2 {
-	display:none;
-}
 
-#img4 {
-	display:none;
-}
-
-#img6 {
-	display:none;
-}
 
 #img3.img-fluid img {
 	margin-left:0 !important;
@@ -320,7 +302,6 @@ h2 {
 }
 
 .contact-form {
-	margin-top:25px;
 	width:50%;
 }
 
