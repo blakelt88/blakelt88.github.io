@@ -9,18 +9,17 @@
   })(window,document,'script','dataLayer','GTM-WSPWCJH');</script>
   <!-- End Google Tag Manager -->
 
-  <title>Blake Turley | Web Design/Development and Analytics</title>
+  <title>Portfolio Blake Turley | Web Design/Development and Analytics</title>
   <meta charset="utf-8">
   <meta property="og:site_name" content="Blake Turley Web Services"/>
   <meta property="og:type" content="Services"/>
-  <meta property="og:url" content="http://blaketurley.com"/>
-  <meta property="og:title" content="Blake Turley Web Design/Development and Analytics"/>
+  <meta property="og:url" content="http://blaketurley.com/portfolio"/>
+  <meta property="og:title" content="Blake Turley Web Design/Development and Analytics Portfolio"/>
     <meta property="og:image" content="http://blaketurley.com/assets/img/mecodeanalyticsmixpicture.png"/>
-  <meta property="og:image" content="http://blaketurley.com/assets/img/mecodeanalyticsmixpicture.png"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Blake Turley | Web Development | Web Analytics Home Page">
+  <meta name="description" content="Blake Turley | Web Development | Web Analytics Portfolio Page">
   <meta name="keywords" content="Web Developer, Web Analyst, Blake Turley, Freelance, Website Help, Development, Website Services">
   <meta name="author" content="Blake Turley">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -37,9 +36,9 @@
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSPWCJH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSPWCJH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -51,12 +50,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="index.html"><img src="assets/img/logo.png" alt="blake turley logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav edit-nav main-nav">
+        <ul class="nav navbar-nav edit-nav">
           <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right edit-nav">
+        <ul class="nav navbar-nav navbar-right edit-nav main-nav">
           <li><a href="https://www.facebook.com/blake.turley.5" target="_blank"><span class="fa fa-facebook"></span></a></li>
           <li><a href="https://www.github.com/blakelt88" target="_blank"><span class="fa fa-github"></span></a></li>
           <li><a href="https://www.linkedin.com/in/blake-turley/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
@@ -65,34 +64,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </nav>
 
-<section class="jumbotron-blake">
-  <div id="coder" class="analytics-outer">
-    <div class="analytics-inner">
-      <h1><b>Web Design Development</b></h1>
-      <p>Modern, responsive and clean code that will give you the look you dream to have.</p>
-    </div>
-  </div>
-  <div id="analyst" class="coder-outer">
-    <div class="coder-inner">
-      <h1><b>Custom Google Analytics</b></h1>
-      <p><b><span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-yellow">l</span><span class="g-red">e</span></b> Analytics and custom Tagging for even the most detailed conversion data to drive traffic to your site like you've never seen.</p>
-    </div>
-  </div>
-  <div class="container text-center img-div">
-      <img class="mixed-img" src="assets/img/mecodeanalyticsmixpicture.png" alt="blake turley web developer/analyst">
-      <img class="analytics-img" src="assets/img/menanalyticsonly.png" alt="blake turley web analyst">
-      <img class="code-img" src="assets/img/mecodeonly.png" alt="blake turley web developer">
-</div>
-</section>
-
 <section class="currentwork-blake">
 <div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col pitch">
-      <p>I can help you get the results you want with the most detailed data. As a developer I can create custom JavaScript tagging for anything you want to track on your site. I take pride in the way I label my analytics data and reports so my clients are able to read and interpret their data without any issues. I'm easy to work with and very responsive. If you'd like to know more or request my services, please visit my contact page and call me or submit my form.
-    </div>
-  </div>
-  <b><h2>Current Projects</h2></b><br>
+  <b><h2>All Projects</h2></b><br>
   <div class="row">
     <div class="col-lg-4 size-site-imgs">
       <div class="img-w-cap">
@@ -113,6 +87,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-4 size-site-imgs">
+      <div class="img-w-cap">
+      <a href="http://blakelt88.github.io/fiddlestick" target="_blank"><img src="assets/img/fiddlestick.JPG" class="img-thumbnail img-responsive featured-img" alt="Blake Turley Fiddlesticks"></a>
+      <p>This is a code player. I always wondered how they were made and decided to figure it out!</p>
+    </div>
+    </div>
+    <div class="col-lg-4 size-site-imgs">
+      <div class="img-w-cap">
+      <a href="http://blakelt88.github.io/ifit" target="_blank"><img src="assets/img/ifit.JPG" class="img-thumbnail img-responsive featured-img" alt="Blake Turley Trial"></a>
+      <p>This was made for a trial run with a company called iFit. I took a photoshop mockup and copied it into web.</p>
+    </div>
+    </div>
+    <div class="col-lg-4 size-site-imgs">
+      <div class="img-w-cap">
+      <a href="http://www.alphawebstrategies.com" target="_blank"><img src="assets/img/alphawebstrats.JPG" class="img-thumbnail img-responsive featured-img" alt="Blake Turley Alpha Web Strategies"></a>
+      <p>This is a very early start on my Web Contract Services business I'd like to setup.</p>
+    </div>
+    </div>
+  </div>
 </div>
 </section>
 
@@ -125,7 +119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="col-lg-6">
         <ul class="nav navbar-nav footer-nav">
           <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
