@@ -48,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/"><img src="assets/img/logo.png" alt="blake turley logo"></a>
+        <a href="/"><img src="../assets/img/logo.png" alt="blake turley logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav edit-nav main-nav">
