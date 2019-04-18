@@ -1,0 +1,166 @@
+.ml-auto, .mx-auto {
+    margin-right:0px !important;
+    margin-left:0px !important;
+}
+
+.navbar {
+	padding:0px !important;
+}
+
+.navbar-nav.ml-auto {
+	width:100%;
+	height: 50px;
+  border-bottom: solid 1px black;
+}
+
+.nav-item {
+	float: left !important;
+  padding-top: 12px !important;
+  text-decoration: none !important;
+  width: 20% !important;
+  text-align: center !important;
+}
+
+.nav-item a {
+	font-size:25px;
+	color:black !important;
+}
+
+.bg-dark {
+    background-color: white !important;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 20px;
+}
+
+/* Row 1 */
+
+/* Right */ 
+
+.row-1 {
+	height: 500px;
+  margin: 8px;
+}
+
+.row-1 > div > div.col-lg-7 {
+	padding-right:0px;
+}
+
+.row-1 > div {
+	padding-right:0px;
+}
+
+.stay-connected {
+	margin:10px 0px 20px 0px;
+	font-size: 32px;
+	color:white;
+	background:#6fc936;
+	height:50px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.social-media {
+	height:45px;
+	display:inline;
+	margin:0 auto;
+}
+
+.social-media > ul {
+	position:relative;
+	width:100% !important;
+  margin-top:5px !important;
+  text-align: center;
+  padding-left:10px;
+}
+
+.social-media > ul > li {
+	list-style:none;
+	display:inline;
+	margin-right:20px;
+}
+
+.social-media > ul > li > a {
+	border-radius:50%;
+	background:#2eb6bf;
+	color:white;
+	padding:10px 12px 10px 12px;
+}
+
+.social-media > ul > li:nth-child(3) > a {
+	padding:10px 16px 10px 16px !important;
+}
+
+.social-media > ul > li:nth-child(4) > a {
+	padding:10px 14px 10px 14px !important;
+}
+
+.social-media > ul > li:nth-child(5) > a {
+	padding:10px 14px 10px 14px !important;
+}
+
+.featured-product {
+	margin: 10px 0px 10px 0px;
+  height: 250px;
+  border: solid 6px #e6222c;
+}
+
+.new-product {
+	margin:10px 0px 10px 0px;
+	font-size: 65px;
+	color:white;
+	background:#e6222c;
+	height:100px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Left */
+
+.carousel {
+	border:solid 6px #2eb6bf;
+	margin: 10px 0px 10px 0px;
+	height:500px;
+}
+
+/* Row 2 */
+
+
+.row-2 {
+	height: 250px;
+  margin: 8px;
+}
+
+.row-2 > div {
+	padding-right:0px;
+}
+
+.row-2-col {
+	height:200px;
+	margin:25px 0px 25px 15px;
+}
+
+.home {
+	background:#e6222c;
+}
+
+.schools {
+	background:#2fb6bd;
+}
+
+.decorative {
+	background:#6fc936;
+}
+
+.row-2 > div > div > p {
+	margin:10px 0px 10px 0px;
+	font-size: 65px;
+	color:white;
+	background:#e6222c;
+	height:100px;
+	text-align:center;
+	vertical-align:middle;
+}
