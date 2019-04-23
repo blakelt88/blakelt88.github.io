@@ -119,6 +119,13 @@
       </div>
     </div>
   </div>
+  
+  <!-- Row 3 -->
+  <div class="row-3">
+  	<div class="row">
+  		<p><a href="">SUBSCRIBE VIA EMAIL</a></p>
+  	</div>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

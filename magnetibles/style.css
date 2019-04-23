@@ -155,12 +155,55 @@
 	background:#6fc936;
 }
 
-.row-2 > div > div > p {
-	margin:10px 0px 10px 0px;
-	font-size: 65px;
-	color:white;
-	background:#e6222c;
-	height:100px;
+.row-2 > div > .home > p:first-child {
+	    margin: 10px 0px 10px 0px;
+    font-size: 35px;
+    color: white;
+    background: #e6222c;
+    /* height: 100px; */
+    text-align: center;
+    vertical-align: middle;
+    border: solid 4px white;
+    height: 90%;
+    padding-top: 55px;
+}
+
+.row-2 > div > .schools > p:first-child {
+	    margin: 10px 0px 10px 0px;
+    font-size: 35px;
+    color: white;
+    background: #2fb6bd;
+    /* height: 100px; */
+    text-align: center;
+    vertical-align: middle;
+    border: solid 4px white;
+    height: 90%;
+    padding-top: 55px;
+}
+
+.row-2 > div > .decorative > p:first-child {
+	    margin: 10px 0px 10px 0px;
+    font-size: 35px;
+    color: white;
+    background: #6fc936;
+    /* height: 100px; */
+    text-align: center;
+    vertical-align: middle;
+    border: solid 4px white;
+    height: 90%;
+    padding-top: 55px;
+}
+
+/* Row 3 */
+
+.row-3 {
+	height:75px;
+}
+
+.row-3 > div > div > p > a {
+	color:#6fc936;
+	font-size:25px;
 	text-align:center;
-	vertical-align:middle;
+	margin:0 auto;
+	display:block;
 }
